@@ -1,29 +1,25 @@
 ﻿using Cysharp.Threading.Tasks;
+using System;
+using System.Collections.Generic;
 using System.IO;
+using System.Threading;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameUtil
 {
+    private static long _lastId = 0;
+
     public static void LoadFullData()
     {
-        //GameDataManager.Instance.LoadCharacterData(GetFullDataPath("Character"));
-
-    }
-
-    public static string GetFullDataPath(string dataTableName)
-    {
-        if (string.IsNullOrEmpty(dataTableName))
-        {
-            Debug.Log("테이블 이름이 올바르지 않습니다!");
-            return string.Empty;
-        }
-
-        // string path = @"C:예시-여러분의 상위 폴더\ComputerBasics_DaniTech_Work\JsonConverter\JsonOutput\Character.json";
-        // 제이슨 컨버터를 한번 실행해서 JsonCoutput에 Character.json을 미리 만들어뒀는지도 꼭 확인해주세요!
-        // 상대경로 ../../ 추후 툴 이름이나 경로가 변경되면 여길 확인하세요!
-        string relativePath = $"JsonConverter/JsonOutput/{dataTableName}.json";
-        string fullPath = Path.GetFullPath(relativePath);
-        return fullPath;
+        // 게임 로딩할 때 불러올 데이터는 여기서! 
+        GameDataManager.Instance.LoadSkillData("Skill");
+        GameDataManager.Instance.LoadCharacterData("Character");
+        GameDataManager.Instance.LoadWeaponData("Weapon");
+        GameDataManager.Instance.LoadCostumeData("Costume");
+        GameDataManager.Instance.LoadDNItemData("DNItem");
+        GameDataManager.Instance.LoadDNDialogueData();
+        GameDataManager.Instance.LoadAll();
     }
 
     public static int CalcCharacterFinalDamage(int curCharacterLevel, int levelPerDamage, bool isCritical)
@@ -32,53 +28,104 @@ public class GameUtil
         int finalDamage = isCritical ? (damagePerLevel * 2) : damagePerLevel;
         return finalDamage;
     }
-    //public static Sprite LoadSpriteCanBeNull(string spriteName)
-    //{
-    //    // 1. Resources/ 경로에서 이름으로 스프라이트 로드
-    //    // 예: spriteName이 "Sword"라면 Assets/Resources/2D/Sword.png를 찾음
-    //    // 이 2D같은 경로는 나중에 Sprite, Texture 등등 다양하게 바꿔도 무관합니다!
-    //    Sprite loadedSprite = Resources.Load<Sprite>($"{spriteName}");
 
-    //    if (loadedSprite != null)
-    //    {
-    //        return loadedSprite;
-    //    }
+    public static Sprite LoadSpriteCanBeNull(string spriteName)
+    {
+        // 1. Resources/ 경로에서 이름으로 스프라이트 로드
+        // 예: spriteName이 "Sword"라면 Assets/Resources/2D/Sword.png를 찾음
+        // 이 2D같은 경로는 나중에 Sprite, Texture 등등 다양하게 바꿔도 무관합니다!
+        Sprite loadedSprite = Resources.Load<Sprite>($"{spriteName}");
 
-    //    Debug.LogError($"에셋을 찾을 수 없습니다: {spriteName}");
-    //    return null;
-    //}
+        if (loadedSprite != null)
+        {
+            return loadedSprite;
+        }
 
-    //public static async UniTask<Sprite> LoadAndSetSpriteImage(Image targetImage, string spritePath)
-    //{
-    //    Sprite sprite = await DaniTechResourceManager.Inst.LoadSprite(spritePath);
-    //    if (sprite != null)
-    //    {
-    //        targetImage.sprite = sprite;
-    //    }
-    //    return sprite;
-    //}
+        Debug.LogError($"에셋을 찾을 수 없습니다: {spriteName}");
+        return null;
+    }
 
-    //public static async UniTaskVoid LoadAndPlayAudioClip(AudioSource audioSource, string audioPath, bool isLoop = false)
-    //{
-    //    AudioClip clip = await DaniTechResourceManager.Inst.LoadAsset<AudioClip>(audioPath);
-    //    if (clip == null)
-    //    {
-    //        Debug.LogError($"{audioPath}를 찾을 수 없습니다! 어드레서블 설정이 되어 있는지 확인해주세요.");
-    //        return;
-    //    }
+    public static async UniTask<Sprite> LoadAndSetSpriteImage(Image targetImage, string spritePath)
+    {
+        Sprite sprite = await DaniTechResourceManager.Inst.LoadSprite(spritePath);
+        if (sprite != null)
+        {
+            targetImage.sprite = sprite;
+        }
+        return sprite;
+    }
 
-    //    if (isLoop == true)
-    //    {
-    //        audioSource.clip = clip;
-    //        audioSource.loop = true;
-    //        audioSource.Play();
-    //    }
-    //    else
-    //    {
-    //        audioSource.PlayOneShot(clip);
-    //    }
-    //}
+    public static async UniTaskVoid LoadAndPlayAudioClip(AudioSource audioSource, string audioPath, bool isLoop = false)
+    {
+        AudioClip clip = await DaniTechResourceManager.Inst.LoadAsset<AudioClip>(audioPath);
+        if (clip == null)
+        {
+            Debug.LogError($"{audioPath}를 찾을 수 없습니다! 어드레서블 설정이 되어 있는지 확인해주세요.");
+            return;
+        }
 
+        if (isLoop == true)
+        {
+            audioSource.clip = clip;
+            audioSource.loop = true;
+            audioSource.Play();
+        }
+        else
+        {
+            audioSource.PlayOneShot(clip);
+        }
+    }
 
+    public static async UniTaskVoid LoadAndSetTexture(RawImage targetRawImage, string texturePath)
+    {
+        // 비동기로 로드하기 전까지는 해당 오브젝트를 잠깐 비활성화 해준다
+        targetRawImage.gameObject.SetActive(false);
+        Texture texture = await DaniTechResourceManager.Inst.LoadAsset<Texture>(texturePath);
+        if (texture != null)
+        {
+            targetRawImage.texture = texture;
+        }
+        targetRawImage.gameObject.SetActive(true);
+    }
 
+    public static List<string> GetDialogueIdList(string dialogueGroupId)
+    {
+        var list = new List<string>();
+
+        // "dialogue_group_mainstream_1_1"
+        var data = GameDataManager.Instance.GetDNDialogueGroupData(dialogueGroupId);
+        if (data != null)
+        {
+            var idArr = data.DialogueIdList;
+            foreach (var id in idArr)
+            {
+                list.Add(id);
+            }
+        }
+
+        return list;
+    }
+
+    // 그냥 유니크 키가 발급되어야 할 때 사용하려고 만든 것 (의미가 있는 건 아니므로 사용만 하세요)
+    public static long GenerateUniqueId()
+    {
+        long newId = DateTime.UtcNow.Ticks;
+
+        // 원자적 연산으로 안전하게 ID 갱신
+        while (true)
+        {
+            long lastId = Volatile.Read(ref _lastId);
+
+            // 만약 현재 시간이 이전 ID보다 작거나 같다면 (루프가 너무 빠른 경우 포함)
+            // 이전 ID + 1로 강제 설정하여 중복 방지
+            long idToAssign = (newId <= lastId) ? lastId + 1 : newId;
+
+            // _lastId가 내가 읽은 시점과 같다면 idToAssign으로 교체 (성공 시 루프 탈출)
+            if (Interlocked.CompareExchange(ref _lastId, idToAssign, lastId) == lastId)
+            {
+                return idToAssign;
+            }
+            // 그 사이 다른 스레드가 값을 바꿨다면 다시 시도
+        }
+    }
 }
