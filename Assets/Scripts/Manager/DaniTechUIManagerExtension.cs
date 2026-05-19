@@ -55,35 +55,6 @@ public static class DaniTechUIManagerExtension
         }
        
     }
-    //}
-
-        //// 신규UI추가 3) 이렇게 어떤 팝업을 열고, 열때 전달해야하는 파라미터가 있다면 이렇게 전달한다.
-        //    // 추가하기 편하게 그냥 빼둔 확장 메서드이므로, uiManager과 this는 우선 넘어가자
-        //public static void OpenMyProfilePopup(this DaniTechUIManager uiManager, string characterDataId)
-        //{
-        //    // 신규UI추가 4) 이렇게 UI 타입을 던져서 UI 생성을 요청한다
-        //    var uiBase = uiManager.OpenPopupUI(DaniTechUIType.DNMyProfilePopup);
-        //    if (uiBase == null)
-        //    {
-        //        Debug.LogWarning($"UI가 생성되지 않았습니다");
-        //        return;
-        //    }
-
-        //    if (uiBase is DaniTech_MyProfilePopup myProfilePopup)
-        //    {
-        //        myProfilePopup.RefreshCharacterUI(characterDataId);
-        //    }
-        //}
-
-        //public static void OpenInventoryPopup(this DaniTechUIManager uiManger)
-        //{
-        //    var uiBase = uiManger.OpenContentUI(DaniTechUIType.DNInventory);
-        //    if (uiBase == null)
-        //    {
-        //        Debug.LogWarning($"UI가 생성되지 않았습니다");
-        //        return;
-        //    }
-        //}
 
     public static void OpenStartUI(this DaniTechUIManager uiManger)
     {

@@ -243,7 +243,7 @@ GameObject:
   - component: {fileID: 8004471840343715551}
   - component: {fileID: 7437665027690690014}
   m_Layer: 5
-  m_Name: GameStartButton
+  m_Name: Button_GameStart
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -363,7 +363,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60cea8d7f001f5c4d83c1fa9e2c5b1e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DaniTechUIButton
-  Button_Base: {fileID: 0}
+  Button_Base: {fileID: 8004471840343715551}
   Text_Base: {fileID: 0}
   Image_Base: {fileID: 0}
   Image_Select: {fileID: 0}
@@ -539,7 +539,7 @@ GameObject:
   - component: {fileID: 6655386612271814874}
   - component: {fileID: 7851586405579989249}
   m_Layer: 5
-  m_Name: OptionButton
+  m_Name: Button_Option
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -659,7 +659,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60cea8d7f001f5c4d83c1fa9e2c5b1e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DaniTechUIButton
-  Button_Base: {fileID: 0}
+  Button_Base: {fileID: 6655386612271814874}
   Text_Base: {fileID: 0}
   Image_Base: {fileID: 0}
   Image_Select: {fileID: 0}
@@ -677,7 +677,7 @@ GameObject:
   - component: {fileID: 8019792139714413684}
   - component: {fileID: 3168413143215482067}
   m_Layer: 5
-  m_Name: GameQuitButton
+  m_Name: Button_GameQuit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -797,7 +797,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60cea8d7f001f5c4d83c1fa9e2c5b1e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DaniTechUIButton
-  Button_Base: {fileID: 0}
+  Button_Base: {fileID: 8019792139714413684}
   Text_Base: {fileID: 0}
   Image_Base: {fileID: 0}
   Image_Select: {fileID: 0}

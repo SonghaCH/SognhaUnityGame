@@ -7,11 +7,16 @@ public class StartUI : DaniTechUIBase
     [SerializeField] private DaniTechUIButton Btn_Quit;
     
     //ToDo임시 Start 변경
-    private void Start()
+    private void OnEnable()
     {
         Btn_Start.BindOnClickButtonEvent(OnClick_GameStart);
         Btn_Option.BindOnClickButtonEvent(OnClick_OpenOption);
         Btn_Quit.BindOnClickButtonEvent(OnClick_GameQuit);
+    }
+
+    private void OnDisable()
+    {
+        int a = 3;
     }
 
     public void OnClick_GameStart()
