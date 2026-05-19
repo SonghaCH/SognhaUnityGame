@@ -14,14 +14,13 @@ public class StartUI : DaniTechUIBase
         Btn_Quit.BindOnClickButtonEvent(OnClick_GameQuit);
     }
 
-    private void OnDisable()
-    {
-        int a = 3;
-    }
 
     public void OnClick_GameStart()
     {
         Debug.Log("게임 시작 버튼 ");
+        DaniTechUIManager.Instance.CloseContentUI(DaniTechUIType.StartUI);
+        DaniTechUIManager.Instance.OpenMSGDialogueUI();
+
     }
 
     public void OnClick_OpenOption()

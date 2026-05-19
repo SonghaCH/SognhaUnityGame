@@ -15,7 +15,8 @@ public enum DaniTechUIType
     StartUI,
     StartLoadingUI,
     QuitPopupUI,
-    
+    MSGDialogueUI,
+
     DNSimplePopup,
     DNMainUI,
     DNMyProfilePopup, 
@@ -41,6 +42,8 @@ public static class DaniTechUIManagerExtension
     {
         uiManager.OpenStartLoadingUI();
         uiManager.OpenStartUI();
+
+
         // 게임 로비 UI를 여기서 오픈해주자 -> uiManager.
         // MainUI도
     }
@@ -78,6 +81,16 @@ public static class DaniTechUIManagerExtension
     public static void OpenQuitPopupUI(this DaniTechUIManager uiManager)
     {
         var uiBase = uiManager.OpenUI(DaniTechUIRootType.PopupUI, DaniTechUIType.QuitPopupUI);
+        if (uiBase == null)
+        {
+            Debug.LogWarning($"UI가 생성되지 않았습니다");
+            return;
+        }
+    }
+
+    public static void OpenMSGDialogueUI(this DaniTechUIManager uiManager)
+    {
+        var uiBase = uiManager.OpenUI(DaniTechUIRootType.ContentUI, DaniTechUIType.MSGDialogueUI);
         if (uiBase == null)
         {
             Debug.LogWarning($"UI가 생성되지 않았습니다");
