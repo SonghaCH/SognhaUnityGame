@@ -18,7 +18,6 @@ public class DNCharacterData : GameDataBase
 }
 
 
-
 [System.Serializable]
 public class DNSkillData : GameDataBase
 {

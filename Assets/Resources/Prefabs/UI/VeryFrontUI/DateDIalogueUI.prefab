@@ -53,6 +53,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DateDialogueUI
   Btn_NextButton: {fileID: 487625117410417863}
+  Text_Description: {fileID: 6950190169562272247}
 --- !u!1 &1507375958977426559
 GameObject:
   m_ObjectHideFlags: 0

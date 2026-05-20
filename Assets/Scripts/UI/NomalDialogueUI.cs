@@ -17,6 +17,11 @@ public class NomalDialogueUI : DaniTechUIBase
         Btn_Next.BindOnClickButtonEvent(OnClick_Next);
     }
 
+    
+
+
+
+
     // 다이얼로그에서 Next 버튼이 눌러질때 호출된다
     public void OnClick_Next()
     {
@@ -38,7 +43,7 @@ public class NomalDialogueUI : DaniTechUIBase
 
     private bool CheckAndStartNextDialogue()
     {
-        var dialogueData = GameDataManager.Instance.GetDNDialogueData(_currentDialogueId);
+        var dialogueData = GameDataManager.Instance.GetNomalDialogueData(_currentDialogueId);
         if (dialogueData == null)
         {
             Debug.LogWarning($"다이얼로그 데이터가 존재하지 않습니다 {dialogueData}");
@@ -59,7 +64,7 @@ public class NomalDialogueUI : DaniTechUIBase
     // 다이얼로그를 시작하는 메서드 (외부에서 UIManager를 통해 다이얼로그 시작을 요청할때도 쓴다!)
     public void StartDialogue(string dialogeId)
     {
-        var dialogueData = GameDataManager.Instance.GetDNDialogueData(dialogeId);
+        var dialogueData = GameDataManager.Instance.GetNomalDialogueData(dialogeId);
         if (dialogueData == null)
         {
             Debug.LogWarning($"다이얼로그 데이터가 존재하지 않습니다 {dialogueData}");
@@ -85,7 +90,7 @@ public class NomalDialogueUI : DaniTechUIBase
             SetCurrentDialogueDescription(dialogueData.Description);
         }
 
-        SetCharacterName(dialogueData.CharacterDataId);
+        SetCharacterName(dialogueData.Id);
     }
 
     private bool CheckAndSetDescription()
@@ -108,7 +113,7 @@ public class NomalDialogueUI : DaniTechUIBase
 
         if (isActive)
         {
-            var characterData = GameDataManager.Instance.GetCharacterData(characterDataId);
+            var characterData = GameDataManager.Instance.GetSHCharacterData(characterDataId);
             if (characterData != null)
             {
                 Text_Character.text = characterData.Name;
@@ -118,6 +123,6 @@ public class NomalDialogueUI : DaniTechUIBase
 
     private void SetCurrentDialogueDescription(string description)
     {
-        Text_Description.text = description;
+        
     }
 }
