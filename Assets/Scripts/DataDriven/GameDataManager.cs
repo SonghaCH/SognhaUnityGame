@@ -26,7 +26,7 @@ public class GameDataManager : MonoBehaviour
         public List<T> items; // JSON 파일의 루트 키 이름이 "items"여야 함
     }
     // ---------------------------------------------------
-
+    
     public Dictionary<string, DNCharacterData> CharacterDataList { get; private set; } = new Dictionary<string, DNCharacterData>();
     public Dictionary<string, DNSkillData> SkillDataList { get; private set; } = new Dictionary<string, DNSkillData>();
     public Dictionary<string, DNWeaponData> WeaponDataList { get; private set; } = new Dictionary<string, DNWeaponData>();
@@ -36,6 +36,26 @@ public class GameDataManager : MonoBehaviour
     public Dictionary<string, DNDialogueData> DialogueDataList { get; private set; } = new Dictionary<string, DNDialogueData>();
     public Dictionary<string, DNFieldObjectData> FieldObjectDataList { get; private set; } = new Dictionary<string, DNFieldObjectData>();
     public Dictionary<string, DNMonsterData> MonsterDataList { get; private set; } = new Dictionary<string, DNMonsterData>();
+
+
+
+
+
+
+
+    public Dictionary<string, SHCharacterData> SHCharacterDataList { get; private set; } = new Dictionary<string, SHCharacterData>();
+    public Dictionary<string, DateDialogueData> DateDialogueDataList { get; private set; } = new Dictionary<string, DateDialogueData>();
+    public Dictionary<string, MindDialogueData> MindDialoguedataList { get; private set; } = new Dictionary<string, MindDialogueData>();
+    public Dictionary<string, MSGDialogueData> MSGDialogueDataList { get; private set; } = new Dictionary<string, MSGDialogueData>();
+    public Dictionary<string, NomalDialogueData> NomalDialogueDataList { get; private set; } = new Dictionary<string, NomalDialogueData>();
+
+
+    
+
+
+
+
+
 
     private Dictionary<string, T> LoadData<T>(string tableName) where T : GameDataBase
     {
@@ -81,6 +101,8 @@ public class GameDataManager : MonoBehaviour
         SkillDataList = LoadData<DNSkillData>(jsonPath);
     }
 
+   
+
     public void LoadCharacterData(string jsonPath)
     {
         CharacterDataList = LoadData<DNCharacterData>(jsonPath);
@@ -112,6 +134,49 @@ public class GameDataManager : MonoBehaviour
         FieldObjectDataList = LoadData<DNFieldObjectData>("DNFieldObject");
         MonsterDataList = LoadData<DNMonsterData>("DNMonster");
     }
+
+
+    //----------------------------------------------------------------------------------------------------------
+
+    public void LoadSHCharacterData(string jsonPath)
+    {
+        SHCharacterDataList = LoadData<SHCharacterData>(jsonPath);
+
+    }
+
+    public void LoadDateDialogueData(string jsonPath)
+    {
+        DateDialogueDataList = LoadData<DateDialogueData>(jsonPath);
+    }
+
+    public void LoadMindDialoguedata(string jsonPath)
+    {
+        MindDialoguedataList = LoadData<MindDialogueData>(jsonPath);
+    }
+    public void LoadMSGDialogueData(string jsonPath)
+    {
+        MSGDialogueDataList = LoadData<MSGDialogueData>(jsonPath);
+    }
+
+    public void LoadNomalDialogueData(string jsonPath)
+    {
+        NomalDialogueDataList = LoadData<NomalDialogueData>(jsonPath);
+    }
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     // [아래는 사용을 위한 부분들을 메서드 정의] =========================================================================================
@@ -179,4 +244,43 @@ public class GameDataManager : MonoBehaviour
 
         return FieldObjectDataList.TryGetValue(dataId, out var data) ? data : null;
     }
+
+    //--------------------------------------------------------------
+
+    public SHCharacterData GetSHCharacterData(string dataId)
+    {
+        if (SHCharacterDataList == null || string.IsNullOrEmpty(dataId)) return null;
+
+        return SHCharacterDataList.TryGetValue(dataId, out var data) ? data : null;
+    }
+
+    public DateDialogueData GetDateDialogueData(string dataId)
+    {
+        if (DateDialogueDataList == null || string.IsNullOrEmpty(dataId)) return null;
+
+        return DateDialogueDataList.TryGetValue(dataId, out var data) ? data : null;
+    }
+    public MindDialogueData GetMindDialoguedata(string dataId)
+    {
+        if (MindDialoguedataList == null || string.IsNullOrEmpty(dataId)) return null;
+
+        return MindDialoguedataList.TryGetValue(dataId, out var data) ? data : null;
+    }
+    public MSGDialogueData GetMSGDialogueData(string dataId)
+    {
+        if (MSGDialogueDataList == null || string.IsNullOrEmpty(dataId)) return null;
+
+        return MSGDialogueDataList.TryGetValue(dataId, out var data) ? data : null;
+    }
+    public NomalDialogueData GetNomalDialogueData(string dataId)
+    {
+        if (NomalDialogueDataList == null || string.IsNullOrEmpty(dataId)) return null;
+
+        return NomalDialogueDataList.TryGetValue(dataId, out var data) ? data : null;
+    }
+
+
+
+    
+
 }

@@ -17,6 +17,8 @@ public class DNCharacterData : GameDataBase
     public string BasicCostumeId;
 }
 
+
+
 [System.Serializable]
 public class DNSkillData : GameDataBase
 {
@@ -88,6 +90,58 @@ public class DNMonsterData : GameDataBase
     public string IconPath;
     public string PrefabPath;
 }
+
+//----------------------------------------------------------------------------------------------------------------------
+
+[System.Serializable]
+public class SHCharacterData : GameDataBase
+{
+    public string Name;
+    public string Description;
+    public string characterData;
+}
+
+[System.Serializable]
+public class DateDialogueData: GameDataBase
+{
+    public string Description;
+}
+
+[System.Serializable]
+public class MindDialogueData: GameDataBase
+{
+    public string Description;
+    public string NextDialogueId;
+}
+
+public class MSGDialogueData: GameDataBase
+{
+    public string MSGType;
+    public string Description;
+    public string NextDialogueId;
+}
+
+public class NomalDialogueData : GameDataBase
+{
+    public string Description;
+    public string NextDialogueId;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // C# 때와 약간 달라진 점
 // Syste.Text.Json대신 유니티 내장 JsonUtility를 사용
 // 따라서 프로퍼티말고 그냥 일반 public 멤버변수로 변경함

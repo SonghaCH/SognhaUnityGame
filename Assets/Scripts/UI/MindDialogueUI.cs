@@ -2,12 +2,10 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class NomalDialogueUI : DaniTechUIBase
+public class MindDialogueUI : DaniTechUIBase
 {
-    [SerializeField] private GameObject Layout_CharacterName;
-    [SerializeField] private Text Text_Character;
-    [SerializeField] private Text Text_Description;
     [SerializeField] private DaniTechUIButton Btn_Next;
+    [SerializeField] private Text Text_Description;
 
     private string _currentDialogueId;
     private Queue<string> _descriptionQueue = new Queue<string>();
@@ -16,8 +14,6 @@ public class NomalDialogueUI : DaniTechUIBase
     {
         Btn_Next.BindOnClickButtonEvent(OnClick_Next);
     }
-
-    // 다이얼로그에서 Next 버튼이 눌러질때 호출된다
     public void OnClick_Next()
     {
         // 다음 대사가 있는지 체크한다
@@ -85,7 +81,6 @@ public class NomalDialogueUI : DaniTechUIBase
             SetCurrentDialogueDescription(dialogueData.Description);
         }
 
-        SetCharacterName(dialogueData.CharacterDataId);
     }
 
     private bool CheckAndSetDescription()
@@ -100,21 +95,7 @@ public class NomalDialogueUI : DaniTechUIBase
         return isNextDescriptionExsist;
     }
 
-    private void SetCharacterName(string characterDataId)
-    {
-        // 캐릭터 정보가 있다면 말하는 이의 추가 정보를 표기해줄 수 있도록 연동하는 부분
-        bool isActive = (string.IsNullOrEmpty(characterDataId) == false);
-        Layout_CharacterName.SetActive(isActive);
-
-        if (isActive)
-        {
-            var characterData = GameDataManager.Instance.GetCharacterData(characterDataId);
-            if (characterData != null)
-            {
-                Text_Character.text = characterData.Name;
-            }
-        }
-    }
+    
 
     private void SetCurrentDialogueDescription(string description)
     {

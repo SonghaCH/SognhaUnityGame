@@ -16,6 +16,7 @@ public enum DaniTechUIType
     StartLoadingUI,
     QuitPopupUI,
     MSGDialogueUI,
+    DateDialogueUI,
 
     DNSimplePopup,
     DNMainUI,
@@ -78,6 +79,11 @@ public static class DaniTechUIManagerExtension
             return;
         }
     }
+    public static void CloseLoadingUI(this DaniTechUIManager uiManager)
+    {
+        uiManager.CloseUI(DaniTechUIRootType.VeryFrontUI, DaniTechUIType.StartLoadingUI);
+    }
+
     public static void OpenQuitPopupUI(this DaniTechUIManager uiManager)
     {
         var uiBase = uiManager.OpenUI(DaniTechUIRootType.PopupUI, DaniTechUIType.QuitPopupUI);
@@ -97,12 +103,27 @@ public static class DaniTechUIManagerExtension
             return;
         }
     }
-
-
-    public static void CloseLoadingUI(this DaniTechUIManager uiManager)
+    public static void CloseMSGDialogueUI(this DaniTechUIManager uiManager)
     {
-        uiManager.CloseUI(DaniTechUIRootType.VeryFrontUI, DaniTechUIType.StartLoadingUI);
+        uiManager.CloseUI(DaniTechUIRootType.ContentUI, DaniTechUIType.MSGDialogueUI);
     }
+
+    public static void OpenDateDialogueUI(this DaniTechUIManager uiManager)
+    {
+        var uiBase = uiManager.OpenUI(DaniTechUIRootType.VeryFrontUI, DaniTechUIType.DateDialogueUI,false);
+        if (uiBase == null)
+        {
+            Debug.LogWarning($"UI가 생성되지 않았습니다");
+            return;
+        }
+    }
+
+    public static void CloseDateDialogueUI(this DaniTechUIManager uiManager)
+    {
+        uiManager.CloseUI(DaniTechUIRootType.VeryFrontUI, DaniTechUIType.DateDialogueUI);
+    }
+
+
 
     //public static void OpenDialogueUI(this DaniTechUIManager uiManager, string startDialogueId)
     //{

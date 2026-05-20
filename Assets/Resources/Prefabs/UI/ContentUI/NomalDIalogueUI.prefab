@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4961900394786039153}
   - component: {fileID: 1061294469530299350}
   m_Layer: 5
-  m_Name: NomalDIalogueUI
+  m_Name: NomalDialogueUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

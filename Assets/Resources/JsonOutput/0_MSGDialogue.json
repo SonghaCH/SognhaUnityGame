@@ -1,0 +1,79 @@
+[
+  {
+    "Id": "msgDialogue_Opening_1_1_100",
+    "MSGType": "MyMSG",
+    "characterDataId": "character_Player_01",
+    "Description": "오늘 게임도 재밌었다. 그치?",
+    "NextDialogueId": "msgDialogue_Opening_1_1_101",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "msgDialogue_Opening_1_1_101",
+    "MSGType": "OhterMSG",
+    "characterDataId": "character_Minhyeong_01",
+    "Description": "재미있었지..<np> 잠깐 전화 할래?",
+    "NextDialogueId": null,
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "msgDialogue_Opening_1_1_102",
+    "MSGType": "MyMSG",
+    "characterDataId": "character_Player_01",
+    "Description": "정말 못해준 것만 기억나는 밤이네. 부족했지만 극복해주고 내 옆에 있어줘서 정말 고마워. 이럴 줄 알았으면 조금이라도 데이트하자고 조를걸 그랬어 ㅋㅋ 내 일상부터 핸드폰, 너는 내 전부고 내 목표고 정말 많은 부분이 차지해있네. <np>너가 어디 막 없어지고 다시는 못보고 이런건 아니지만 나라는 아파트에서 펜트 하우스 주인이 방뺀다고 하니까 시간이 좀 걸리고 씁쓸하기도 해. <np>그래도 뭐 너에게 있어서 나도 소중하고 좋은 사람이었다고 인정받았으니 지나온 내 연애는 열심히 한거 같네. <np>물론 예상 할 수 없는 타이밍에 이별을 맞이하는데.. 어찌보면 내가 선뜻 할 수 없는, 내가 못잡은 타이밍을 너가 용기내서 무릅쓰고 해준거 아니었을까라는 생각이 든다. <np>그래도 나 너 마지막까지 쉽게 안놓았고 잡았다? 억지로 라도 이유 만들어서 너 안놓았다?",
+    "NextDialogueId": "msgDialogue_Opening_1_1_103",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "msgDialogue_Opening_1_1_103",
+    "MSGType": "OhterMSG",
+    "characterDataId": "character_Minhyeong_01",
+    "Description": "고마워 앞으로도 우리 좋은 사람 되기 위해 열심히 살자 화이팅! 얼른 자자 이제 그만 생각하고…",
+    "NextDialogueId": "msgDialogue_Opening_1_1_104",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "msgDialogue_Opening_1_1_104",
+    "MSGType": "MyMSG",
+    "characterDataId": "character_Player_01",
+    "Description": "눈감으면 눈물만 나서 오히려 카톡을 보내니까 안정되는거 같아.",
+    "NextDialogueId": "msgDialogue_Opening_1_1_105",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "msgDialogue_Opening_1_1_105",
+    "MSGType": "OhterMSG",
+    "characterDataId": "character_Minhyeong_01",
+    "Description": "난 좀 얘기하니까 힘든거 같아 미안해…",
+    "NextDialogueId": "msgDialogue_Opening_1_1_106",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "msgDialogue_Opening_1_1_106",
+    "MSGType": "MyMSG",
+    "characterDataId": "character_Player_01",
+    "Description": "끝까지 아프고 힘들게 해서 미안해. 딱 여기까지만 할게. 고생했어! 잘자!",
+    "NextDialogueId": "msgDialogue_Opening_1_1_107",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  }
+]
