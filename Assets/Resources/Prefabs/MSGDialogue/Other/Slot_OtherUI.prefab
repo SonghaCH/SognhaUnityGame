@@ -129,7 +129,7 @@ GameObject:
   - component: {fileID: 4212114889951456649}
   - component: {fileID: 4294791840282461988}
   m_Layer: 5
-  m_Name: Layout_Others
+  m_Name: Slot_OtherUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

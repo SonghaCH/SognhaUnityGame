@@ -105,6 +105,18 @@ public class DateDialogueData: GameDataBase
 {
     public string Description;
 }
+//SelectionNameList": null,
+//    "SelectionDialogueIdList": null,
+//    "TexturePath": null,
+//    "VoicePath": null,
+//    "CharacterDataId": null
+
+[System.Serializable]
+public class _DateDialogueData : GameDataBase
+{
+    public string Description;
+    public string NextDialogueId;
+}
 
 [System.Serializable]
 public class MindDialogueData: GameDataBase
@@ -113,6 +125,7 @@ public class MindDialogueData: GameDataBase
     public string NextDialogueId;
 }
 
+[System.Serializable]
 public class MSGDialogueData: GameDataBase
 {
     public string MSGType;
@@ -120,7 +133,8 @@ public class MSGDialogueData: GameDataBase
     public string NextDialogueId;
 }
 
-public class NomalDialogueData : GameDataBase
+[System.Serializable]
+public class NormalDialogueData : GameDataBase
 {
     public string Description;
     public string NextDialogueId;

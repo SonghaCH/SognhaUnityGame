@@ -24,9 +24,12 @@ public class GameUtil
 
         GameDataManager.Instance.LoadSHCharacterData("0_Character");
         GameDataManager.Instance.LoadDateDialogueData("0_DateDialogue");
+        GameDataManager.Instance.Load0_DateDialogueData("0_DateDialogue");
+
+
         GameDataManager.Instance.LoadMindDialoguedata("0_MindDialogue");
         GameDataManager.Instance.LoadMSGDialogueData("0_MSGDialogue");
-        GameDataManager.Instance.LoadNomalDialogueData("0_NomalDialogue");
+        GameDataManager.Instance.LoadNormalDialogueData("0_NormalDialogue");
 
 
 

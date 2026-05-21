@@ -1,4 +1,5 @@
-﻿using System;
+﻿using JetBrains.Annotations;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -47,9 +48,11 @@ public class GameDataManager : MonoBehaviour
 
     public Dictionary<string, SHCharacterData> SHCharacterDataList { get; private set; } = new Dictionary<string, SHCharacterData>();
     public Dictionary<string, DateDialogueData> DateDialogueDataList { get; private set; } = new Dictionary<string, DateDialogueData>();
+    public Dictionary<string, _DateDialogueData> _DateDialogueDataList { get; private set; } = new Dictionary<string, _DateDialogueData>();
+
     public Dictionary<string, MindDialogueData> MindDialoguedataList { get; private set; } = new Dictionary<string, MindDialogueData>();
     public Dictionary<string, MSGDialogueData> MSGDialogueDataList { get; private set; } = new Dictionary<string, MSGDialogueData>();
-    public Dictionary<string, NomalDialogueData> NomalDialogueDataList { get; private set; } = new Dictionary<string, NomalDialogueData>();
+    public Dictionary<string, NormalDialogueData> NomalDialogueDataList { get; private set; } = new Dictionary<string, NormalDialogueData>();
 
 
     
@@ -140,16 +143,27 @@ public class GameDataManager : MonoBehaviour
 
     //----------------------------------------------------------------------------------------------------------
 
+
+
     public void LoadSHCharacterData(string jsonPath)
     {
         SHCharacterDataList = LoadData<SHCharacterData>(jsonPath);
 
     }
 
+   
+
     public void LoadDateDialogueData(string jsonPath)
     {
         DateDialogueDataList = LoadData<DateDialogueData>(jsonPath);
     }
+    public void Load0_DateDialogueData(string jsonPath)
+    {
+        _DateDialogueDataList = LoadData<_DateDialogueData>(jsonPath);
+    }
+
+
+
 
     public void LoadMindDialoguedata(string jsonPath)
     {
@@ -160,9 +174,9 @@ public class GameDataManager : MonoBehaviour
         MSGDialogueDataList = LoadData<MSGDialogueData>(jsonPath);
     }
 
-    public void LoadNomalDialogueData(string jsonPath)
+    public void LoadNormalDialogueData(string jsonPath)
     {
-        NomalDialogueDataList = LoadData<NomalDialogueData>(jsonPath);
+        NomalDialogueDataList = LoadData<NormalDialogueData>(jsonPath);
     }
 
 
@@ -274,7 +288,7 @@ public class GameDataManager : MonoBehaviour
 
         return MSGDialogueDataList.TryGetValue(dataId, out var data) ? data : null;
     }
-    public NomalDialogueData GetNomalDialogueData(string dataId)
+    public NormalDialogueData GetNormalDialogueData(string dataId)
     {
         if (NomalDialogueDataList == null || string.IsNullOrEmpty(dataId)) return null;
 

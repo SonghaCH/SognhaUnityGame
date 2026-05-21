@@ -4,19 +4,24 @@ using UnityEngine.UI;
 
 public class MindDialogueUI : DaniTechUIBase
 {
-    [SerializeField] private DaniTechUIButton Btn_Next;
     [SerializeField] private Text Text_Description;
+    [SerializeField] private DaniTechUIButton Btn_Next;
 
     private string _currentDialogueId;
+
+    // <np>로 쪼개진 나레이션 조각들을 담아둘 큐
     private Queue<string> _descriptionQueue = new Queue<string>();
 
     private void OnEnable()
     {
         Btn_Next.BindOnClickButtonEvent(OnClick_Next);
     }
+
+    /// <summary>
+    /// 내면 다이얼로그에서 Next 버튼이 눌러질 때 호출된다
+    /// </summary>
     public void OnClick_Next()
     {
-        // 다음 대사가 있는지 체크한다
         bool isNextDescriptionExist = CheckAndSetDescription();
 
         if (isNextDescriptionExist)
@@ -24,81 +29,44 @@ public class MindDialogueUI : DaniTechUIBase
             return;
         }
 
-        // 대사가 없다면, 다음으로 이어지는 다이얼로그가 있는지 체크한다
-        bool isNextDialogueExist = CheckAndStartNextDialogue();
-        if (isNextDialogueExist == false)
-        {
-            DaniTechUIManager.Instance.CloseContentUI(DaniTechUIType.DNDialogueUI);
-        }
+        DialogueManager.Instance.RequestNextDialogue(_currentDialogueId);
+
     }
 
-    private bool CheckAndStartNextDialogue()
+    /// <summary>
+    /// [매니저 연동 함수] DialogueManager가 내면 나레이션 프리팹을 켜면서 데이터를 주입할 때 호출하는 함수
+    /// </summary>
+    public void SetupDialogue(string dialogueId, string description, string characterId)
     {
-        var dialogueData = GameDataManager.Instance.GetDNDialogueData(_currentDialogueId);
-        if (dialogueData == null)
+        _currentDialogueId = dialogueId;
+        _descriptionQueue.Clear();
+
+        string[] dialogueDescriptionList = description.Split(new string[] { "<np>" }, System.StringSplitOptions.None);
+
+        foreach (string desc in dialogueDescriptionList)
         {
-            Debug.LogWarning($"다이얼로그 데이터가 존재하지 않습니다 {dialogueData}");
-            return false;
+            _descriptionQueue.Enqueue(desc);
         }
 
-        // 현재 데이터를 기준으로 다음 다이얼로그가 있는지 체크해보고, 있다면 다음 다이얼로그를 시작한다!
-        string nextDialogueId = dialogueData.NextDialogueId;
-        if (string.IsNullOrEmpty(nextDialogueId) == false)
-        {
-            StartDialogue(nextDialogueId);
-            return true;
-        }
-
-        return false;
-    }
-
-    // 다이얼로그를 시작하는 메서드 (외부에서 UIManager를 통해 다이얼로그 시작을 요청할때도 쓴다!)
-    public void StartDialogue(string dialogeId)
-    {
-        var dialogueData = GameDataManager.Instance.GetDNDialogueData(dialogeId);
-        if (dialogueData == null)
-        {
-            Debug.LogWarning($"다이얼로그 데이터가 존재하지 않습니다 {dialogueData}");
-            return;
-        }
-
-        // 현재 진행중인 다이얼로그 Id는 다음 다이얼로그가 있는지 체크할 때 쓸 수 있도록 보관한다
-        _currentDialogueId = dialogeId;
-
-        // 혹시 현재 대사가 너무 길거나 다음 페이지 처리가 필요할 때 <np> 키워드로 잘라주자!
-        if (dialogueData.Description.Contains("<np>"))
-        {
-            string[] dialogueDescriptionList = dialogueData.Description.Split("<np>");
-            foreach (string desc in dialogueDescriptionList)
-            {
-                _descriptionQueue.Enqueue(desc);
-            }
-            CheckAndSetDescription();
-        }
-        else
-        {
-            // Np 태그가 없다면 바로 다이얼로그 UI를 세팅하자
-            SetCurrentDialogueDescription(dialogueData.Description);
-        }
-
+        CheckAndSetDescription();
     }
 
     private bool CheckAndSetDescription()
     {
-        bool isNextDescriptionExsist = (_descriptionQueue.Count > 0);
-        if (isNextDescriptionExsist)
+        if (_descriptionQueue.Count > 0)
         {
             string desc = _descriptionQueue.Dequeue();
             SetCurrentDialogueDescription(desc);
+            return true;
         }
-
-        return isNextDescriptionExsist;
+        return false;
     }
-
-    
 
     private void SetCurrentDialogueDescription(string description)
     {
-        Text_Description.text = description;
+        if (Text_Description != null)
+        {
+            Text_Description.text = description;
+        }
     }
 }

@@ -16,8 +16,16 @@ public enum DaniTechUIType
     StartLoadingUI,
     QuitPopupUI,
     MSGDialogueUI,
+    Slot_MyChatUI,
+    Slot_OtherUI,
+    Slot_DateBoxUI,
+
+
+
+
     DateDialogueUI,
-    NomalDialogueUI,
+    NormalDialogueUI,
+    MindDialogueUI,
 
     DNSimplePopup,
     DNMainUI,
@@ -124,9 +132,9 @@ public static class DaniTechUIManagerExtension
         uiManager.CloseUI(DaniTechUIRootType.VeryFrontUI, DaniTechUIType.DateDialogueUI);
     }
 
-    public static void OpenNomalDialogueUI(this DaniTechUIManager uiManager)
+    public static void OpenNormalDialogueUI(this DaniTechUIManager uiManager)
     {
-        var uiBase = uiManager.OpenUI(DaniTechUIRootType.ContentUI, DaniTechUIType.NomalDialogueUI, false);
+        var uiBase = uiManager.OpenUI(DaniTechUIRootType.ContentUI, DaniTechUIType.NormalDialogueUI, false);
         if (uiBase == null)
         {
             Debug.LogWarning($"UI가 생성되지 않았습니다");
@@ -136,7 +144,7 @@ public static class DaniTechUIManagerExtension
 
     public static void CloseNomalDialogueUI(this DaniTechUIManager uiManager)
     {
-        uiManager.CloseUI(DaniTechUIRootType.ContentUI, DaniTechUIType.NomalDialogueUI);
+        uiManager.CloseUI(DaniTechUIRootType.ContentUI, DaniTechUIType.NormalDialogueUI);
     }
 
 

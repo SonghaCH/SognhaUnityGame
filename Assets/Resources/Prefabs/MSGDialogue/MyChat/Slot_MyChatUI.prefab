@@ -167,7 +167,7 @@ GameObject:
   - component: {fileID: 990918207863739834}
   - component: {fileID: 7999234560893725532}
   m_Layer: 5
-  m_Name: Layout_MyChat
+  m_Name: Slot_MyChatUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
