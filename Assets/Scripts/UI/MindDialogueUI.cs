@@ -22,10 +22,12 @@ public class MindDialogueUI : DaniTechUIBase
     /// </summary>
     public void OnClick_Next()
     {
+        Debug.Log("ggg");
         bool isNextDescriptionExist = CheckAndSetDescription();
 
         if (isNextDescriptionExist)
         {
+            Debug.LogWarning("아이디없음");
             return;
         }
 
@@ -36,7 +38,7 @@ public class MindDialogueUI : DaniTechUIBase
     /// <summary>
     /// [매니저 연동 함수] DialogueManager가 내면 나레이션 프리팹을 켜면서 데이터를 주입할 때 호출하는 함수
     /// </summary>
-    public void SetupDialogue(string dialogueId, string description, string characterId)
+    public void SetupDialogue(string dialogueId, string description)
     {
         _currentDialogueId = dialogueId;
         _descriptionQueue.Clear();

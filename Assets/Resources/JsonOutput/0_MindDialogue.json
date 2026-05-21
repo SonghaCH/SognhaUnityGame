@@ -12,7 +12,7 @@
   {
     "Id": "mindDialogue_Opening_1_1_103",
     "Description": "잠깐 전화 하자는 그녀의 카톡이 도착했다.<np>전부터 전화를 하며 잠드는 루틴을 가진 우리였다.<np>그렇지만 최근 서로 바쁘고, 다른 일정을 가지고 있어 근래에는 전화를 하지 않았었다.<np>전화를 받자 무언가 감정을 다 잡은 듯한 목소리톤과 평소와는 다른 분위기가 느껴졌다.",
-    "NextDialogueId": "normalDialogue_opening_1_1_104",
+    "NextDialogueId": "normalDialogue_Opening_1_1_104",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
     "TexturePath": null,
@@ -42,7 +42,7 @@
   {
     "Id": "mindDialogue_Opening_1_1_109",
     "Description": "그렇게 2년이 지났고, 나는 여전히 우리는 끈끈하고 서로를 아껴주고, 사랑을 주며 살아갔다고, 비록 바쁜 일상이 되었지만 서로에게 만큼은 진심이라고 생각했다.<np>\n하지만 그녀는 생각이 달랐던 모양이다. <np>\n나는 그녀가 떠나는 걸 원치 않았기에 그녀가 이별을 고하고, 이별을 원할 때 항상 그 손 놓치 않고 꼭 잡아주었다. 절대 놓치 않을거라고, 설령 너가 나한테 모질게 말했어도, \n내가 처음 좋아했던 마음처럼 널 절대로 놓치 않겠다고 무슨 일이 있어도 너를 놓치 않겠다고 약속하고 다짐했었다.<np>\n이번 또한 마찬가지다. ",
-    "NextDialogueId": "normalDialogue_opening_1_1_110",
+    "NextDialogueId": "normalDialogue_Opening_1_1_110",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
     "TexturePath": null,
@@ -52,7 +52,7 @@
   {
     "Id": "mindDialogue_Opening_1_1_112",
     "Description": "나는 처음으로 그녀에게 사랑이 식었다는 얘기를 들었다. 아무리 힘든 상황이었어도, 아무리 심하게 싸운 날도, 그녀는 나를 좋아한다고 해주었다.<np>처음으로 들은 그 이야기는 나에게는 너무 충격으로 돌아왔지만, 나는 그녀를 잃고 싶지 않았다. \n",
-    "NextDialogueId": "normalDialogue_opening_1_1_113",
+    "NextDialogueId": "normalDialogue_Opening_1_1_113",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
     "TexturePath": null,
@@ -62,7 +62,7 @@
   {
     "Id": "mindDialogue_Opening_1_1_115",
     "Description": "말을 듣다보니 나도 모르게 눈물이 흘렀다.<np> 우리의 1600일이라는 숫자는 그저 극복 할 가치가 없는 이별 해야만 하는 이유가 되는것이 너무 슬프고, 마음이 아팠다.<np>목이 매여서 한동안 말을 하지 못했다....\n",
-    "NextDialogueId": "normalDialogue_opening_1_1_116",
+    "NextDialogueId": "normalDialogue_Opening_1_1_116",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
     "TexturePath": null,
@@ -72,7 +72,7 @@
   {
     "Id": "mindDialogue_Opening_1_1_119",
     "Description": "그렇게 강력하게 매번 붙잡았던 나는 더이상 좋지 않다는 말에 무너기에 충분했다.<np>이별에 순간이 다가온거라고 느꼈다.<np>그녀의 사랑이 없는데 난 그녀를 잡을 자격이 없다고 생각했다.<np>아니.. 잡을 수 없었다..",
-    "NextDialogueId": "normalDialogue_opening_1_1_120",
+    "NextDialogueId": "normalDialogue_Opening_1_1_120",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
     "TexturePath": null,

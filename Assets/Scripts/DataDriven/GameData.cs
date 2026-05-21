@@ -104,6 +104,8 @@ public class SHCharacterData : GameDataBase
 public class DateDialogueData: GameDataBase
 {
     public string Description;
+    public string NextDialogueId;
+
 }
 //SelectionNameList": null,
 //    "SelectionDialogueIdList": null,

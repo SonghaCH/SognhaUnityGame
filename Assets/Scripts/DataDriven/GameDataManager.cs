@@ -276,7 +276,7 @@ public class GameDataManager : MonoBehaviour
 
         return DateDialogueDataList.TryGetValue(dataId, out var data) ? data : null;
     }
-    public MindDialogueData GetMindDialoguedata(string dataId)
+    public MindDialogueData GetMindDialogueData(string dataId)
     {
         if (MindDialoguedataList == null || string.IsNullOrEmpty(dataId)) return null;
 
