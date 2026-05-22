@@ -2,7 +2,7 @@
   {
     "Id": "msgDialogue_Opening_1_1_102",
     "MSGType": "DateMSG",
-    "characterDataId": "character_Date",
+    "characterDataId": "character_Player_01",
     "Description": "2026년 4월 6일 월요일",
     "NextDialogueId": "msgDialogue_Opening_1_1_103"
   },

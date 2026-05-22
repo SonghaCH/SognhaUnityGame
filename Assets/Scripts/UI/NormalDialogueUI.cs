@@ -51,7 +51,6 @@ public class NormalDialogueUI : DaniTechUIBase
             var characterData = GameDataManager.Instance.GetSHCharacterData(characterDataId);
             if (characterData != null)
             {
-                Debug.Log(characterData);
                 Text_Character.text = characterData.Name;
             }
         }

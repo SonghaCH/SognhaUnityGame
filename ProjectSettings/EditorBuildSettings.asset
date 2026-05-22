@@ -4,7 +4,10 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/SonghaGameScene.unity
+    guid: 75604978929f89545adfc84c0a2408fc
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 3cd0c981e194cfb4c98475d5cb52174d, type: 2}
   m_UseUCBPForAssetBundles: 0
