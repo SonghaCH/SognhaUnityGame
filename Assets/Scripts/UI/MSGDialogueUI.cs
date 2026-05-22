@@ -11,9 +11,12 @@ public class MSGDialogueUI : DaniTechUIBase
 
     private string _currentDialogueId;
     private string _msgTypeFromServer; // 엑셀의 B컬럼(MSGType) 문자열을 캐싱할 변수 ("DateMSG", "MyMSG", "OhterMSG")
+    private string _msgDescription;
+    private string _characterName;
 
-    // <np>로 쪼개진 대사 조각들을 순차적으로 뽑아 쓸 큐
-    private Queue<string> _msgQueue = new Queue<string>();
+
+
+
 
     private void OnEnable()
     {
@@ -23,38 +26,28 @@ public class MSGDialogueUI : DaniTechUIBase
 
     public void OnClick_Next()
     {
-        // 큐에 대사가 남아있다면 다음 슬롯을 찍어내고 함수를 종료합니다.
-        bool isNextMsgExist = SpawnNextChatSlot();
-
-        if (isNextMsgExist)
-        {
-            return;
-        }
-
         // 현재 ID의 모든 조각 대사를 소모했다면 매니저에게 다음 데이터 라인을 요청합니다.
         DialogueManager.Instance.RequestNextDialogue(_currentDialogueId);
     }
 
-    public void SetupDialogue(string dialogueId, string description, string msgType)
+    public void SetupDialogue(string dialogueId, string description, string msgType,string characterName)
     {
         _currentDialogueId = dialogueId;
         _msgTypeFromServer = msgType; // 매니저가 주입해준 엑셀의 기획 타입 문자열 저장
+        _msgDescription = description;
+        _characterName = characterName;
 
-        _msgQueue.Clear();
 
-        // <np> 기준으로 한 라인의 대사 쪼개기
-       
 
-        // 창이 열리자마자 첫 번째 카톡 슬롯 하나를 바로 뿜어줍니다.
-        SpawnNextChatSlot();
+        SpawnNextChatSlot(_msgDescription, _msgTypeFromServer, _characterName);
     }
 
     /// <summary>
     /// 강사님의 UI 로드 경로 아키텍처를 순수하게 활용하여, 딕셔너리 캐싱 한계를 우회하고 무한 인스턴스화하는 핵심 로직
     /// </summary>
-    private bool SpawnNextChatSlot()
+    private bool SpawnNextChatSlot(string msgDescription, string msgTypeFromServer,string characterName)
     {
-        string currentMsg = _msgQueue.Dequeue();
+        //string currentMsg = _msgQueue.Dequeue();
 
         // 1. 오직 엑셀 데이터만을 기준으로 타겟 에넘 타입을 정확히 분기합니다.
         DaniTechUIType slotUIType = GetChatSlotUIType();
@@ -65,16 +58,27 @@ public class MSGDialogueUI : DaniTechUIBase
         // 3. 리소스 폴더에서 직접 에셋을 로드한 뒤 스크롤뷰 Content 자식으로 복사 소환합니다.
         GameObject loadedPrefab = Resources.Load<GameObject>(path);
 
+        var chacterData = GameDataManager.Instance.GetCharacterData(characterName);
+
         if (loadedPrefab != null)
         {
             GameObject slotGo = Instantiate(loadedPrefab, Content_Scroll);
+            Slot_OtherUI slot = slotGo.GetComponent<Slot_OtherUI>();
 
-            // 소환된 프리팹 자식에 붙은 Text 컴포넌트를 찾아 카톡 내용을 밀어 넣습니다.
-            Text slotText = slotGo.GetComponentInChildren<Text>();
-            if (slotText != null)
+            if(slotUIType == DaniTechUIType.Slot_DateBoxUI)
             {
-                slotText.text = currentMsg;
+                slot.Text_Description.text = msgDescription;
             }
+            else if (slotUIType == DaniTechUIType.Slot_MyChatUI)
+            {
+                slot.Text_Description.text = msgDescription;
+            }
+            else
+            {
+                slot.Text_Name.text = characterName;
+                slot.Text_Description.text = msgDescription;
+            }
+
         }
         else
         {
@@ -90,6 +94,8 @@ public class MSGDialogueUI : DaniTechUIBase
 
         return true;
     }
+
+
 
     /// <summary>
     /// [★데이터 드리븐 완전 동기화] 오직 엑셀 컬럼 정보만 보고 프리팹 슬롯 형식을 일치시켜 주는 함수

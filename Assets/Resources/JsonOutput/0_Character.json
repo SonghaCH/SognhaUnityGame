@@ -10,5 +10,11 @@
     "Name": "민형",
     "Description": "여 주인공이다.",
     "characterData": "민형"
+  },
+  {
+    "Id": "character_Date",
+    "Name": null,
+    "Description": null,
+    "characterData": null
   }
 ]

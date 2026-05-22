@@ -40,6 +40,16 @@
     "VoicePath": null
   },
   {
+    "Id": "normalDialogue_Opening_1_1_114",
+    "CharacterDataId": "character_Player_01",
+    "Description": "왜 그렇게 생각했는데?",
+    "NextDialogueId": "mindDialogue_Opening_1_1_115",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
     "Id": "normalDialogue_Opening_1_1_117",
     "CharacterDataId": "character_Minhyeong_01",
     "Description": "요즘 우리는 서로 매우 바쁜 삶을 살고 있고, 전에 말했던 헤어짐의 타이밍이지 않을까 싶어. 가장 힘들지 않게 이별 할 수 있는 기회라고 생각했어.",

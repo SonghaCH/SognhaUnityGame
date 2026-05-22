@@ -100,7 +100,16 @@
   },
   {
     "Id": "mindDialogue_Opening_1_1_122",
-    "Description": "그렇게 그녀는 훈련소에 있는 수화기 너머로 나에게 이야기를 전하였다.\n정말 무력하게 이야기를 들었지만 현실과 타협하듯 그녀에게 \"그럼 딱 우리 이번 년도까지만 만나자. 내가 변화된 모습을 보여주고, 너의 맘도 변화 시킬 수 있지않을까? 딱 이번년도까지만 만나자..\"\n라고 대답하였다.",
+    "Description": "그렇게 그녀는 훈련소에 있는 수화기 너머로 나에게 이야기를 전하였다. 정말 무력하게 이야기를 들었지만 현실과 타협하듯 그녀에게 ",
+    "NextDialogueId": "mindDialogue_Opening_1_1_122(2)",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null,
+    "CharacterDataId": null
+  },
+  {
+    "Id": "mindDialogue_Opening_1_1_122(2)",
+    "Description": "\"그럼 딱 우리 이번 년도까지만 만나자. 내가 변화된 모습을 보여주고, 너의 맘도 변화 시킬 수 있지않을까? 딱 이번년도까지만 만나자..\" 라고 대답하였다.",
     "NextDialogueId": "mindDialogue_Opening_1_1_123",
     "SelectionDialogueIdList": null,
     "TexturePath": null,
@@ -109,7 +118,7 @@
   },
   {
     "Id": "mindDialogue_Opening_1_1_123",
-    "Description": "말 없이 울고 있는 그녀와 수화기 너머로 듣고 있는 나는 마치 영화 주인공이 된 듯. 세상에서 가장 슬픈 모습으로 서로에게 눈물을 전하였다.",
+    "Description": "말 없이 울고 있는 그녀와 수화기 너머로 듣고 있는 나는 마치 영화 주인공이 된 듯 세상에서 가장 슬픈 모습으로 서로에게 눈물을 전하였다.",
     "NextDialogueId": "mindDialogue_Opening_1_1_124",
     "SelectionDialogueIdList": null,
     "TexturePath": null,
@@ -208,7 +217,7 @@
   },
   {
     "Id": "mindDialogue_Opening_1_1_150",
-    "Description": "그렇게 강력하게 매번 붙잡았던 나는 더이상 좋지 않다는 말에 무너기에 충분했다.<np><np><np>",
+    "Description": "그렇게 강력하게 매번 붙잡았던 나는 더이상 좋지 않다는 말에 무너지기에 충분했다.",
     "NextDialogueId": "mindDialogue_Opening_1_1_151",
     "SelectionDialogueIdList": null,
     "TexturePath": null,
@@ -236,7 +245,7 @@
   {
     "Id": "mindDialogue_Opening_1_1_153",
     "Description": "아니.. 잡을 수 없었다..",
-    "NextDialogueId": "mindDialogue_Opening_1_1_154",
+    "NextDialogueId": "normalDialogue_Opening_1_1_154",
     "SelectionDialogueIdList": null,
     "TexturePath": null,
     "VoicePath": null,
@@ -262,7 +271,16 @@
   },
   {
     "Id": "mindDialogue_Opening_1_1_171",
-    "Description": "그렇게 나의 세상은 무너졌다. <np>예상치 못한 타이밍과 잡을 수 없는 이 무력함에 밤새 울며 새벽을 보냈다. 너무 어버버 이별한 것 같다는 생각이 들었다.",
+    "Description": "그렇게 나의 세상은 무너졌다. .",
+    "NextDialogueId": "mindDialogue_Opening_1_1_172",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null,
+    "CharacterDataId": null
+  },
+  {
+    "Id": "mindDialogue_Opening_1_1_172",
+    "Description": "예상치 못한 타이밍과 잡을 수 없는 이 무력함에 밤새 울며 새벽을 보냈다. 너무 어버버 이별한 것 같다는 생각이 들었다.",
     "NextDialogueId": null,
     "SelectionDialogueIdList": null,
     "TexturePath": null,

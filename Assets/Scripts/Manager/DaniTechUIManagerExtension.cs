@@ -15,6 +15,7 @@ public enum DaniTechUIType
     StartUI,
     StartLoadingUI,
     QuitPopupUI,
+    
     MSGDialogueUI,
     Slot_MyChatUI,
     Slot_OtherUI,

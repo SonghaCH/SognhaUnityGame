@@ -185,12 +185,13 @@ public class DialogueManager : MonoBehaviour
             DaniTechUIManager.Instance.CloseUI(DaniTechUIRootType.VeryFrontUI, DaniTechUIType.DateDialogueUI);
             DaniTechUIManager.Instance.CloseUI(DaniTechUIRootType.VeryFrontUI, DaniTechUIType.MindDialogueUI);
 
+
+
             DaniTechUIBase baseUI = DaniTechUIManager.Instance.OpenUI(DaniTechUIRootType.ContentUI, DaniTechUIType.NormalDialogueUI);
             NormalDialogueUI normalUI = baseUI as NormalDialogueUI;
-
             if (normalUI != null)
             {
-                normalUI.SetupDialogue(dialogueId, data.Description, data.Id);
+                normalUI.SetupDialogue(dialogueId, data.Description, data.CharacterDataId);
             }
         }
 
@@ -204,17 +205,18 @@ public class DialogueManager : MonoBehaviour
                 Debug.LogWarning("데이터 없음");
                 return;
             }
-                
 
-                // 1. 다른 겹치는 방해꾼 UI들만 먼저 꺼줍니다. (날짜창은 아직 살려둡니다!)
+            DaniTechUIBase baseUI = DaniTechUIManager.Instance.OpenUI(DaniTechUIRootType.VeryFrontUI, DaniTechUIType.MindDialogueUI);
+            MindDialogueUI mindUI = baseUI as MindDialogueUI;
+
+            // 1. 다른 겹치는 방해꾼 UI들만 먼저 꺼줍니다. (날짜창은 아직 살려둡니다!)
             DaniTechUIManager.Instance.CloseUI(DaniTechUIRootType.ContentUI, DaniTechUIType.NormalDialogueUI);
-            DaniTechUIManager.Instance.CloseUI(DaniTechUIRootType.ContentUI, DaniTechUIType.MSGDialogueUI);
+            //DaniTechUIManager.Instance.CloseUI(DaniTechUIRootType.ContentUI, DaniTechUIType.MSGDialogueUI);
             DaniTechUIManager.Instance.CloseUI(DaniTechUIRootType.VeryFrontUI, DaniTechUIType.DateDialogueUI);
 
 
             // 2. 목적지인 마인드 UI를 '먼저' 안전하게 생성합니다.
-            DaniTechUIBase baseUI = DaniTechUIManager.Instance.OpenUI(DaniTechUIRootType.VeryFrontUI, DaniTechUIType.MindDialogueUI);
-            MindDialogueUI mindUI = baseUI as MindDialogueUI;
+            
 
             if (mindUI != null)
             {
@@ -232,13 +234,14 @@ public class DialogueManager : MonoBehaviour
             var data = GameDataManager.Instance.GetDateDialogueData(dialogueId);
             if (data == null) return;
 
+            DaniTechUIBase baseUI = DaniTechUIManager.Instance.OpenUI(DaniTechUIRootType.VeryFrontUI, DaniTechUIType.DateDialogueUI);
+            DateDialogueUI dateUI = baseUI as DateDialogueUI;
             // 날짜창이 새로 켜질 때는 화면에 찌꺼기가 남지 않도록 마인드창을 포함해 싹 다 청소합니다.
             DaniTechUIManager.Instance.CloseUI(DaniTechUIRootType.ContentUI, DaniTechUIType.NormalDialogueUI);
             DaniTechUIManager.Instance.CloseUI(DaniTechUIRootType.ContentUI, DaniTechUIType.MSGDialogueUI);
             DaniTechUIManager.Instance.CloseUI(DaniTechUIRootType.VeryFrontUI, DaniTechUIType.MindDialogueUI);
 
-            DaniTechUIBase baseUI = DaniTechUIManager.Instance.OpenUI(DaniTechUIRootType.VeryFrontUI, DaniTechUIType.DateDialogueUI);
-            DateDialogueUI dateUI = baseUI as DateDialogueUI;
+          
 
             if (dateUI != null)
             {
@@ -250,6 +253,8 @@ public class DialogueManager : MonoBehaviour
         {
             var data = GameDataManager.Instance.GetMSGDialogueData(dialogueId);
             if (data == null) return;
+            Debug.Log(data.characterDataId);
+            var chacterData = GameDataManager.Instance.GetSHCharacterData(data.characterDataId);
 
             // 1. 일반 대사창은 먼저 닫아줍니다.
             DaniTechUIManager.Instance.CloseUI(DaniTechUIRootType.ContentUI, DaniTechUIType.NormalDialogueUI);
@@ -260,7 +265,7 @@ public class DialogueManager : MonoBehaviour
 
             if (msgUI != null)
             {
-                msgUI.SetupDialogue(dialogueId, data.Description, data.MSGType);
+                msgUI.SetupDialogue(dialogueId, data.Description, data.MSGType,chacterData.Name);
             }
 
             // 3. 목적지인 카톡창 세팅이 완전히 끝났으므로, 이제 소명을 다한 마인드 창을 '나중에' 깔끔하게 닫아줍니다!
