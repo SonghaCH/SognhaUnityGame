@@ -27,6 +27,7 @@ public enum DaniTechUIType
     NormalDialogueUI,
     MindDialogueUI,
 
+
     DNSimplePopup,
     DNMainUI,
     DNMyProfilePopup, 

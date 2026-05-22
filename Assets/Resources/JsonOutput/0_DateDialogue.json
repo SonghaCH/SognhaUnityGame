@@ -2,10 +2,7 @@
   {
     "Id": "dateDialogue_Opening_1_1_100",
     "Description": "4월 6일 월요일 오전 2시 36분",
-    "NextDialogueId": "mindDialogue_Opening_1_1_99",
-    "SelectionDialogueIdList": null,
-    "TexturePath": null,
-    "VoicePath": null,
+    "NextDialogueId": "mindDialogue_Opening_1_1_101",
     "CharacterDataId": null
   }
 ]

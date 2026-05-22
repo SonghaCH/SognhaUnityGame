@@ -1,19 +1,17 @@
 [
   {
-    "Id": "mindDialogue_Opening_1_1_99",
+    "Id": "mindDialogue_Opening_1_1_101",
     "Description": "오늘도 그녀와 함께 새벽까지 게임을 하고, 잘 준비를 하며 하루를 마무리하는 카톡을 하였다.",
-    "NextDialogueId": "msgDialogue_Opening_1_1_100",
-    "SelectionNameList": null,
+    "NextDialogueId": "msgDialogue_Opening_1_1_102",
     "SelectionDialogueIdList": null,
     "TexturePath": "Texture2D/Texture2D_Loading_1",
     "VoicePath": null,
     "CharacterDataId": null
   },
   {
-    "Id": "mindDialogue_Opening_1_1_103",
-    "Description": "잠깐 전화 하자는 그녀의 카톡이 도착했다.<np>전부터 전화를 하며 잠드는 루틴을 가진 우리였다.<np>그렇지만 최근 서로 바쁘고, 다른 일정을 가지고 있어 근래에는 전화를 하지 않았었다.<np>전화를 받자 무언가 감정을 다 잡은 듯한 목소리톤과 평소와는 다른 분위기가 느껴졌다.",
-    "NextDialogueId": "normalDialogue_Opening_1_1_104",
-    "SelectionNameList": null,
+    "Id": "mindDialogue_Opening_1_1_106",
+    "Description": "잠깐 전화 하자는 그녀의 카톡이 도착했다.",
+    "NextDialogueId": "mindDialogue_Opening_1_1_107",
     "SelectionDialogueIdList": null,
     "TexturePath": null,
     "VoicePath": null,
@@ -21,9 +19,8 @@
   },
   {
     "Id": "mindDialogue_Opening_1_1_107",
-    "Description": "서로의 일상이 바쁘긴했지만 나는 정말로 지금이 서로가 서로에게 떳떳하게 살아가는 일상이고, 어른이 되어가는 과정이라고 생각했다. <np>하지만 그녀는 다르게 생각했나보다.",
+    "Description": "전부터 전화를 하며 잠드는 루틴을 가진 우리였다.",
     "NextDialogueId": "mindDialogue_Opening_1_1_108",
-    "SelectionNameList": null,
     "SelectionDialogueIdList": null,
     "TexturePath": null,
     "VoicePath": null,
@@ -31,9 +28,8 @@
   },
   {
     "Id": "mindDialogue_Opening_1_1_108",
-    "Description": "그녀는 약 2년전 우리의 이별을 예고하고, 더 이상 이어져서는 안되는 사이라고 했었다. <np>그녀도 처음에는 우리가 좋아하는 것만으로 이 관계가 유지되고 발전될거라고 믿었다고 했다.<np>\n하지만 그녀의 부모님은 '넌 왜 너만 생각하냐고, 너는 그 친구와 결혼 할 생각도 없다며, 너는 그의 20대를 통째로 집어 삼키며 나중에 결혼하게 될 사람한테 피해주고, 그의 20대를 잡아먹고 있는거라고, 확실하게 해. 라고 이야기를 들었다고 한다.<np> 그래서 그녀도 다시 생각을 하게 되었고, 이대로 가다간 서로 발전도 없이 20대 후반을 맞이 할거 같다고 하였다. <np>\n그렇게 그녀는 훈련소에 있는 수화기 너머로 나에게 이야기를 전하였다.\n정말 무력하게 이야기를 들었지만 현실과 타협하듯 그녀에게 \"그럼 딱 우리 이번 년도까지만 만나자. 내가 변화된 모습을 보여주고, 너의 맘도 변화 시킬 수 있지않을까? 딱 이번년도까지만 만나자..\"\n라고 대답하였다.<np> 말 없이 울고 있는 그녀와 수화기 너머로 듣고 있는 나는 마치 영화 주인공이 된 듯. 세상에서 가장 슬픈 모습으로 서로에게 눈물을 전하였다.<np>\n그렇게 우리는 끈끈한 관계를 이어갔고,  말했던 이번 년도의 끝이 지나갔다. 하지만 마치 없었던 말인거처럼 서로를 아껴주며 서로의 인생을 살아나갔다.\n",
+    "Description": "그렇지만 최근 서로 바쁘고, 다른 일정을 가지고 있어 근래에는 전화를 하지 않았었다.",
     "NextDialogueId": "mindDialogue_Opening_1_1_109",
-    "SelectionNameList": null,
     "SelectionDialogueIdList": null,
     "TexturePath": null,
     "VoicePath": null,
@@ -41,19 +37,8 @@
   },
   {
     "Id": "mindDialogue_Opening_1_1_109",
-    "Description": "그렇게 2년이 지났고, 나는 여전히 우리는 끈끈하고 서로를 아껴주고, 사랑을 주며 살아갔다고, 비록 바쁜 일상이 되었지만 서로에게 만큼은 진심이라고 생각했다.<np>\n하지만 그녀는 생각이 달랐던 모양이다. <np>\n나는 그녀가 떠나는 걸 원치 않았기에 그녀가 이별을 고하고, 이별을 원할 때 항상 그 손 놓치 않고 꼭 잡아주었다. 절대 놓치 않을거라고, 설령 너가 나한테 모질게 말했어도, \n내가 처음 좋아했던 마음처럼 널 절대로 놓치 않겠다고 무슨 일이 있어도 너를 놓치 않겠다고 약속하고 다짐했었다.<np>\n이번 또한 마찬가지다. ",
+    "Description": "전화를 받자 무언가 감정을 다 잡은 듯한 목소리톤과 평소와는 다른 분위기가 느껴졌다.",
     "NextDialogueId": "normalDialogue_Opening_1_1_110",
-    "SelectionNameList": null,
-    "SelectionDialogueIdList": null,
-    "TexturePath": null,
-    "VoicePath": null,
-    "CharacterDataId": null
-  },
-  {
-    "Id": "mindDialogue_Opening_1_1_112",
-    "Description": "나는 처음으로 그녀에게 사랑이 식었다는 얘기를 들었다. 아무리 힘든 상황이었어도, 아무리 심하게 싸운 날도, 그녀는 나를 좋아한다고 해주었다.<np>처음으로 들은 그 이야기는 나에게는 너무 충격으로 돌아왔지만, 나는 그녀를 잃고 싶지 않았다. \n",
-    "NextDialogueId": "normalDialogue_Opening_1_1_113",
-    "SelectionNameList": null,
     "SelectionDialogueIdList": null,
     "TexturePath": null,
     "VoicePath": null,
@@ -61,9 +46,26 @@
   },
   {
     "Id": "mindDialogue_Opening_1_1_115",
-    "Description": "말을 듣다보니 나도 모르게 눈물이 흘렀다.<np> 우리의 1600일이라는 숫자는 그저 극복 할 가치가 없는 이별 해야만 하는 이유가 되는것이 너무 슬프고, 마음이 아팠다.<np>목이 매여서 한동안 말을 하지 못했다....\n",
-    "NextDialogueId": "normalDialogue_Opening_1_1_116",
-    "SelectionNameList": null,
+    "Description": "서로의 일상이 바쁘긴했지만 나는 정말로 지금이 서로가 서로에게 떳떳하게 살아가는 일상이고, 어른이 되어가는 과정이라고 생각했다. ",
+    "NextDialogueId": "mindDialogue_Opening_1_1_116",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null,
+    "CharacterDataId": null
+  },
+  {
+    "Id": "mindDialogue_Opening_1_1_116",
+    "Description": "하지만 그녀는 다르게 생각했나보다.",
+    "NextDialogueId": "normalDialogue_Opening_1_1_117",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null,
+    "CharacterDataId": null
+  },
+  {
+    "Id": "mindDialogue_Opening_1_1_118",
+    "Description": "그녀는 약 2년전 우리의 이별을 예고하고, 더 이상 이어져서는 안되는 사이라고 했었다. \n",
+    "NextDialogueId": "mindDialogue_Opening_1_1_119",
     "SelectionDialogueIdList": null,
     "TexturePath": null,
     "VoicePath": null,
@@ -71,9 +73,26 @@
   },
   {
     "Id": "mindDialogue_Opening_1_1_119",
-    "Description": "그렇게 강력하게 매번 붙잡았던 나는 더이상 좋지 않다는 말에 무너기에 충분했다.<np>이별에 순간이 다가온거라고 느꼈다.<np>그녀의 사랑이 없는데 난 그녀를 잡을 자격이 없다고 생각했다.<np>아니.. 잡을 수 없었다..",
-    "NextDialogueId": "normalDialogue_Opening_1_1_120",
-    "SelectionNameList": null,
+    "Description": "그녀도 처음에는 우리가 좋아하는 것만으로 이 관계가 유지되고 발전될거라고 믿었다고 했다.",
+    "NextDialogueId": "mindDialogue_Opening_1_1_120",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null,
+    "CharacterDataId": null
+  },
+  {
+    "Id": "mindDialogue_Opening_1_1_120",
+    "Description": "하지만 그녀의 부모님은 '넌 왜 너만 생각하냐고, 너는 그 친구와 결혼 할 생각도 없다며, 너는 그의 20대를 통째로 집어 삼키며 나중에 결혼하게 될 사람한테 피해주고, 그의 20대를 잡아먹고 있는거라고, 확실하게 해. 라고 이야기를 들었다고 한다.",
+    "NextDialogueId": "mindDialogue_Opening_1_1_121",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null,
+    "CharacterDataId": null
+  },
+  {
+    "Id": "mindDialogue_Opening_1_1_121",
+    "Description": "그래서 그녀도 다시 생각을 하게 되었고, 이대로 가다간 서로 발전도 없이 20대 후반을 맞이 할거 같다고 하였다. ",
+    "NextDialogueId": "mindDialogue_Opening_1_1_122",
     "SelectionDialogueIdList": null,
     "TexturePath": null,
     "VoicePath": null,
@@ -81,9 +100,53 @@
   },
   {
     "Id": "mindDialogue_Opening_1_1_122",
-    "Description": "그렇게 우리의 통화는 끝이 났다.<np>통화가 끝났어도 눈물이 멈추지 않아 카톡으로 그녀에게 내 생각을 전하였다.\n",
-    "NextDialogueId": "msgDialogue_Opening_1_1_123",
-    "SelectionNameList": null,
+    "Description": "그렇게 그녀는 훈련소에 있는 수화기 너머로 나에게 이야기를 전하였다.\n정말 무력하게 이야기를 들었지만 현실과 타협하듯 그녀에게 \"그럼 딱 우리 이번 년도까지만 만나자. 내가 변화된 모습을 보여주고, 너의 맘도 변화 시킬 수 있지않을까? 딱 이번년도까지만 만나자..\"\n라고 대답하였다.",
+    "NextDialogueId": "mindDialogue_Opening_1_1_123",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null,
+    "CharacterDataId": null
+  },
+  {
+    "Id": "mindDialogue_Opening_1_1_123",
+    "Description": "말 없이 울고 있는 그녀와 수화기 너머로 듣고 있는 나는 마치 영화 주인공이 된 듯. 세상에서 가장 슬픈 모습으로 서로에게 눈물을 전하였다.",
+    "NextDialogueId": "mindDialogue_Opening_1_1_124",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null,
+    "CharacterDataId": null
+  },
+  {
+    "Id": "mindDialogue_Opening_1_1_124",
+    "Description": "그렇게 우리는 끈끈한 관계를 이어갔고,  말했던 이번 년도의 끝이 지나갔다. 하지만 마치 없었던 말인거처럼 서로를 아껴주며 서로의 인생을 살아나갔다.",
+    "NextDialogueId": "mindDialogue_Opening_1_1_125",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null,
+    "CharacterDataId": null
+  },
+  {
+    "Id": "mindDialogue_Opening_1_1_125",
+    "Description": "그렇게 2년이 지났고, 나는 여전히 우리는 끈끈하고 서로를 아껴주고, 사랑을 주며 살아갔다고, 비록 바쁜 일상이 되었지만 서로에게 만큼은 진심이라고 생각했다.",
+    "NextDialogueId": "mindDialogue_Opening_1_1_126",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null,
+    "CharacterDataId": null
+  },
+  {
+    "Id": "mindDialogue_Opening_1_1_126",
+    "Description": "그렇지만 그녀의 생각은 달랐던 모양이다.",
+    "NextDialogueId": "mindDialogue_Opening_1_1_127",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null,
+    "CharacterDataId": null
+  },
+  {
+    "Id": "mindDialogue_Opening_1_1_127",
+    "Description": "나는 그녀가 떠나는 걸 원치 않았기에 그녀가 이별을 고하고, 이별을 원할 때 항상 그 손 놓치 않고 꼭 잡아주었다. 절대 놓치 않을거라고, 설령 너가 나한테 모질게 말했어도, \n내가 처음 좋아했던 마음처럼 널 절대로 놓치 않겠다고 무슨 일이 있어도 너를 놓치 않겠다고 약속하고 다짐했었다.",
+    "NextDialogueId": "mindDialogue_Opening_1_1_128",
     "SelectionDialogueIdList": null,
     "TexturePath": null,
     "VoicePath": null,
@@ -91,9 +154,116 @@
   },
   {
     "Id": "mindDialogue_Opening_1_1_128",
+    "Description": "이번 또한 마찬가지다. ",
+    "NextDialogueId": "normalDialogue_Opening_1_1_129",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null,
+    "CharacterDataId": null
+  },
+  {
+    "Id": "mindDialogue_Opening_1_1_136",
+    "Description": "나는 처음으로 그녀에게 사랑이 식었다는 얘기를 들었다. 아무리 힘든 상황이었어도, 아무리 심하게 싸운 날도, 그녀는 나를 좋아한다고 해주었다.",
+    "NextDialogueId": "mindDialogue_Opening_1_1_137",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null,
+    "CharacterDataId": null
+  },
+  {
+    "Id": "mindDialogue_Opening_1_1_137",
+    "Description": "처음으로 들은 그 이야기는 나에게는 너무 충격으로 돌아왔지만, 나는 그녀를 잃고 싶지 않았다. ",
+    "NextDialogueId": "normalDialogue_Opening_1_1_138",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null,
+    "CharacterDataId": null
+  },
+  {
+    "Id": "mindDialogue_Opening_1_1_144",
+    "Description": "말을 듣다보니 나도 모르게 눈물이 흘렀다.\n",
+    "NextDialogueId": "mindDialogue_Opening_1_1_145",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null,
+    "CharacterDataId": null
+  },
+  {
+    "Id": "mindDialogue_Opening_1_1_145",
+    "Description": "우리의 1600일이라는 숫자는 그저 극복 할 가치가 없는 이별 해야만 하는 이유가 되는것이 너무 슬프고, 마음이 아팠다.",
+    "NextDialogueId": "mindDialogue_Opening_1_1_146",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null,
+    "CharacterDataId": null
+  },
+  {
+    "Id": "mindDialogue_Opening_1_1_146",
+    "Description": "목이 매여서 한동안 말을 하지 못했다....",
+    "NextDialogueId": "normalDialogue_Opening_1_1_147",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null,
+    "CharacterDataId": null
+  },
+  {
+    "Id": "mindDialogue_Opening_1_1_150",
+    "Description": "그렇게 강력하게 매번 붙잡았던 나는 더이상 좋지 않다는 말에 무너기에 충분했다.<np><np><np>",
+    "NextDialogueId": "mindDialogue_Opening_1_1_151",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null,
+    "CharacterDataId": null
+  },
+  {
+    "Id": "mindDialogue_Opening_1_1_151",
+    "Description": "이별에 순간이 다가온거라고 느꼈다.",
+    "NextDialogueId": "mindDialogue_Opening_1_1_152",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null,
+    "CharacterDataId": null
+  },
+  {
+    "Id": "mindDialogue_Opening_1_1_152",
+    "Description": "그녀의 사랑이 없는데 난 그녀를 잡을 자격이 없다고 생각했다.",
+    "NextDialogueId": "mindDialogue_Opening_1_1_153",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null,
+    "CharacterDataId": null
+  },
+  {
+    "Id": "mindDialogue_Opening_1_1_153",
+    "Description": "아니.. 잡을 수 없었다..",
+    "NextDialogueId": "mindDialogue_Opening_1_1_154",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null,
+    "CharacterDataId": null
+  },
+  {
+    "Id": "mindDialogue_Opening_1_1_160",
+    "Description": "그렇게 우리의 통화는 끝이 났다.",
+    "NextDialogueId": "msgDialogue_Opening_1_1_162",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null,
+    "CharacterDataId": null
+  },
+  {
+    "Id": "mindDialogue_Opening_1_1_161",
+    "Description": "통화가 끝났어도 눈물이 멈추지 않아 카톡으로 그녀에게 내 생각을 전하였다.",
+    "NextDialogueId": "mindDialogue_Opening_1_1_162",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null,
+    "CharacterDataId": null
+  },
+  {
+    "Id": "mindDialogue_Opening_1_1_171",
     "Description": "그렇게 나의 세상은 무너졌다. <np>예상치 못한 타이밍과 잡을 수 없는 이 무력함에 밤새 울며 새벽을 보냈다. 너무 어버버 이별한 것 같다는 생각이 들었다.",
     "NextDialogueId": null,
-    "SelectionNameList": null,
     "SelectionDialogueIdList": null,
     "TexturePath": null,
     "VoicePath": null,

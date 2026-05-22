@@ -43,11 +43,7 @@ public class MSGDialogueUI : DaniTechUIBase
         _msgQueue.Clear();
 
         // <np> 기준으로 한 라인의 대사 쪼개기
-        string[] msgList = description.Split(new string[] { "<np>" }, System.StringSplitOptions.None);
-        foreach (string msg in msgList)
-        {
-            _msgQueue.Enqueue(msg);
-        }
+       
 
         // 창이 열리자마자 첫 번째 카톡 슬롯 하나를 바로 뿜어줍니다.
         SpawnNextChatSlot();
@@ -58,45 +54,41 @@ public class MSGDialogueUI : DaniTechUIBase
     /// </summary>
     private bool SpawnNextChatSlot()
     {
-        if (_msgQueue.Count > 0)
+        string currentMsg = _msgQueue.Dequeue();
+
+        // 1. 오직 엑셀 데이터만을 기준으로 타겟 에넘 타입을 정확히 분기합니다.
+        DaniTechUIType slotUIType = GetChatSlotUIType();
+
+        // 2. 익스텐션 메서드의 GetUIPath 규칙에 맞춰 리소스 경로를 조합합니다.
+        string path = DaniTechUIManager.Instance.GetUIPath(DaniTechUIRootType.ContentUI, slotUIType);
+
+        // 3. 리소스 폴더에서 직접 에셋을 로드한 뒤 스크롤뷰 Content 자식으로 복사 소환합니다.
+        GameObject loadedPrefab = Resources.Load<GameObject>(path);
+
+        if (loadedPrefab != null)
         {
-            string currentMsg = _msgQueue.Dequeue();
+            GameObject slotGo = Instantiate(loadedPrefab, Content_Scroll);
 
-            // 1. 오직 엑셀 데이터만을 기준으로 타겟 에넘 타입을 정확히 분기합니다.
-            DaniTechUIType slotUIType = GetChatSlotUIType();
-
-            // 2. 익스텐션 메서드의 GetUIPath 규칙에 맞춰 리소스 경로를 조합합니다.
-            string path = DaniTechUIManager.Instance.GetUIPath(DaniTechUIRootType.ContentUI, slotUIType);
-
-            // 3. 리소스 폴더에서 직접 에셋을 로드한 뒤 스크롤뷰 Content 자식으로 복사 소환합니다.
-            GameObject loadedPrefab = Resources.Load<GameObject>(path);
-
-            if (loadedPrefab != null)
+            // 소환된 프리팹 자식에 붙은 Text 컴포넌트를 찾아 카톡 내용을 밀어 넣습니다.
+            Text slotText = slotGo.GetComponentInChildren<Text>();
+            if (slotText != null)
             {
-                GameObject slotGo = Instantiate(loadedPrefab, Content_Scroll);
-
-                // 소환된 프리팹 자식에 붙은 Text 컴포넌트를 찾아 카톡 내용을 밀어 넣습니다.
-                Text slotText = slotGo.GetComponentInChildren<Text>();
-                if (slotText != null)
-                {
-                    slotText.text = currentMsg;
-                }
+                slotText.text = currentMsg;
             }
-            else
-            {
-                Debug.LogError($"[MSGDialogueUI] 프리팹 로드 실패! Resources/{path} 폴더 내 파일명과 에넘 규칙을 확인하세요.");
-            }
-
-            // 4. 새로운 슬롯이 생겼으므로 UI 버티컬 레이아웃 시스템을 즉시 강제 갱신하고 스크롤을 맨 밑(0)으로 내립니다.
-            Canvas.ForceUpdateCanvases();
-            if (Scroll_Rect != null)
-            {
-                Scroll_Rect.verticalNormalizedPosition = 0f;
-            }
-
-            return true;
         }
-        return false;
+        else
+        {
+            Debug.LogError($"[MSGDialogueUI] 프리팹 로드 실패! Resources/{path} 폴더 내 파일명과 에넘 규칙을 확인하세요.");
+        }
+
+        // 4. 새로운 슬롯이 생겼으므로 UI 버티컬 레이아웃 시스템을 즉시 강제 갱신하고 스크롤을 맨 밑(0)으로 내립니다.
+        Canvas.ForceUpdateCanvases();
+        if (Scroll_Rect != null)
+        {
+            Scroll_Rect.verticalNormalizedPosition = 0f;
+        }
+
+        return true;
     }
 
     /// <summary>

@@ -10,7 +10,7 @@ public class MindDialogueUI : DaniTechUIBase
     private string _currentDialogueId;
 
     // <np>로 쪼개진 나레이션 조각들을 담아둘 큐
-    private Queue<string> _descriptionQueue = new Queue<string>();
+    //private Queue<string> _descriptionQueue = new Queue<string>();
 
     private void OnEnable()
     {
@@ -22,17 +22,7 @@ public class MindDialogueUI : DaniTechUIBase
     /// </summary>
     public void OnClick_Next()
     {
-        Debug.Log("ggg");
-        bool isNextDescriptionExist = CheckAndSetDescription();
-
-        if (isNextDescriptionExist)
-        {
-            Debug.LogWarning("아이디없음");
-            return;
-        }
-
         DialogueManager.Instance.RequestNextDialogue(_currentDialogueId);
-
     }
 
     /// <summary>
@@ -41,34 +31,9 @@ public class MindDialogueUI : DaniTechUIBase
     public void SetupDialogue(string dialogueId, string description)
     {
         _currentDialogueId = dialogueId;
-        _descriptionQueue.Clear();
-
-        string[] dialogueDescriptionList = description.Split(new string[] { "<np>" }, System.StringSplitOptions.None);
-
-        foreach (string desc in dialogueDescriptionList)
-        {
-            _descriptionQueue.Enqueue(desc);
-        }
-
-        CheckAndSetDescription();
+        Text_Description.text = description;
     }
+    
 
-    private bool CheckAndSetDescription()
-    {
-        if (_descriptionQueue.Count > 0)
-        {
-            string desc = _descriptionQueue.Dequeue();
-            SetCurrentDialogueDescription(desc);
-            return true;
-        }
-        return false;
-    }
-
-    private void SetCurrentDialogueDescription(string description)
-    {
-        if (Text_Description != null)
-        {
-            Text_Description.text = description;
-        }
-    }
+    
 }
