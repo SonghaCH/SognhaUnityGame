@@ -15,12 +15,7 @@ MonoBehaviour:
   m_GroupName: Default Local Group
   m_GUID: 148207ea9883a174cb0232b50b86685d
   m_SerializeEntries:
-  - m_GUID: 0c68e54d4ff90a542937e6acd5f5488f
-    m_Address: Sprite/Out Class
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 15d5182f11267fe4eaa02041afe2b0fb
+  - m_GUID: 0f6709899ab37d247a79f938a640600e
     m_Address: Sprite/Class Room
     m_ReadOnly: 0
     m_SerializedLabels: []
@@ -30,18 +25,13 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 494d42b4da744d942885bd8939449c3f
-    m_Address: Sprite/Out Class cry
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 53d63c5dcfc184347a438836dba38592
     m_Address: Sprite/Before Sleep Empty
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 6eb123d0eda5e1e41835c954d3ce802c
-    m_Address: Sprite/Class Room study.
+  - m_GUID: 6d72327a473f4f5459b0e9fc5239982c
+    m_Address: Sprite/Out Class cry
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -77,6 +67,16 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 9e24de396c98ab943a2878d083bbd071
     m_Address: Sprite/Photo amusemenpark
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bc0cae17ad356ea4bafbd5ab043093f3
+    m_Address: Sprite/Class Room study
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e22b2813fde79714c97fb5bfea580b7c
+    m_Address: Sprite/Out Class
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
