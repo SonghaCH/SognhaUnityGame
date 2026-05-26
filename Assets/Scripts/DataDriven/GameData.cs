@@ -105,6 +105,7 @@ public class DateDialogueData: GameDataBase
 {
     public string Description;
     public string NextDialogueId;
+    public string BGImagePath;
 
 }
 
@@ -114,6 +115,8 @@ public class _DateDialogueData : GameDataBase
 {
     public string Description;
     public string NextDialogueId;
+    public string BGImagePath;
+
 }
 
 [System.Serializable]
@@ -121,6 +124,8 @@ public class MindDialogueData: GameDataBase
 {
     public string Description;
     public string NextDialogueId;
+    public string BGImagePath;
+
 }
 
 [System.Serializable]
@@ -130,6 +135,8 @@ public class MSGDialogueData: GameDataBase
     public string Description;
     public string NextDialogueId;
     public string characterDataId;
+    public string BGImagePath;
+
 
 }
 
@@ -139,6 +146,8 @@ public class NormalDialogueData : GameDataBase
     public string Description;
     public string CharacterDataId;
     public string NextDialogueId;
+    public string BGImagePath;
+
 }
 
 

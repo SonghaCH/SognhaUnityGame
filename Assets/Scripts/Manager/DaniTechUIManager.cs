@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -11,6 +12,7 @@ public class DaniTechUIManager : MonoBehaviour
     [SerializeField] Canvas Canvas_VeryFrontRoot;
 
     public static DaniTechUIManager Instance { get; set; }
+    
 
     // 얘는 생성과 제거에 관한 부분 -> Instancing과 가비지컬렉터와 연관이 있는 애
     private Dictionary<DaniTechUIType, DaniTechUIBase> _createdUIDic = new Dictionary<DaniTechUIType, DaniTechUIBase>();
@@ -132,6 +134,7 @@ public class DaniTechUIManager : MonoBehaviour
         CloseUI(DaniTechUIRootType.PopupUI, uiType);
     }
 
+    
 
 
 }

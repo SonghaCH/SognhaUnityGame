@@ -1,11 +1,15 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Android.Gradle.Manifest;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class DialogueManager : MonoBehaviour
 {
     public static DialogueManager Instance { get; private set; }
+    public event Action<Sprite> _OnChangeBackgroundImage;
+    public string BeforeImagePath;
 
     private void Awake()
     {
@@ -31,6 +35,7 @@ public class DialogueManager : MonoBehaviour
             return;
         }
 
+        DaniTechUIManager.Instance.OpenBackgroundUI();
         ProcessDialogue(startDialogueId);
     }
 
@@ -192,6 +197,7 @@ public class DialogueManager : MonoBehaviour
             if (normalUI != null)
             {
                 normalUI.SetupDialogue(dialogueId, data.Description, data.CharacterDataId);
+                CheckBGImage(data.BGImagePath);
             }
         }
 
@@ -221,6 +227,8 @@ public class DialogueManager : MonoBehaviour
             if (mindUI != null)
             {
                 mindUI.SetupDialogue(dialogueId, data.Description);
+                CheckBGImage(data.BGImagePath);
+
             }
 
             // 3. [★완벽 방어선] 이제 소명을 다한 날짜창을 화면에서 완전히 지워버립니다! 
@@ -246,6 +254,8 @@ public class DialogueManager : MonoBehaviour
             if (dateUI != null)
             {
                 dateUI.SetupDialogue(dialogueId, data.Description);
+                CheckBGImage(data.BGImagePath);
+
             }
         }
         // D. 카톡 메신저 연출 처리 -> 카톡창을 '먼저' 띄우고 마인드를 '나중에' 안전하게 닫습니다!
@@ -266,6 +276,8 @@ public class DialogueManager : MonoBehaviour
             if (msgUI != null)
             {
                 msgUI.SetupDialogue(dialogueId, data.Description, data.MSGType,chacterData.Name);
+                CheckBGImage(data.BGImagePath);
+
             }
 
             // 3. 목적지인 카톡창 세팅이 완전히 끝났으므로, 이제 소명을 다한 마인드 창을 '나중에' 깔끔하게 닫아줍니다!
@@ -283,5 +295,30 @@ public class DialogueManager : MonoBehaviour
         DaniTechUIManager.Instance.CloseUI(DaniTechUIRootType.ContentUI, DaniTechUIType.MSGDialogueUI);
         DaniTechUIManager.Instance.CloseUI(DaniTechUIRootType.VeryFrontUI, DaniTechUIType.DateDialogueUI);
         DaniTechUIManager.Instance.CloseUI(DaniTechUIRootType.VeryFrontUI, DaniTechUIType.MindDialogueUI);
+    }
+
+    private void ChangeBackgroundImage(string BGpath)
+    {
+        DaniTechResourceManager.Inst.LoadSprite(BGpath, (sprite) =>
+        {
+            if (sprite == null)
+                return;
+            _OnChangeBackgroundImage?.Invoke(sprite);
+
+        });
+        
+    }
+
+    private void CheckBGImage(string nextImagePath)
+    {
+
+        if (BeforeImagePath != nextImagePath)
+        {
+            ChangeBackgroundImage(nextImagePath);
+        }
+
+        BeforeImagePath = nextImagePath;
+
+
     }
 }

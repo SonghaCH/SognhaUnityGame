@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
+using UnityEngine.U2D;
 
 public enum DaniTechUIRootType
 {
@@ -27,6 +29,8 @@ public enum DaniTechUIType
     DateDialogueUI,
     NormalDialogueUI,
     MindDialogueUI,
+    
+    BackgroundUI,
 
 
     DNSimplePopup,
@@ -38,8 +42,11 @@ public enum DaniTechUIType
     DNInfoBookUI
 }
 
+
 public static class DaniTechUIManagerExtension
 {
+
+
     public static string GetUIPath(this DaniTechUIManager uiManager, DaniTechUIRootType uiRootType, DaniTechUIType uiType)
     {
         string path = string.Empty; // "" == string.Empty
@@ -148,6 +155,19 @@ public static class DaniTechUIManagerExtension
     {
         uiManager.CloseUI(DaniTechUIRootType.ContentUI, DaniTechUIType.NormalDialogueUI);
     }
+
+    public static void OpenBackgroundUI(this DaniTechUIManager uiManager)
+    {
+        var uiBase = uiManager.OpenUI(DaniTechUIRootType.BackgroundUI, DaniTechUIType.BackgroundUI, false);
+        if (uiBase == null)
+        {
+            Debug.LogWarning($"UI가 생성되지 않았습니다");
+            return;
+        }
+    }
+
+
+
 
 
 

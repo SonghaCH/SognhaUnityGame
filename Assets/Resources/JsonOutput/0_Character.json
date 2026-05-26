@@ -12,9 +12,9 @@
     "characterData": "민형"
   },
   {
-    "Id": "character_Date",
-    "Name": null,
-    "Description": null,
-    "characterData": null
+    "Id": "character_Hyunwoo_01",
+    "Name": "현우",
+    "Description": "교육을 같이 듣는 동료 이다.",
+    "characterData": "현우"
   }
 ]

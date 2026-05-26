@@ -14,7 +14,82 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.Addressables.Editor::UnityEditor.AddressableAssets.Settings.AddressableAssetGroup
   m_GroupName: Default Local Group
   m_GUID: 148207ea9883a174cb0232b50b86685d
-  m_SerializeEntries: []
+  m_SerializeEntries:
+  - m_GUID: 0c68e54d4ff90a542937e6acd5f5488f
+    m_Address: Sprite/Out Class
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 15d5182f11267fe4eaa02041afe2b0fb
+    m_Address: Sprite/Class Room
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 17c1b5a119687cd4985f68bef54df781
+    m_Address: Sprite/Before Sleep
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 494d42b4da744d942885bd8939449c3f
+    m_Address: Sprite/Out Class cry
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 53d63c5dcfc184347a438836dba38592
+    m_Address: Sprite/Before Sleep Empty
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6eb123d0eda5e1e41835c954d3ce802c
+    m_Address: Sprite/Class Room study.
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 77f739173a61b3f44a7b75b67bcf9601
+    m_Address: Sprite/Call Image
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7a0efa6922bab234681215929adf5a18
+    m_Address: Sprite/CU go home cry
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 87482368a0595d2478824ce51d6058ba
+    m_Address: Sprite/Dark empty Room
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8cc0da9a3a8f58f4bb79a0b5eb40c516
+    m_Address: Sprite/CU work
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8cf80925f4f1e5941a6e8eeac8ca20e7
+    m_Address: Sprite/morning empty Room
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 913060e19f36e8747abd82539a685e9f
+    m_Address: Sprite/Call Army
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9e24de396c98ab943a2878d083bbd071
+    m_Address: Sprite/Photo amusemenpark
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e5aa4726aa096624ca2cab29b573dac8
+    m_Address: Sprite/CU cry
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e6ddb6916e632f9448b88744083bd0d8
+    m_Address: Sprite/Cu go home
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 917f8464e25535b469cbc1869322e349, type: 2}
   m_SchemaSet:
