@@ -281,7 +281,322 @@
   {
     "Id": "mindDialogue_Opening_1_1_172",
     "Description": "예상치 못한 타이밍과 잡을 수 없는 이 무력함에 밤새 울며 새벽을 보냈다. 너무 어버버 이별한 것 같다는 생각이 들었다.",
-    "NextDialogueId": null,
+    "NextDialogueId": "mindDialogue_Opening_1_1_173",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null,
+    "CharacterDataId": null
+  },
+  {
+    "Id": "mindDialogue_Opening_1_1_173",
+    "Description": "그렇게 밤을 맞이 하였고, 자야하지만 밤이 너무도 고통스럽고 외롭게 느껴졌다.",
+    "NextDialogueId": "mindDialogue_Opening_1_1_174",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null,
+    "CharacterDataId": null
+  },
+  {
+    "Id": "mindDialogue_Opening_1_1_174",
+    "Description": "밤새 눈물 흘리며 지치듯 잠에 들었다.",
+    "NextDialogueId": "dateDialogue_Opening_1_1_175",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null,
+    "CharacterDataId": null
+  },
+  {
+    "Id": "mindDialogue_Opening_1_1_176",
+    "Description": "그렇게 이별 첫 날을 맞이 하게 되었다.",
+    "NextDialogueId": "mindDialogue_Opening_1_1_177",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null,
+    "CharacterDataId": null
+  },
+  {
+    "Id": "mindDialogue_Opening_1_1_177",
+    "Description": "아직도 실감이 나지 않았고, 아침에 일어나서도 온몸이 아프고, 눈물이 났다.",
+    "NextDialogueId": "mindDialogue_Opening_1_1_178",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null,
+    "CharacterDataId": null
+  },
+  {
+    "Id": "mindDialogue_Opening_1_1_178",
+    "Description": "하지만 나는 더 이상 어리지 않았고, ",
+    "NextDialogueId": "mindDialogue_Opening_1_1_179",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null,
+    "CharacterDataId": null
+  },
+  {
+    "Id": "mindDialogue_Opening_1_1_179",
+    "Description": "과거의 나처럼 감정에 지배당하면 아무것도 변하지 않는다는것을 알고 있다.",
+    "NextDialogueId": "mindDialogue_Opening_1_1_180 ",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null,
+    "CharacterDataId": null
+  },
+  {
+    "Id": "mindDialogue_Opening_1_1_180 ",
+    "Description": "현재 수강하고 있는 강의를 듣기 위해 자리를 박차고 일어났다.",
+    "NextDialogueId": "mindDialogue_Opening_1_1_181",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null,
+    "CharacterDataId": null
+  },
+  {
+    "Id": "mindDialogue_Opening_1_1_181",
+    "Description": "그렇게 강의를 들을 준비를 하던중 동료가 먼저 말을 걸어왔다.",
+    "NextDialogueId": "normalDialogue_Opening_1_1_182",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null,
+    "CharacterDataId": null
+  },
+  {
+    "Id": "mindDialogue_Opening_1_1_185",
+    "Description": "주변 사람들한테도 표가 났는지 동료가 평소와 다른 느낌이라고 말을 해주었다.",
+    "NextDialogueId": "normalDialogue_Opening_1_1_186",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null,
+    "CharacterDataId": null
+  },
+  {
+    "Id": "mindDialogue_Opening_1_1_187",
+    "Description": "다른 말없이 그 한마디에 눌러오던 감정이 터져나오듯 눈물이 쏟아졌다.",
+    "NextDialogueId": "mindDialogue_Opening_1_1_188",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null,
+    "CharacterDataId": null
+  },
+  {
+    "Id": "mindDialogue_Opening_1_1_188",
+    "Description": "나는 아무말도 할 수 없었고, 그 자리에서 숨죽이며 5분간 울기만 했다.",
+    "NextDialogueId": "normalDialogue_Opening_1_1_189",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null,
+    "CharacterDataId": null
+  },
+  {
+    "Id": "mindDialogue_Opening_1_1_193",
+    "Description": "그저 남 앞에서 울기만 했지만 큰 도움이 되었고, 많은 힘이 되었다.",
+    "NextDialogueId": "mindDialogue_Opening_1_1_194",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null,
+    "CharacterDataId": null
+  },
+  {
+    "Id": "mindDialogue_Opening_1_1_194",
+    "Description": "그렇게 슬픔을 안은채 끝까지 수업을 들었고, 끝나자마자 근무하는 편의점으로 향했다.",
+    "NextDialogueId": "mindDialogue_Opening_1_1_195",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null,
+    "CharacterDataId": null
+  },
+  {
+    "Id": "mindDialogue_Opening_1_1_195",
+    "Description": "쉴틈을 주면 그녀가 속을 비집고 들어올것만 같았다.",
+    "NextDialogueId": "mindDialogue_Opening_1_1_196",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null,
+    "CharacterDataId": null
+  },
+  {
+    "Id": "mindDialogue_Opening_1_1_196",
+    "Description": "천천히 생각을 정리하며, 우리가 헤어져야하는 이유가 타당하고, 내가 받아 들일수 있는 이별인지 생각해보았다.",
+    "NextDialogueId": "mindDialogue_Opening_1_1_197",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null,
+    "CharacterDataId": null
+  },
+  {
+    "Id": "mindDialogue_Opening_1_1_197",
+    "Description": "나에게는 첫 연애이자 첫 이별이었으며, ",
+    "NextDialogueId": "mindDialogue_Opening_1_1_198",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null,
+    "CharacterDataId": null
+  },
+  {
+    "Id": "mindDialogue_Opening_1_1_198",
+    "Description": "정말 힘들다는 것을 몸소 느끼며 최대한 이 슬픔을 받아들이기로 했다.",
+    "NextDialogueId": "mindDialogue_Opening_1_1_199",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null,
+    "CharacterDataId": null
+  },
+  {
+    "Id": "mindDialogue_Opening_1_1_199",
+    "Description": "하지만 알바를 하는 와중에도 그녀는 마음속에 비집고 들어왔고",
+    "NextDialogueId": "mindDialogue_Opening_1_1_200",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null,
+    "CharacterDataId": null
+  },
+  {
+    "Id": "mindDialogue_Opening_1_1_200",
+    "Description": "편의점에서 나오는 노래 마저 이별 노래가 나와 더 고통스럽게 만들었다.",
+    "NextDialogueId": "mindDialogue_Opening_1_1_201",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null,
+    "CharacterDataId": null
+  },
+  {
+    "Id": "mindDialogue_Opening_1_1_201",
+    "Description": "그래서 였을까, 밤이라서 약해졌던 탓일까.",
+    "NextDialogueId": "mindDialogue_Opening_1_1_202",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null,
+    "CharacterDataId": null
+  },
+  {
+    "Id": "mindDialogue_Opening_1_1_202",
+    "Description": "결국 나는 알바가 끝나고 퇴근 하는 차 안에서 그녀에게 전화를 걸었다.",
+    "NextDialogueId": "mindDialogue_Opening_1_1_203",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null,
+    "CharacterDataId": null
+  },
+  {
+    "Id": "mindDialogue_Opening_1_1_203",
+    "Description": "(통화 연결중)",
+    "NextDialogueId": "normalDialogue_Opening_1_1_204",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null,
+    "CharacterDataId": null
+  },
+  {
+    "Id": "mindDialogue_Opening_1_1_222",
+    "Description": "사실 다 알고 있었다..",
+    "NextDialogueId": "mindDialogue_Opening_1_1_223",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null,
+    "CharacterDataId": null
+  },
+  {
+    "Id": "mindDialogue_Opening_1_1_223",
+    "Description": "내가 잘못한것도 없었고, 내가 못해준 것도 없었다.",
+    "NextDialogueId": "mindDialogue_Opening_1_1_224",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null,
+    "CharacterDataId": null
+  },
+  {
+    "Id": "mindDialogue_Opening_1_1_224",
+    "Description": "단지 미안하다고 사과해야만 할거 같았기때문이다.",
+    "NextDialogueId": "mindDialogue_Opening_1_1_225",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null,
+    "CharacterDataId": null
+  },
+  {
+    "Id": "mindDialogue_Opening_1_1_225",
+    "Description": "결혼을 전제라면 내가 노력할 수 있는 부분은 있지않을까하고",
+    "NextDialogueId": "mindDialogue_Opening_1_1_226",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null,
+    "CharacterDataId": null
+  },
+  {
+    "Id": "mindDialogue_Opening_1_1_226",
+    "Description": "찌질하게 매달렸다.",
+    "NextDialogueId": "normalDialogue_Opening_1_1_227",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null,
+    "CharacterDataId": null
+  },
+  {
+    "Id": "mindDialogue_Opening_1_1_255",
+    "Description": "정말로 명확한 이유를 알았다면 납득하고, 고칠 수 있었을텐데..",
+    "NextDialogueId": "mindDialogue_Opening_1_1_256",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null,
+    "CharacterDataId": null
+  },
+  {
+    "Id": "mindDialogue_Opening_1_1_256",
+    "Description": "그녀는 끝까지 말하기를 꺼려했다.",
+    "NextDialogueId": "mindDialogue_Opening_1_1_257",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null,
+    "CharacterDataId": null
+  },
+  {
+    "Id": "mindDialogue_Opening_1_1_257",
+    "Description": "하지만 한가지는 분명했다.",
+    "NextDialogueId": "mindDialogue_Opening_1_1_258",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null,
+    "CharacterDataId": null
+  },
+  {
+    "Id": "mindDialogue_Opening_1_1_258",
+    "Description": "그것을 말한다면 내가 큰 상처가 될것이고,",
+    "NextDialogueId": "mindDialogue_Opening_1_1_259",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null,
+    "CharacterDataId": null
+  },
+  {
+    "Id": "mindDialogue_Opening_1_1_259",
+    "Description": "고치지도 변화 하지도 못하는 문제라고 말하였는데",
+    "NextDialogueId": "mindDialogue_Opening_1_1_260",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null,
+    "CharacterDataId": null
+  },
+  {
+    "Id": "mindDialogue_Opening_1_1_260",
+    "Description": "나를 잘아는 그녀는 나에 대해서 그렇게 말하지 않을것이다.",
+    "NextDialogueId": "mindDialogue_Opening_1_1_261",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null,
+    "CharacterDataId": null
+  },
+  {
+    "Id": "mindDialogue_Opening_1_1_261",
+    "Description": "하지만.. 이렇게까지 말하지 않는다는건 나를 지켜주려 했다고 생각한다.",
+    "NextDialogueId": "mindDialogue_Opening_1_1_262",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null,
+    "CharacterDataId": null
+  },
+  {
+    "Id": "mindDialogue_Opening_1_1_262",
+    "Description": "그렇기 때문에 더이상 묻지 않기로 했다.",
+    "NextDialogueId": "normalDialogue_Opening_1_1_263",
     "SelectionDialogueIdList": null,
     "TexturePath": null,
     "VoicePath": null,

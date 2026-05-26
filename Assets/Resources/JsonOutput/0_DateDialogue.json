@@ -4,5 +4,11 @@
     "Description": "4월 6일 월요일 오전 2시 36분",
     "NextDialogueId": "mindDialogue_Opening_1_1_101",
     "CharacterDataId": null
+  },
+  {
+    "Id": "dateDialogue_Opening_1_1_175",
+    "Description": "4월 6일 월요일 오전 9시 30분",
+    "NextDialogueId": "mindDialogue_Opening_1_1_176",
+    "CharacterDataId": null
   }
 ]
