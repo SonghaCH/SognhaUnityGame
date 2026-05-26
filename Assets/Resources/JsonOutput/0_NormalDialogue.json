@@ -102,7 +102,7 @@
   {
     "Id": "normalDialogue_Opening_1_1_133",
     "CharacterDataId": "character_Minhyeong_01",
-    "Description": "얼마전 데이트에서도 전만큼 재미있지 않다고 느꼈고, 오늘도 너와 함꼐 게임하면서 사소한 다툼이 있었잖아? 근데 평소였으면 엄청 서운하고, 속상해서 너한테 분명하게 말했을거야.",
+    "Description": "얼마 전 데이트에서도 전만큼 재미있지 않다고 느꼈고, 오늘도 너와 함꼐 게임하면서 사소한 다툼이 있었잖아? 근데 평소였으면 엄청 서운하고, 속상해서 너한테 분명하게 말했을거야.",
     "NextDialogueId": "normalDialogue_Opening_1_1_134",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
@@ -252,7 +252,7 @@
   {
     "Id": "normalDialogue_Opening_1_1_157",
     "CharacterDataId": "character_Minhyeong_01",
-    "Description": "많이 힘들겠지만 노력해야지.. 아니? 해야만해<np> ",
+    "Description": "많이 힘들겠지만 노력해야지.. 아니? 해야만해",
     "NextDialogueId": "normalDialogue_Opening_1_1_158",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
@@ -274,6 +274,706 @@
     "CharacterDataId": "character_Minhyeong_01",
     "Description": "안녕 이제 더이상 말하지 않아줬으면 좋겠어. 흔들리고 싶지않아. 이만 끊을게",
     "NextDialogueId": "mindDialogue_Opening_1_1_160",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "normalDialogue_Opening_1_1_182",
+    "CharacterDataId": "character_Hyunwoo_01",
+    "Description": "혹시 평소랑 뭔가 다르게 힘들어 보이시는데 무슨 일 있으신가요?",
+    "NextDialogueId": "normalDialogue_Opening_1_1_183",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "normalDialogue_Opening_1_1_183",
+    "CharacterDataId": "character_Player_01",
+    "Description": "아..뭐 별건 아니고 그냥 여자 친구와 헤어졌습니다. 허허",
+    "NextDialogueId": "normalDialogue_Opening_1_1_184",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "normalDialogue_Opening_1_1_184",
+    "CharacterDataId": "character_Hyunwoo_01",
+    "Description": "아이고..잠시 밖으로 나갈까요?",
+    "NextDialogueId": "mindDialogue_Opening_1_1_185",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "normalDialogue_Opening_1_1_186",
+    "CharacterDataId": "character_Hyunwoo_01",
+    "Description": "괜찮습니까.. 제가 위로 같은건 잘 못하지만 그래도 말을 걸어야 할거 같았습니다. ",
+    "NextDialogueId": "mindDialogue_Opening_1_1_187",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "normalDialogue_Opening_1_1_189",
+    "CharacterDataId": "character_Hyunwoo_01",
+    "Description": "수업도 좋지만 지금은 쉬는건 어떻겠습니까….",
+    "NextDialogueId": "normalDialogue_Opening_1_1_190",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "normalDialogue_Opening_1_1_190",
+    "CharacterDataId": "character_Player_01",
+    "Description": "쉬게 되면은 더 공허하고 고통스러울거 같습니다…",
+    "NextDialogueId": "normalDialogue_Opening_1_1_191",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "normalDialogue_Opening_1_1_191",
+    "CharacterDataId": "character_Player_01",
+    "Description": "먼저 물어봐주셔서 감사합니다…",
+    "NextDialogueId": "normalDialogue_Opening_1_1_192",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "normalDialogue_Opening_1_1_192",
+    "CharacterDataId": "character_Hyunwoo_01",
+    "Description": "알겠습니다.. 그래도 무리는 하지 마십쇼.",
+    "NextDialogueId": "mindDialogue_Opening_1_1_193",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "normalDialogue_Opening_1_1_204",
+    "CharacterDataId": "character_Minhyeong_01",
+    "Description": "여보세요?",
+    "NextDialogueId": "normalDialogue_Opening_1_1_205",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "normalDialogue_Opening_1_1_205",
+    "CharacterDataId": "character_Player_01",
+    "Description": "안녕.. 다시 연락해서 미안한데 나 할 말이  아직 남아서 연락했어.",
+    "NextDialogueId": "normalDialogue_Opening_1_1_206",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "normalDialogue_Opening_1_1_206",
+    "CharacterDataId": "character_Minhyeong_01",
+    "Description": "말해.",
+    "NextDialogueId": "normalDialogue_Opening_1_1_207",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "normalDialogue_Opening_1_1_207",
+    "CharacterDataId": "character_Player_01",
+    "Description": "내가 하루동안 너가 말한 이유들을 고민하고, 받아들이려고 노력도 해보았는데.",
+    "NextDialogueId": "normalDialogue_Opening_1_1_208",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "normalDialogue_Opening_1_1_208",
+    "CharacterDataId": "character_Player_01",
+    "Description": "아무리 생각해도 너무 어버버 헤어진거 같아.. 늦은 시간이라 말도 더 못했었고..",
+    "NextDialogueId": "normalDialogue_Opening_1_1_209",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "normalDialogue_Opening_1_1_209",
+    "CharacterDataId": "character_Minhyeong_01",
+    "Description": "응.. 일단은 나는 할 말 다했고, 들어줄게.",
+    "NextDialogueId": "normalDialogue_Opening_1_1_210",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "normalDialogue_Opening_1_1_210",
+    "CharacterDataId": "character_Player_01",
+    "Description": "너는 내 잘못이 아니라고 그랬는데.. 너가 식게 된 이유는 내 잘못인거같아…",
+    "NextDialogueId": "normalDialogue_Opening_1_1_211",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "normalDialogue_Opening_1_1_211",
+    "CharacterDataId": "character_Player_01",
+    "Description": "내가 헤어지게 되는 지점까지 너가 생각하게 만든거 같아.",
+    "NextDialogueId": "normalDialogue_Opening_1_1_212",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "normalDialogue_Opening_1_1_212",
+    "CharacterDataId": "character_Player_01",
+    "Description": "너 마음에 짐이 쌓이고 상처를 줬던거 같아…",
+    "NextDialogueId": "normalDialogue_Opening_1_1_213",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "normalDialogue_Opening_1_1_213",
+    "CharacterDataId": "character_Player_01",
+    "Description": "사소한 것들이어도 쌓이고 쌓여서 너를 힘든게 했던거 같아…",
+    "NextDialogueId": "normalDialogue_Opening_1_1_214",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "normalDialogue_Opening_1_1_214",
+    "CharacterDataId": "character_Minhyeong_01",
+    "Description": "난 너한테 상처받은거 없고 너가 짐이라고 생각한적도 없어.",
+    "NextDialogueId": "normalDialogue_Opening_1_1_215",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "normalDialogue_Opening_1_1_215",
+    "CharacterDataId": "character_Minhyeong_01",
+    "Description": "그냥 이제는 그만해야할 때가 왔다고 생각해서 말한거야.",
+    "NextDialogueId": "normalDialogue_Opening_1_1_216",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "normalDialogue_Opening_1_1_216",
+    "CharacterDataId": "character_Player_01",
+    "Description": "그치만 우리 결혼에 대해서 제대로 말하고, 짚고 넘어간 적이 없었잖아..",
+    "NextDialogueId": "normalDialogue_Opening_1_1_217",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "normalDialogue_Opening_1_1_217",
+    "CharacterDataId": "character_Player_01",
+    "Description": "단순히 결혼 문제였다면 함께 얘기했으면 어땠을까 싶어…",
+    "NextDialogueId": "normalDialogue_Opening_1_1_218",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "normalDialogue_Opening_1_1_218",
+    "CharacterDataId": "character_Minhyeong_01",
+    "Description": "미안한데 너랑 결혼에 대해 진지하게 생각한적이 없었어…",
+    "NextDialogueId": "normalDialogue_Opening_1_1_219",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "normalDialogue_Opening_1_1_219",
+    "CharacterDataId": "character_Minhyeong_01",
+    "Description": "너랑 결혼할 생각으로 만난것도 아니었고, 생각해본적도 없었으니까",
+    "NextDialogueId": "normalDialogue_Opening_1_1_220",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "normalDialogue_Opening_1_1_220",
+    "CharacterDataId": "character_Minhyeong_01",
+    "Description": "나는 다 정리했고 번복 할 생각이 없어.",
+    "NextDialogueId": "normalDialogue_Opening_1_1_221",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "normalDialogue_Opening_1_1_221",
+    "CharacterDataId": "character_Minhyeong_01",
+    "Description": "나는 너랑 함께하는 미래를 그릴수 없으니 너와 함께 걸어갈 여자를 찾았으면 좋겠다",
+    "NextDialogueId": "mindDialogue_Opening_1_1_222",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "normalDialogue_Opening_1_1_227",
+    "CharacterDataId": "character_Player_01",
+    "Description": "나는 너와의 미래를 꿈꿨고, 헤어짐이라는 가정 한번 들어본 적 없어.",
+    "NextDialogueId": "normalDialogue_Opening_1_1_228",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "normalDialogue_Opening_1_1_228",
+    "CharacterDataId": "character_Player_01",
+    "Description": "만일 너가 그리는 미래가 있다면 내가 그렇게 바뀌도록 노력한다면 ",
+    "NextDialogueId": "normalDialogue_Opening_1_1_229",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "normalDialogue_Opening_1_1_229",
+    "CharacterDataId": "character_Player_01",
+    "Description": "아직 이루진 않았지만 그렇게 바뀐다면 다시 돌아갈 수 있을까..",
+    "NextDialogueId": "normalDialogue_Opening_1_1_230",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "normalDialogue_Opening_1_1_230",
+    "CharacterDataId": "character_Player_01",
+    "Description": "너가 그리는 미래는 어떤 것이고,  그 모습은 어떤것인지 알려 줄 수 있어?",
+    "NextDialogueId": "normalDialogue_Opening_1_1_231",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "normalDialogue_Opening_1_1_231",
+    "CharacterDataId": "character_Minhyeong_01",
+    "Description": "정말 미안한데.. 그만 말하고 싶어..",
+    "NextDialogueId": "normalDialogue_Opening_1_1_232",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "normalDialogue_Opening_1_1_232",
+    "CharacterDataId": "character_Minhyeong_01",
+    "Description": "내가 주절 주절 설명하고 싶지도 않고.. ",
+    "NextDialogueId": "normalDialogue_Opening_1_1_233",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "normalDialogue_Opening_1_1_233",
+    "CharacterDataId": "character_Minhyeong_01",
+    "Description": "이미 내 마음은 변하지 않아.",
+    "NextDialogueId": "normalDialogue_Opening_1_1_234",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "normalDialogue_Opening_1_1_234",
+    "CharacterDataId": "character_Player_01",
+    "Description": "노력해도 불가능 하다는거네..",
+    "NextDialogueId": "normalDialogue_Opening_1_1_235",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "normalDialogue_Opening_1_1_235",
+    "CharacterDataId": "character_Player_01",
+    "Description": "나는 지금 이 상황이 너무 답답해",
+    "NextDialogueId": "normalDialogue_Opening_1_1_236",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "normalDialogue_Opening_1_1_236",
+    "CharacterDataId": "character_Player_01",
+    "Description": "명확한 이유가 뭐인지, 내 문제가 뭐였는지..",
+    "NextDialogueId": "normalDialogue_Opening_1_1_237",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "normalDialogue_Opening_1_1_237",
+    "CharacterDataId": "character_Player_01",
+    "Description": "그런 이유를 알면 생각 정리가 잘 될텐데..",
+    "NextDialogueId": "normalDialogue_Opening_1_1_238",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "normalDialogue_Opening_1_1_238",
+    "CharacterDataId": "character_Player_01",
+    "Description": "그냥 막연하게만 헤어지는 사실만 알게 되니까.",
+    "NextDialogueId": "normalDialogue_Opening_1_1_239",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "normalDialogue_Opening_1_1_239",
+    "CharacterDataId": "character_Player_01",
+    "Description": "너무 힘드네..",
+    "NextDialogueId": "normalDialogue_Opening_1_1_240",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "normalDialogue_Opening_1_1_240",
+    "CharacterDataId": "character_Player_01",
+    "Description": "내가 고칠 수 없는 부분인거야?",
+    "NextDialogueId": "normalDialogue_Opening_1_1_241",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "normalDialogue_Opening_1_1_241",
+    "CharacterDataId": "character_Player_01",
+    "Description": "내가 너를 만나는 동안에는 변화 할 수 없는 부분인거야??",
+    "NextDialogueId": "normalDialogue_Opening_1_1_242",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "normalDialogue_Opening_1_1_242",
+    "CharacterDataId": "character_Minhyeong_01",
+    "Description": "응 넌 그렇게 될 수 없을거야..",
+    "NextDialogueId": "normalDialogue_Opening_1_1_243",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "normalDialogue_Opening_1_1_243",
+    "CharacterDataId": "character_Minhyeong_01",
+    "Description": "그리고 못 고친다고 생각도 들어.",
+    "NextDialogueId": "normalDialogue_Opening_1_1_244",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "normalDialogue_Opening_1_1_244",
+    "CharacterDataId": "character_Minhyeong_01",
+    "Description": "너가 잘못해서 그런것도 아니고",
+    "NextDialogueId": "normalDialogue_Opening_1_1_245",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "normalDialogue_Opening_1_1_245",
+    "CharacterDataId": "character_Minhyeong_01",
+    "Description": "그냥 더 이상 말하면 인신 공격이 될거 같아..",
+    "NextDialogueId": "normalDialogue_Opening_1_1_246",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "normalDialogue_Opening_1_1_246",
+    "CharacterDataId": "character_Minhyeong_01",
+    "Description": "그만 말하자..",
+    "NextDialogueId": "normalDialogue_Opening_1_1_247",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "normalDialogue_Opening_1_1_247",
+    "CharacterDataId": "character_Player_01",
+    "Description": "인신 공격이면 내 외형 같은 것들이 마음에 안드는거야?",
+    "NextDialogueId": "normalDialogue_Opening_1_1_248",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "normalDialogue_Opening_1_1_248",
+    "CharacterDataId": "character_Minhyeong_01",
+    "Description": "다시 말하지만... 그런거 아니고 하.. 그만 말하고 싶어.",
+    "NextDialogueId": "normalDialogue_Opening_1_1_249",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "normalDialogue_Opening_1_1_249",
+    "CharacterDataId": "character_Minhyeong_01",
+    "Description": "스무고개 하는것도 아니고.. 자꾸 반복되는거 같네.",
+    "NextDialogueId": "normalDialogue_Opening_1_1_250",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "normalDialogue_Opening_1_1_250",
+    "CharacterDataId": "character_Player_01",
+    "Description": "납득이 안되어서 그래..",
+    "NextDialogueId": "normalDialogue_Opening_1_1_251",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "normalDialogue_Opening_1_1_251",
+    "CharacterDataId": "character_Minhyeong_01",
+    "Description": "납득하고 안하고는 너가 생각하기 나름인거고",
+    "NextDialogueId": "normalDialogue_Opening_1_1_252",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "normalDialogue_Opening_1_1_252",
+    "CharacterDataId": "character_Minhyeong_01",
+    "Description": "이별이 양방향이 아닐 수도 있는거야.",
+    "NextDialogueId": "normalDialogue_Opening_1_1_253",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "normalDialogue_Opening_1_1_253",
+    "CharacterDataId": "character_Minhyeong_01",
+    "Description": "내 생각을 다 말해 줄 의무도 없고",
+    "NextDialogueId": "normalDialogue_Opening_1_1_254",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "normalDialogue_Opening_1_1_254",
+    "CharacterDataId": "character_Minhyeong_01",
+    "Description": "그냥 그만 물어봤으면 좋겠어..",
+    "NextDialogueId": "mindDialogue_Opening_1_1_255",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "normalDialogue_Opening_1_1_263",
+    "CharacterDataId": "character_Player_01",
+    "Description": "그렇게까지 설명하기 싫고, 말하기 힘든 정도라면",
+    "NextDialogueId": "normalDialogue_Opening_1_1_264",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "normalDialogue_Opening_1_1_264",
+    "CharacterDataId": "character_Player_01",
+    "Description": "너도 많이 힘들고 아팠을거 같네..",
+    "NextDialogueId": "normalDialogue_Opening_1_1_265",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "normalDialogue_Opening_1_1_265",
+    "CharacterDataId": "character_Player_01",
+    "Description": "나는 아무것도 모르면서 감정적으로 이야기하고",
+    "NextDialogueId": "normalDialogue_Opening_1_1_266",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "normalDialogue_Opening_1_1_266",
+    "CharacterDataId": "character_Player_01",
+    "Description": "사실은 나 상처 주기 싫어서 그런거였을텐데..",
+    "NextDialogueId": "normalDialogue_Opening_1_1_267",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "normalDialogue_Opening_1_1_267",
+    "CharacterDataId": "character_Player_01",
+    "Description": "미안해.. 그리고 많이 좋아했어..",
+    "NextDialogueId": "normalDialogue_Opening_1_1_268",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "normalDialogue_Opening_1_1_268",
+    "CharacterDataId": "character_Player_01",
+    "Description": "나의 처음이 되어주어서 고맙고,",
+    "NextDialogueId": "normalDialogue_Opening_1_1_269",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "normalDialogue_Opening_1_1_269",
+    "CharacterDataId": "character_Player_01",
+    "Description": "죽을 때까지도 잊지 않을게.",
+    "NextDialogueId": "normalDialogue_Opening_1_1_270",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "normalDialogue_Opening_1_1_270",
+    "CharacterDataId": "character_Player_01",
+    "Description": "잘지내고, 나도 열심히 할테니까",
+    "NextDialogueId": "normalDialogue_Opening_1_1_271",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "normalDialogue_Opening_1_1_271",
+    "CharacterDataId": "character_Player_01",
+    "Description": "너도 원하는거 꼭 이루길 바래..",
+    "NextDialogueId": "normalDialogue_Opening_1_1_272",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "normalDialogue_Opening_1_1_272",
+    "CharacterDataId": "character_Player_01",
+    "Description": "사랑해 그리고 미안해.. 안녕",
+    "NextDialogueId": "normalDialogue_Opening_1_1_273",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "normalDialogue_Opening_1_1_273",
+    "CharacterDataId": "character_Player_01",
+    "Description": "이젠 진짜로 정리할게.. 아프게 해서 미안해.",
+    "NextDialogueId": "normalDialogue_Opening_1_1_274",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "normalDialogue_Opening_1_1_274",
+    "CharacterDataId": "character_Minhyeong_01",
+    "Description": "알아줘서 고마워. 좋아했던 마음 다 진심이었어. 잘자",
+    "NextDialogueId": "normalDialogue_Opening_1_1_275",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "normalDialogue_Opening_1_1_275",
+    "CharacterDataId": "character_Player_01",
+    "Description": "그리고.. 너무 자책하지 말고 그냥 다 내 탓이라고 생각해주면 좋겠네",
+    "NextDialogueId": "normalDialogue_Opening_1_1_276",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "normalDialogue_Opening_1_1_276",
+    "CharacterDataId": "character_Player_01",
+    "Description": "더 안아팠으면 좋겠어..",
+    "NextDialogueId": "normalDialogue_Opening_1_1_277",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "normalDialogue_Opening_1_1_277",
+    "CharacterDataId": "character_Minhyeong_01",
+    "Description": "…",
+    "NextDialogueId": "normalDialogue_Opening_1_1_278",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "normalDialogue_Opening_1_1_278",
+    "CharacterDataId": "character_Player_01",
+    "Description": "이만 끊을게. 안녕",
+    "NextDialogueId": null,
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
     "TexturePath": null,
