@@ -973,7 +973,7 @@
     "Id": "normalDialogue_Opening_1_1_278",
     "CharacterDataId": "character_Player_01",
     "Description": "이만 끊을게. 안녕",
-    "NextDialogueId": null,
+    "NextDialogueId": "mindDialogue_Opening_1_1_279",
     "BGImagePath": "Sprite/Cu go home",
     "SelectionDialogueIdList": null,
     "TexturePath": null,

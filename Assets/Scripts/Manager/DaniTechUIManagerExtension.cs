@@ -17,6 +17,7 @@ public enum DaniTechUIType
     StartUI,
     StartLoadingUI,
     QuitPopupUI,
+    SkipPopupUI,
     
     MSGDialogueUI,
     Slot_MyChatUI,
@@ -76,6 +77,17 @@ public static class DaniTechUIManagerExtension
             return;
         }
        
+    }
+
+    public static void OpenSkipPopupUI(this DaniTechUIManager uiManager)
+    {
+        var uiBase = uiManager.OpenPopupUI(DaniTechUIType.SkipPopupUI);
+        if (uiBase == null)
+        {
+            Debug.LogWarning($"UI가 생성되지 않았습니다");
+            return;
+        }
+
     }
 
     public static void OpenStartUI(this DaniTechUIManager uiManger)

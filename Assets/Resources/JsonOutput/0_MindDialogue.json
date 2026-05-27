@@ -668,5 +668,125 @@
     "TexturePath": null,
     "VoicePath": null,
     "CharacterDataId": null
+  },
+  {
+    "Id": "mindDialogue_Opening_1_1_279",
+    "Description": "이제껏 나는 그녀의 전화를 단 한번도 먼저 끊은적 없었다.",
+    "NextDialogueId": "mindDialogue_Opening_1_1_280 ",
+    "BGImagePath": "Sprite/CU go home cry",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null,
+    "CharacterDataId": null
+  },
+  {
+    "Id": "mindDialogue_Opening_1_1_280 ",
+    "Description": "그러나 이번 만큼은 아픈 마음을 견딜 수 없어서 먼저 끊었다.",
+    "NextDialogueId": "mindDialogue_Opening_1_1_281",
+    "BGImagePath": "Sprite/CU go home cry",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null,
+    "CharacterDataId": null
+  },
+  {
+    "Id": "mindDialogue_Opening_1_1_281",
+    "Description": "집으로 가야하는데 한참을 차 안에서 눈물 흘렸다.",
+    "NextDialogueId": "mindDialogue_Opening_1_1_282",
+    "BGImagePath": "Sprite/CU go home cry",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null,
+    "CharacterDataId": null
+  },
+  {
+    "Id": "mindDialogue_Opening_1_1_282",
+    "Description": "그렇지만 나름 찝찝했던거만큼은 조금이나마 해결되는 밤이었다.",
+    "NextDialogueId": "mindDialogue_Opening_1_1_283",
+    "BGImagePath": "Sprite/CU go home cry",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null,
+    "CharacterDataId": null
+  },
+  {
+    "Id": "mindDialogue_Opening_1_1_283",
+    "Description": "그렇게 집으로 돌아와 힘든 시간을 보냈다.",
+    "NextDialogueId": "mindDialogue_Opening_1_1_284",
+    "BGImagePath": "Sprite/Before Sleep Empty",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null,
+    "CharacterDataId": null
+  },
+  {
+    "Id": "mindDialogue_Opening_1_1_284",
+    "Description": "깊이 생각하지 않으려 했지만, 자꾸만 가슴 한 켠이 짓눌리듯 아파왔다.",
+    "NextDialogueId": "mindDialogue_Opening_1_1_285",
+    "BGImagePath": "Sprite/Before Sleep Empty",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null,
+    "CharacterDataId": null
+  },
+  {
+    "Id": "mindDialogue_Opening_1_1_285",
+    "Description": "그렇게…잠 못들고 공허한 밤을 보냈다.",
+    "NextDialogueId": "dateDialogue_Opening_1_1_286",
+    "BGImagePath": "Sprite/Dark empty Room",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null,
+    "CharacterDataId": null
+  },
+  {
+    "Id": "mindDialogue_Opening_1_1_287",
+    "Description": "너무나 아프고 외로운 밤이지만, 나는 오히려 결의를 다지는 시간이 되었다.",
+    "NextDialogueId": "mindDialogue_Opening_1_1_288",
+    "BGImagePath": "Sprite/morning empty Room 7-30",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null,
+    "CharacterDataId": null
+  },
+  {
+    "Id": "mindDialogue_Opening_1_1_288",
+    "Description": "누가 보기에도 떳떳한 나를 만들어 그녀 앞에 다시 설 것이다.",
+    "NextDialogueId": "mindDialogue_Opening_1_1_289",
+    "BGImagePath": "Sprite/morning empty Room 7-30",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null,
+    "CharacterDataId": null
+  },
+  {
+    "Id": "mindDialogue_Opening_1_1_289",
+    "Description": "힘들고 아파도, 멈춰있을 때가 아니라는것을 알고 있다.",
+    "NextDialogueId": "mindDialogue_Opening_1_1_290",
+    "BGImagePath": "Sprite/morning empty Room 7-30",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null,
+    "CharacterDataId": null
+  },
+  {
+    "Id": "mindDialogue_Opening_1_1_290",
+    "Description": "이 악물고 버텨 끝내 성장하는 나를 보여 줄 시간이다.",
+    "NextDialogueId": "mindDialogue_Opening_1_1_291",
+    "BGImagePath": "Sprite/moring CheerUp",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null,
+    "CharacterDataId": null
+  },
+  {
+    "Id": "mindDialogue_Opening_1_1_291",
+    "Description": "하루 하루 최선을 다해서, 포기하지 말고 나를 가꾸는 시간이 되자.",
+    "NextDialogueId": null,
+    "BGImagePath": "Sprite/moring CheerUp",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null,
+    "CharacterDataId": null
   }
 ]

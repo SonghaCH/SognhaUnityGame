@@ -10,5 +10,11 @@
     "Description": "4월 6일 월요일 오전 9시 30분",
     "NextDialogueId": "mindDialogue_Opening_1_1_176",
     "BGImagePath": "Sprite/Dark empty Room"
+  },
+  {
+    "Id": "dateDialogue_Opening_1_1_286",
+    "Description": "4월 7일 화요일 오전 7시 30분",
+    "NextDialogueId": "mindDialogue_Opening_1_1_287",
+    "BGImagePath": "Sprite/Dark empty Room"
   }
 ]

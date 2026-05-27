@@ -44,127 +44,43 @@ public class DialogueManager : MonoBehaviour
     /// </summary>
     public void RequestNextDialogue(string currentDialogueId)
     {
-        Debug.Log($"현재 다이얼로그ID:{currentDialogueId}");
+        if (string.IsNullOrEmpty(currentDialogueId)) return;
+
+        Debug.Log($"현재 다이얼로그ID: {currentDialogueId}");
         string nextId = string.Empty;
 
-        // 1. 접두사를 분석하여 해당 데이터 테이블에서 다음 대사 ID를 추적합니다.
+        // 1. 접두사를 한 번만 검사하여 깔끔하게 분기 처리 (switch문 활용)
         if (currentDialogueId.StartsWith("msgDialogue"))
         {
             var data = GameDataManager.Instance.GetMSGDialogueData(currentDialogueId);
             if (data != null) nextId = data.NextDialogueId;
-            Debug.Log($"다음 들어올 ID: {nextId}");
         }
-        else if (currentDialogueId.StartsWith("msgDialogue"))
-        {
-            var data = GameDataManager.Instance.GetNormalDialogueData(currentDialogueId);
-            if (data != null) nextId = data.NextDialogueId;
-            Debug.Log($"다음 들어올 ID: {nextId}");
-        }
-        else if (currentDialogueId.StartsWith("msgDialogue"))
-        {
-            var data = GameDataManager.Instance.GetMindDialogueData(currentDialogueId);
-            if (data != null) nextId = data.NextDialogueId;
-            Debug.Log($"다음 들어올 ID: {nextId}");
-
-        }
-        else if (currentDialogueId.StartsWith("msgDialogue"))
-        {
-            var data = GameDataManager.Instance.GetDateDialogueData(currentDialogueId);
-            if (data != null) nextId = data.NextDialogueId;
-            Debug.Log($"다음 들어올 ID: {nextId}");
-
-        }
-
-
         else if (currentDialogueId.StartsWith("normalDialogue"))
         {
             var data = GameDataManager.Instance.GetNormalDialogueData(currentDialogueId);
             if (data != null) nextId = data.NextDialogueId;
-            Debug.Log($"다음 들어올 ID: {nextId}");
-
         }
-        else if (currentDialogueId.StartsWith("normalDialogue"))
-        {
-            var data = GameDataManager.Instance.GetMSGDialogueData(currentDialogueId);
-            if (data != null) nextId = data.NextDialogueId;
-            Debug.Log($"다음 들어올 ID: {nextId}");
-
-        }
-        else if (currentDialogueId.StartsWith("normalDialogue"))
-        {
-            var data = GameDataManager.Instance.GetMindDialogueData(currentDialogueId);
-            if (data != null) nextId = data.NextDialogueId;
-            Debug.Log($"다음 들어올 ID: {nextId}");
-        }
-        else if (currentDialogueId.StartsWith("normalDialogue"))
-        {
-            var data = GameDataManager.Instance.GetDateDialogueData(currentDialogueId);
-            if (data != null) nextId = data.NextDialogueId;
-            Debug.Log($"다음 들어올 ID: {nextId}");
-        }
-
-
         else if (currentDialogueId.StartsWith("mindDialogue"))
         {
             var data = GameDataManager.Instance.GetMindDialogueData(currentDialogueId);
             if (data != null) nextId = data.NextDialogueId;
-            Debug.Log($"다음 들어올 ID: {nextId}");
         }
-        else if (currentDialogueId.StartsWith("mindDialogue"))
-        {
-            var data = GameDataManager.Instance.GetMSGDialogueData(currentDialogueId);
-            if (data != null) nextId = data.NextDialogueId;
-            Debug.Log($"다음 들어올 ID: {nextId}");
-        }
-        else if (currentDialogueId.StartsWith("mindDialogue"))
-        {
-            var data = GameDataManager.Instance.GetNormalDialogueData(currentDialogueId);
-            if (data != null) nextId = data.NextDialogueId;
-            Debug.Log($"다음 들어올 ID: {nextId}");
-        }
-        else if (currentDialogueId.StartsWith("mindDialogue"))
-        {
-            var data = GameDataManager.Instance.GetDateDialogueData(currentDialogueId);
-            if (data != null) nextId = data.NextDialogueId;
-            Debug.Log($"다음 들어올 ID: {nextId}");
-        }
-
-
-        // [★완벽 교정] 하드코딩 주소를 지우고, 데이터 매니저에서 날짜 데이터의 진짜 NextDialogueId를 읽어옵니다!
         else if (currentDialogueId.StartsWith("dateDialogue"))
         {
             var data = GameDataManager.Instance.GetDateDialogueData(currentDialogueId);
             if (data != null) nextId = data.NextDialogueId;
-            Debug.Log($"다음 들어올 ID: {nextId}");
         }
-
-        else if (currentDialogueId.StartsWith("dateDialogue"))
+        else
         {
-            var data = GameDataManager.Instance.GetMSGDialogueData(currentDialogueId);
-            if (data != null) nextId = data.NextDialogueId;
-            Debug.Log($"다음 들어올 ID: {nextId}");
+            Debug.LogWarning($"[DialogueManager] 알 수 없는 다이얼로그 ID 형식입니다: {currentDialogueId}");
         }
 
-        else if (currentDialogueId.StartsWith("dateDialogue"))
-        {
-            var data = GameDataManager.Instance.GetNormalDialogueData(currentDialogueId);
-            if (data != null) nextId = data.NextDialogueId;
-            Debug.Log($"다음 들어올 ID: {nextId}");
-        }
-
-        else if (currentDialogueId.StartsWith("dateDialogue"))
-        {
-            var data = GameDataManager.Instance.GetMindDialogueData(currentDialogueId);
-            if (data != null) nextId = data.NextDialogueId;
-            Debug.Log($"다음 들어올 ID: {nextId}");
-        }
-
-
+        Debug.Log($"다음 들어올 ID: {nextId}");
 
         // 2. 다음 ID가 없거나 종료 조건("0" 또는 "None")을 만나면 다이얼로그 창을 전체 리셋합니다.
         if (string.IsNullOrEmpty(nextId) || nextId == "0" || nextId.Equals("None", StringComparison.OrdinalIgnoreCase))
         {
-            Debug.Log($"넥스트아이디:{nextId}");
+            Debug.Log($"넥스트아이디: {nextId}");
             Debug.Log("[DialogueManager] 모든 다이얼로그 플로우가 종료되었습니다.");
             CloseAllDialogueUIs();
             return;
