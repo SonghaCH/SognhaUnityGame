@@ -403,7 +403,7 @@
     "Id": "mindDialogue_Opening_1_1_185",
     "Description": "주변 사람들한테도 표가 났는지 동료가 평소와 다른 느낌이라고 말을 해주었다.",
     "NextDialogueId": "normalDialogue_Opening_1_1_186",
-    "BGImagePath": "Sprite/Out Class cry",
+    "BGImagePath": "Sprite/Out Class",
     "SelectionDialogueIdList": null,
     "TexturePath": null,
     "VoicePath": null,
