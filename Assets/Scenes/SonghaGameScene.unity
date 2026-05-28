@@ -354,7 +354,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1218938556033242630, guid: 4c2f011e0c933ad44b82a4224b9bb853, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3977682942094511021, guid: 4c2f011e0c933ad44b82a4224b9bb853, type: 3}
       propertyPath: m_TileSpriteArray.Array.data[0].m_Data

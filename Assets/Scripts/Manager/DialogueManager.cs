@@ -46,6 +46,7 @@ public class DialogueManager : MonoBehaviour
     {
         if (string.IsNullOrEmpty(currentDialogueId)) return;
 
+
         Debug.Log($"현재 다이얼로그ID: {currentDialogueId}");
         string nextId = string.Empty;
 
@@ -87,6 +88,11 @@ public class DialogueManager : MonoBehaviour
         }
 
         // 3. 다음 대사 연출 프로세스를 이어갑니다.
+       if(currentDialogueId == "dateDialogue_Opening_1_1_286")
+        {
+            DaniTechUIManager.Instance.CloseSkipUI();
+        }
+        
         ProcessDialogue(nextId);
     }
 
@@ -95,6 +101,7 @@ public class DialogueManager : MonoBehaviour
     /// </summary>
     private void ProcessDialogue(string dialogueId)
     {
+
         // A. 일반 텍스트 대사창 처리 (normal) -> ContentUI 루트
         if (dialogueId.StartsWith("normalDialogue"))
         {
@@ -234,7 +241,9 @@ public class DialogueManager : MonoBehaviour
         }
 
         BeforeImagePath = nextImagePath;
-
-
     }
+
+    
+
+
 }

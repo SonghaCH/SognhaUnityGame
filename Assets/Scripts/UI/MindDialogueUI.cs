@@ -6,7 +6,7 @@ public class MindDialogueUI : DaniTechUIBase
 {
     [SerializeField] private Text Text_Description;
     [SerializeField] private DaniTechUIButton Btn_Next;
-    [SerializeField] private DaniTechUIButton Btn_Skip;
+    
 
 
     private string _currentDialogueId;
@@ -17,7 +17,6 @@ public class MindDialogueUI : DaniTechUIBase
     private void OnEnable()
     {
         Btn_Next.BindOnClickButtonEvent(OnClick_Next);
-        Btn_Skip.BindOnClickButtonEvent(Onclick_Skip);
     }
 
     /// <summary>
@@ -28,11 +27,7 @@ public class MindDialogueUI : DaniTechUIBase
         DialogueManager.Instance.RequestNextDialogue(_currentDialogueId);
     }
 
-    public void Onclick_Skip()
-    {
-        DaniTechUIManager.Instance.OpenSkipPopupUI();
-        Debug.Log("오프닝 스킵");
-    }
+    
 
     /// <summary>
     /// [매니저 연동 함수] DialogueManager가 내면 나레이션 프리팹을 켜면서 데이터를 주입할 때 호출하는 함수

@@ -17,6 +17,8 @@ public enum DaniTechUIType
     StartUI,
     StartLoadingUI,
     QuitPopupUI,
+
+    SkipUI,
     SkipPopupUI,
     
     MSGDialogueUI,
@@ -63,7 +65,6 @@ public static class DaniTechUIManagerExtension
         uiManager.OpenStartLoadingUI();
         uiManager.OpenStartUI();
 
-
         // 게임 로비 UI를 여기서 오픈해주자 -> uiManager.
         // MainUI도
     }
@@ -78,6 +79,22 @@ public static class DaniTechUIManagerExtension
         }
        
     }
+
+    public static void OpenSkipUI(this DaniTechUIManager uiManager)
+    {
+        var uiBase = uiManager.OpenUI(DaniTechUIRootType.VeryFrontUI, DaniTechUIType.SkipUI, false);
+        if (uiBase == null)
+        {
+            Debug.LogWarning($"UI가 생성되지 않았습니다");
+            return;
+        }
+    }
+    public static void CloseSkipUI(this DaniTechUIManager uiManager)
+    {
+        uiManager.CloseUI(DaniTechUIRootType.VeryFrontUI, DaniTechUIType.SkipUI);
+    }
+
+
 
     public static void OpenSkipPopupUI(this DaniTechUIManager uiManager)
     {

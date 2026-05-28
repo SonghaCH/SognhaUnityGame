@@ -20,6 +20,7 @@ public class StartUI : DaniTechUIBase
         Debug.Log("게임 시작 버튼 ");
         DaniTechUIManager.Instance.CloseContentUI(DaniTechUIType.StartUI);
         DialogueManager.Instance.StartDialogueFlow("dateDialogue_Opening_1_1_100");
+        DaniTechUIManager.Instance.OpenSkipUI();
     }
 
     public void OnClick_OpenOption()
