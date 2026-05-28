@@ -16,5 +16,11 @@
     "Name": "현우",
     "Description": "교육을 같이 듣는 동료 이다.",
     "characterData": "현우"
+  },
+  {
+    "Id": "character_Jooyoung_01",
+    "Name": "누나",
+    "Description": "플레이어의 누나이다",
+    "characterData": "누나"
   }
 ]

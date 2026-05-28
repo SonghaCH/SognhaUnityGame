@@ -20,8 +20,18 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 15665982133a56746b5d2a8ead92d1b1
+    m_Address: Sprite/Sister2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 17c1b5a119687cd4985f68bef54df781
     m_Address: Sprite/Before Sleep
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1eec4bfec7fe6eb43902f7e820e32786
+    m_Address: Sprite/morning Emptyroom
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -32,6 +42,11 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 53d63c5dcfc184347a438836dba38592
     m_Address: Sprite/Before Sleep Empty
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6c0c806d112fcd044bbb03157d0a7685
+    m_Address: Sprite/Sister1
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -60,6 +75,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8b34b45cd596a5f4aab6f8ab2dcdc0ed
+    m_Address: Sprite/Sister3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 8cc0da9a3a8f58f4bb79a0b5eb40c516
     m_Address: Sprite/CU work
     m_ReadOnly: 0
@@ -77,6 +97,26 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 9e24de396c98ab943a2878d083bbd071
     m_Address: Sprite/Photo amusemenpark
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9e454dc571435604088b2529da2c805b
+    m_Address: Sprite/ProfileIcorn
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a2246221bfd6d5b4e863648d1c673049
+    m_Address: Sprite/cheer up Sister
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a962cc7201a356a45af10fb172c7db9e
+    m_Address: Sprite/Door
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: af56216ca89f7a04097617440a703861
+    m_Address: Sprite/Sister4
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0

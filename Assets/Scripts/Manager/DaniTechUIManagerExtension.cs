@@ -82,7 +82,7 @@ public static class DaniTechUIManagerExtension
 
     public static void OpenSkipUI(this DaniTechUIManager uiManager)
     {
-        var uiBase = uiManager.OpenUI(DaniTechUIRootType.VeryFrontUI, DaniTechUIType.SkipUI, false);
+        var uiBase = uiManager.OpenPopupUI(DaniTechUIType.SkipUI);
         if (uiBase == null)
         {
             Debug.LogWarning($"UI가 생성되지 않았습니다");

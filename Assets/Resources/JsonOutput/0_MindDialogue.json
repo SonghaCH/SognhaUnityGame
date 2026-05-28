@@ -772,7 +772,7 @@
   {
     "Id": "mindDialogue_Opening_1_1_290",
     "Description": "이 악물고 버텨 끝내 성장하는 나를 보여 줄 시간이다.",
-    "NextDialogueId": "mindDialogue_Opening_1_1_291",
+    "NextDialogueId": "mindDialogue_Opening_1_1_292",
     "BGImagePath": "Sprite/moring CheerUp",
     "SelectionDialogueIdList": null,
     "TexturePath": null,
@@ -782,8 +782,68 @@
   {
     "Id": "mindDialogue_Opening_1_1_291",
     "Description": "하루 하루 최선을 다해서, 포기하지 말고 나를 가꾸는 시간이 되자.",
-    "NextDialogueId": null,
+    "NextDialogueId": "mindDialogue_Opening_1_1_292",
     "BGImagePath": "Sprite/moring CheerUp",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null,
+    "CharacterDataId": null
+  },
+  {
+    "Id": "mindDialogue_Opening_1_1_292",
+    "Description": "(문이 벌컥 열리며)",
+    "NextDialogueId": "normalDialogue_Opening_1_1_293",
+    "BGImagePath": "Sprite/moring CheerUp",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null,
+    "CharacterDataId": null
+  },
+  {
+    "Id": "mindDialogue_Opening_1_1_303",
+    "Description": "완성된 나를 위해서는 사소한 거라도 성실히 해야한다.",
+    "NextDialogueId": "mindDialogue_Opening_1_1_304",
+    "BGImagePath": "Sprite/morning Emptyroom",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null,
+    "CharacterDataId": null
+  },
+  {
+    "Id": "mindDialogue_Opening_1_1_304",
+    "Description": "이제 서둘러 나갈 준비를 해야겠다.",
+    "NextDialogueId": "mindDialogue_Opening_1_1_305",
+    "BGImagePath": "Sprite/morning Emptyroom",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null,
+    "CharacterDataId": null
+  },
+  {
+    "Id": "mindDialogue_Opening_1_1_305",
+    "Description": "준비를 마치고 문 앞에 서 있다.",
+    "NextDialogueId": "mindDialogue_Opening_1_1_306",
+    "BGImagePath": "Sprite/Door",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null,
+    "CharacterDataId": null
+  },
+  {
+    "Id": "mindDialogue_Opening_1_1_306",
+    "Description": "이제 이 문을 나가는 순간부터 나는 완성된 나로 다시 태어난다.",
+    "NextDialogueId": "mindDialogue_Opening_1_1_307",
+    "BGImagePath": "Sprite/Door",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null,
+    "CharacterDataId": null
+  },
+  {
+    "Id": "mindDialogue_Opening_1_1_307",
+    "Description": null,
+    "NextDialogueId": null,
+    "BGImagePath": "Sprite/Door",
     "SelectionDialogueIdList": null,
     "TexturePath": null,
     "VoicePath": null,

@@ -20,8 +20,9 @@ public class SkipPopupUI : DaniTechUIBase
 
         DaniTechUIManager.Instance.ClosePopupUI(DaniTechUIType.SkipPopupUI);
         
-        DialogueManager.Instance.StartDialogueFlow("dateDialogue_Opening_1_1_286");
-
+        DialogueManager.Instance.StartDialogueFlow("mindDialogue_Opening_1_1_303");
+        
+        DaniTechUIManager.Instance.CloseContentUI(DaniTechUIType.MSGDialogueUI);
         DaniTechUIManager.Instance.CloseSkipUI();
 
     }

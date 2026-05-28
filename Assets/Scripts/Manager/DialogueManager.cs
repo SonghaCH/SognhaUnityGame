@@ -88,7 +88,7 @@ public class DialogueManager : MonoBehaviour
         }
 
         // 3. 다음 대사 연출 프로세스를 이어갑니다.
-       if(currentDialogueId == "dateDialogue_Opening_1_1_286")
+       if(currentDialogueId == "mindDialogue_Opening_1_1_303")
         {
             DaniTechUIManager.Instance.CloseSkipUI();
         }

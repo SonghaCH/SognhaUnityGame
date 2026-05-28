@@ -235,8 +235,8 @@ Transform:
   - {fileID: 3320751502206838040}
   - {fileID: 4115949778841993455}
   - {fileID: 7894534227461556983}
-  - {fileID: 6809421655805360494}
   - {fileID: 5127179420995164239}
+  - {fileID: 6809421655805360494}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &3248428462867649156
@@ -315,7 +315,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 300
+  m_SortingOrder: 400
   m_TargetDisplay: 0
 --- !u!114 &8989796768798199928
 MonoBehaviour:
