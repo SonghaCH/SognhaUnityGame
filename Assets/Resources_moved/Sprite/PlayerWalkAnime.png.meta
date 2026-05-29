@@ -1,0 +1,561 @@
+fileFormatVersion: 2
+guid: cdfa8fe6fc5fabc42ac0989b543c41ef
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2080358656436328349
+    second: PlayerWalkAnime_0
+  - first:
+      213: -8052802768806883870
+    second: PlayerWalkAnime_1
+  - first:
+      213: 5774208897911441112
+    second: PlayerWalkAnime_2
+  - first:
+      213: 8095148790180177393
+    second: PlayerWalkAnime_3
+  - first:
+      213: -8761487175309993785
+    second: PlayerWalkAnime_4
+  - first:
+      213: -7260192329088969384
+    second: PlayerWalkAnime_5
+  - first:
+      213: -1003024444706734904
+    second: PlayerWalkAnime_6
+  - first:
+      213: 1056764853621466486
+    second: PlayerWalkAnime_7
+  - first:
+      213: 5658821776498720675
+    second: PlayerWalkAnime_8
+  - first:
+      213: 7313442375184090100
+    second: PlayerWalkAnime_9
+  - first:
+      213: 718479235482321540
+    second: PlayerWalkAnime_10
+  - first:
+      213: -9099858051257126701
+    second: PlayerWalkAnime_11
+  - first:
+      213: -3261253454552933110
+    second: PlayerWalkAnime_12
+  - first:
+      213: -2653687750823589128
+    second: PlayerWalkAnime_13
+  - first:
+      213: 226202693216018148
+    second: PlayerWalkAnime_14
+  - first:
+      213: -8878996729366723067
+    second: PlayerWalkAnime_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 8.6
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PlayerWalkAnime_0
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 740
+        width: 82
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d97db420d2beedc10800000000000000
+      internalID: 2080358656436328349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerWalkAnime_1
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 742
+        width: 83
+        height: 169
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2edcbfe1c82be3090800000000000000
+      internalID: -8052802768806883870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerWalkAnime_4
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 522
+        width: 82
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c8d18b95d1f86680800000000000000
+      internalID: -8761487175309993785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerWalkAnime_5
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 522
+        width: 83
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 855d2a7fa8d9e3b90800000000000000
+      internalID: -7260192329088969384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerWalkAnime_9
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 296
+        width: 85
+        height: 178
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f3032a87119e7560800000000000000
+      internalID: 7313442375184090100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerWalkAnime_10
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 296
+        width: 85
+        height: 178
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4820b69de0d88f900800000000000000
+      internalID: 718479235482321540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerWalkAnime_13
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 57
+        width: 85
+        height: 181
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8faca5bec053c2bd0800000000000000
+      internalID: -2653687750823589128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerWalkAnime_14
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 54
+        width: 85
+        height: 184
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ee9068a622a32300800000000000000
+      internalID: 226202693216018148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerWalkAnime_2
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 742
+        width: 82
+        height: 169
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1450e9c66bf23f4a9ad2e73a92d5e4e
+      internalID: 5774208897911441112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerWalkAnime_3
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 740
+        width: 86
+        height: 172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5176528660ca573458344da772b9080e
+      internalID: 8095148790180177393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerWalkAnime_6
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 522
+        width: 83
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a412a2c4be5bf7741a615b40d711641a
+      internalID: -1003024444706734904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerWalkAnime_7
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 522
+        width: 82
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8ce1394b06187749a6b2953b0cc4fd4
+      internalID: 1056764853621466486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerWalkAnime_8
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 296
+        width: 85
+        height: 178
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3dfe233fce203d42b6eb227363dcc93
+      internalID: 5658821776498720675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerWalkAnime_11
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 296
+        width: 85
+        height: 178
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fb4fa1c2e53dd44d895f2a4002ddd7f
+      internalID: -9099858051257126701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerWalkAnime_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 133
+        height: 238
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47568ab2ca0870d43af9f37c0261d023
+      internalID: -3261253454552933110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerWalkAnime_15
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 0
+        width: 132
+        height: 238
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5699815861eabf94a8de4fcebb04323f
+      internalID: -8878996729366723067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: ec12051f0d59c4e4ca982af8b68167f9
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      PlayerWalkAnime_0: 2080358656436328349
+      PlayerWalkAnime_1: -8052802768806883870
+      PlayerWalkAnime_10: 718479235482321540
+      PlayerWalkAnime_11: -9099858051257126701
+      PlayerWalkAnime_12: -3261253454552933110
+      PlayerWalkAnime_13: -2653687750823589128
+      PlayerWalkAnime_14: 226202693216018148
+      PlayerWalkAnime_15: -8878996729366723067
+      PlayerWalkAnime_2: 5774208897911441112
+      PlayerWalkAnime_3: 8095148790180177393
+      PlayerWalkAnime_4: -8761487175309993785
+      PlayerWalkAnime_5: -7260192329088969384
+      PlayerWalkAnime_6: -1003024444706734904
+      PlayerWalkAnime_7: 1056764853621466486
+      PlayerWalkAnime_8: 5658821776498720675
+      PlayerWalkAnime_9: 7313442375184090100
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

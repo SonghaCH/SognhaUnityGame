@@ -28,6 +28,8 @@ public enum DaniTechUIType
     Slot_OtherUI,
     Slot_DateBoxUI,
 
+    MainUI,
+
 
 
 
@@ -232,7 +234,21 @@ public static class DaniTechUIManagerExtension
         uiManager.CloseUI(DaniTechUIRootType.PopupUI, DaniTechUIType.ChoicePopupUI);
     }
 
-    
+
+    public static void OpenMainUI(this DaniTechUIManager uiManager)
+    {
+        var uiBase = uiManager.OpenUI(DaniTechUIRootType.MainUI, DaniTechUIType.MainUI, false);
+        if (uiBase == null)
+        {
+            Debug.LogWarning($"UI가 생성되지 않았습니다");
+            return;
+        }
+    }
+
+    public static void CloseMainUI(this DaniTechUIManager uiManager)
+    {
+        uiManager.CloseUI(DaniTechUIRootType.MainUI, DaniTechUIType.MainUI);
+    }
 
 
 
