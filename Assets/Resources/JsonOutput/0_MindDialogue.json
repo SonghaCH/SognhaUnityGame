@@ -842,7 +842,47 @@
   {
     "Id": "mindDialogue_Opening_1_1_307",
     "Description": null,
+    "NextDialogueId": "mindDialogue_Opening_1_1_307(2)",
+    "BGImagePath": "Sprite/Door",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null,
+    "CharacterDataId": null
+  },
+  {
+    "Id": "mindDialogue_Opening_1_1_307(2)",
+    "Description": null,
     "NextDialogueId": null,
+    "BGImagePath": "Sprite/Door",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null,
+    "CharacterDataId": null
+  },
+  {
+    "Id": "mindDialogue_Opening_1_1_307_2",
+    "Description": "좋다! 모두 준비 되었고, 파이팅이다!",
+    "NextDialogueId": "mindDialogue_Opening_1_1_307_2(2)",
+    "BGImagePath": "Sprite/Door",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null,
+    "CharacterDataId": null
+  },
+  {
+    "Id": "mindDialogue_Opening_1_1_307_2(2)",
+    "Description": null,
+    "NextDialogueId": null,
+    "BGImagePath": "Sprite/Door",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null,
+    "CharacterDataId": null
+  },
+  {
+    "Id": "mindDialogue_Opening_1_1_307_3",
+    "Description": "앗! 아직 준비가 안되었다. 까먹은게 있는건가?",
+    "NextDialogueId": "mindDialogue_Opening_1_1_306",
     "BGImagePath": "Sprite/Door",
     "SelectionDialogueIdList": null,
     "TexturePath": null,

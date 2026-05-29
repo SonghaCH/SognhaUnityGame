@@ -20,6 +20,8 @@ public enum DaniTechUIType
 
     SkipUI,
     SkipPopupUI,
+
+    ChoicePopupUI,
     
     MSGDialogueUI,
     Slot_MyChatUI,
@@ -185,6 +187,20 @@ public static class DaniTechUIManagerExtension
         uiManager.CloseUI(DaniTechUIRootType.ContentUI, DaniTechUIType.NormalDialogueUI);
     }
 
+    public static void OpenMindDialogueUI(this DaniTechUIManager uiManager)
+    {
+        var uiBase = uiManager.OpenUI(DaniTechUIRootType.VeryFrontUI, DaniTechUIType.MindDialogueUI, false);
+        if (uiBase == null)
+        {
+            Debug.LogWarning($"UI가 생성되지 않았습니다");
+            return;
+        }
+    }
+    public static void CloseMindDialogueUI(this DaniTechUIManager uiManager)
+    {
+        uiManager.CloseUI(DaniTechUIRootType.VeryFrontUI, DaniTechUIType.MindDialogueUI);
+    }
+
     public static void OpenBackgroundUI(this DaniTechUIManager uiManager)
     {
         var uiBase = uiManager.OpenUI(DaniTechUIRootType.BackgroundUI, DaniTechUIType.BackgroundUI, false);
@@ -194,6 +210,29 @@ public static class DaniTechUIManagerExtension
             return;
         }
     }
+    public static void CloseBackgroundUI(this DaniTechUIManager uiManager)
+    {
+        uiManager.CloseUI(DaniTechUIRootType.BackgroundUI, DaniTechUIType.BackgroundUI);
+    }
+
+
+
+    public static void OpenChoicePopupUI(this DaniTechUIManager uiManager)
+    {
+        var uiBase = uiManager.OpenPopupUI(DaniTechUIType.ChoicePopupUI);
+        if (uiBase == null)
+        {
+            Debug.LogWarning($"UI가 생성되지 않았습니다");
+            return;
+        }
+    }
+
+    public static void CloseChoiceUI(this DaniTechUIManager uiManager)
+    {
+        uiManager.CloseUI(DaniTechUIRootType.PopupUI, DaniTechUIType.ChoicePopupUI);
+    }
+
+    
 
 
 

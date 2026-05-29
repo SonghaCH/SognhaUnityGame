@@ -87,12 +87,25 @@ public class DialogueManager : MonoBehaviour
             return;
         }
 
-        // 3. 다음 대사 연출 프로세스를 이어갑니다.
-       if(currentDialogueId == "mindDialogue_Opening_1_1_303")
+
+        if (currentDialogueId == "mindDialogue_Opening_1_1_303")
         {
             DaniTechUIManager.Instance.CloseSkipUI();
         }
+
+        if (currentDialogueId == "mindDialogue_Opening_1_1_307")
+        {
+            DaniTechUIManager.Instance.OpenChoicePopupUI();
+        }
+
+        if (currentDialogueId == "mindDialogue_Opening_1_1_307_2")
+        {
+            DaniTechUIManager.Instance.OpenStartLoadingUI();
+            DaniTechUIManager.Instance.CloseBackgroundUI();
+            DaniTechUIManager.Instance.CloseMindDialogueUI();
+        }
         
+
         ProcessDialogue(nextId);
     }
 
