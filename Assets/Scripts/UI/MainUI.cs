@@ -31,5 +31,6 @@ public class MainUI : DaniTechUIBase
     private void Onclick_Map()
     {
         Debug.Log("지도 열기");
+        DaniTechUIManager.Instance.OpenMapPopupUI();
     }
 }

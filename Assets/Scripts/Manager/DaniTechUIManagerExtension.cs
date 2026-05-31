@@ -38,6 +38,7 @@ public enum DaniTechUIType
     MindDialogueUI,
     
     BackgroundUI,
+    MapPopupUI,
 
 
     DNSimplePopup,
@@ -248,6 +249,22 @@ public static class DaniTechUIManagerExtension
     public static void CloseMainUI(this DaniTechUIManager uiManager)
     {
         uiManager.CloseUI(DaniTechUIRootType.MainUI, DaniTechUIType.MainUI);
+    }
+    
+    public static void OpenMapPopupUI(this DaniTechUIManager uiManager)
+    {
+        var uiBase = uiManager.OpenPopupUI(DaniTechUIType.MapPopupUI);
+        if (uiBase == null)
+        {
+            Debug.LogWarning($"UI가 생성되지 않았습니다");
+            return;
+        }
+
+    }
+
+    public static void CloseMapPopupUI(this DaniTechUIManager uiManager)
+    {
+        uiManager.CloseUI(DaniTechUIRootType.PopupUI, DaniTechUIType.MapPopupUI);
     }
 
 
