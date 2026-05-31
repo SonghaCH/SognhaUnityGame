@@ -12,8 +12,9 @@ GameObject:
   - component: {fileID: 146291684132302154}
   - component: {fileID: 4916592305303192364}
   - component: {fileID: 4098403091099529038}
+  - component: {fileID: 2733438726806245891}
   m_Layer: 5
-  m_Name: Button (Legacy)
+  m_Name: Button_Exit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -121,6 +122,22 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &2733438726806245891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 187488440086613293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60cea8d7f001f5c4d83c1fa9e2c5b1e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DaniTechUIButton
+  Button_Base: {fileID: 4098403091099529038}
+  Text_Base: {fileID: 0}
+  Image_Base: {fileID: 0}
+  Image_Select: {fileID: 0}
 --- !u!1 &913795884383980264
 GameObject:
   m_ObjectHideFlags: 0
@@ -211,6 +228,7 @@ GameObject:
   - component: {fileID: 98821387882223707}
   - component: {fileID: 5217608597843978487}
   - component: {fileID: 5911382625025512887}
+  - component: {fileID: 1843674076258515488}
   m_Layer: 5
   m_Name: Button_Help
   m_TagString: Untagged
@@ -320,6 +338,22 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1843674076258515488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1613067365246182850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60cea8d7f001f5c4d83c1fa9e2c5b1e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DaniTechUIButton
+  Button_Base: {fileID: 5911382625025512887}
+  Text_Base: {fileID: 0}
+  Image_Base: {fileID: 0}
+  Image_Select: {fileID: 0}
 --- !u!1 &3053216953922144985
 GameObject:
   m_ObjectHideFlags: 0
@@ -562,6 +596,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6526526222534278990}
+  - component: {fileID: 1972345584917009935}
   m_Layer: 5
   m_Name: LuckyDrawUI
   m_TagString: Untagged
@@ -593,6 +628,22 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1972345584917009935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6344047188124721785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 963623c24ebbd6842873d0b3c849598d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LuckyDrawUI
+  Btn_Exit: {fileID: 2733438726806245891}
+  Btn_LuckyPlay: {fileID: 1700657733445365170}
+  Btn_Help: {fileID: 1843674076258515488}
+  Text_Money: {fileID: 748242444407820460}
 --- !u!1 &6721918817148667047
 GameObject:
   m_ObjectHideFlags: 0
@@ -917,6 +968,7 @@ GameObject:
   - component: {fileID: 8340692641878456797}
   - component: {fileID: 1898842292255388519}
   - component: {fileID: 7589614165336410873}
+  - component: {fileID: 1700657733445365170}
   m_Layer: 5
   m_Name: Button_Lucky
   m_TagString: Untagged
@@ -1026,3 +1078,19 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1700657733445365170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8808847569574371648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60cea8d7f001f5c4d83c1fa9e2c5b1e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DaniTechUIButton
+  Button_Base: {fileID: 7589614165336410873}
+  Text_Base: {fileID: 0}
+  Image_Base: {fileID: 0}
+  Image_Select: {fileID: 0}

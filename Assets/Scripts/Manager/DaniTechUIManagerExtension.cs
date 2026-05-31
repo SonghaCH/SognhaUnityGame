@@ -39,7 +39,13 @@ public enum DaniTechUIType
     
     BackgroundUI,
     MapPopupUI,
+
+    LuckyDrawUI,
+
+
     LuckyDrawHelpPopupUI,
+
+    LuckyDrawingPopupUI,
 
 
     DNSimplePopup,
@@ -285,6 +291,43 @@ public static class DaniTechUIManagerExtension
         uiManager.CloseUI(DaniTechUIRootType.PopupUI, DaniTechUIType.LuckyDrawHelpPopupUI);
     }
 
+
+
+    public static void OpenLuckyDrawingPopupUI(this DaniTechUIManager uiManager)
+    {
+        var uiBase = uiManager.OpenPopupUI(DaniTechUIType.LuckyDrawingPopupUI);
+        if (uiBase == null)
+        {
+            Debug.LogWarning($"UI가 생성되지 않았습니다");
+            return;
+        }
+
+    }
+
+
+
+
+    public static void CloseLuckyDrawingPopupUI(this DaniTechUIManager uiManager)
+    {
+        uiManager.CloseUI(DaniTechUIRootType.PopupUI, DaniTechUIType.LuckyDrawingPopupUI);
+    }
+
+
+
+    public static void OpenLuckyDrawUI(this DaniTechUIManager uiManager)
+    {
+        var uiBase = uiManager.OpenUI(DaniTechUIRootType.VeryFrontUI, DaniTechUIType.LuckyDrawUI, false);
+        if (uiBase == null)
+        {
+            Debug.LogWarning($"UI가 생성되지 않았습니다");
+            return;
+        }
+    }
+
+    public static void CloseLuckyDrawUI(this DaniTechUIManager uiManager)
+    {
+        uiManager.CloseUI(DaniTechUIRootType.VeryFrontUI, DaniTechUIType.LuckyDrawUI);
+    }
 
 
 
