@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: e584827da32a4444d97e4e17aaba7a94
+guid: be502716d65b08740aa296e782eedd5b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1618763856059899460
-    second: LuckyDraw_0
+      213: -7071355866087331832
+    second: X button_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -126,23 +126,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: LuckyDraw_0
+      name: X button_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1024
-        height: 627
+        x: 382
+        y: 156
+        width: 255
+        height: 251
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cb1ee4879def889e0800000000000000
-      internalID: -1618763856059899460
+      spriteID: 8086d713e4f7ddd90800000000000000
+      internalID: -7071355866087331832
       vertices: []
       indices: 
       edges: []
@@ -151,7 +151,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 7f20b586c8c4b324bb153c4c6948f8ae
     internalID: 0
     vertices: []
     indices: 
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      LuckyDraw_0: -1618763856059899460
+      X button_0: -7071355866087331832
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
