@@ -17,20 +17,24 @@ public class LuckyDrawUI : DaniTechUIBase
 
     private void OnClick_Exit()
     {
-        Debug.Log("sfasfsaf");
         DaniTechUIManager.Instance.CloseLuckyDrawUI();
     }
 
     private void OnClick_LuckyPlay()
     {
-        Debug.Log("시작버튼 누름");
-        DaniTechUIManager.Instance.OpenLuckyDrawingPopupUI();
+        // 횟수 체크
+        if (TimeManager.Instance.CanDoActivity("activity_LuckyDraw_01"))
+        {
+            DaniTechUIManager.Instance.OpenLuckyDrawingPopupUI();
+        }
+        else
+        {
+            DaniTechUIManager.Instance.OpenMiniPopupUI("금일 복권 추첨 최대 횟수 도달");
+        }
     }
 
     private void OnClick_Help()
     {
         DaniTechUIManager.Instance.OpenLuckyDrawHelpPopupUI();
     }
-
-
 }

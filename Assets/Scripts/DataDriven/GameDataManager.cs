@@ -53,9 +53,11 @@ public class GameDataManager : MonoBehaviour
     public Dictionary<string, MindDialogueData> MindDialoguedataList { get; private set; } = new Dictionary<string, MindDialogueData>();
     public Dictionary<string, MSGDialogueData> MSGDialogueDataList { get; private set; } = new Dictionary<string, MSGDialogueData>();
     public Dictionary<string, NormalDialogueData> NormalDialogueDataList { get; private set; } = new Dictionary<string, NormalDialogueData>();
+    public Dictionary<string, ActivityData> ActivityDataList { get; private set; } = new Dictionary<string, ActivityData>();
 
 
-    
+
+
 
 
 
@@ -179,8 +181,13 @@ public class GameDataManager : MonoBehaviour
         NormalDialogueDataList = LoadData<NormalDialogueData>(jsonPath);
     }
 
+    public void LoadActivityData(string jsonPath)
+    {
+        ActivityDataList = LoadData<ActivityData>(jsonPath);
+    }
 
-    
+
+
 
 
 
@@ -295,8 +302,12 @@ public class GameDataManager : MonoBehaviour
         return NormalDialogueDataList.TryGetValue(dataId, out var data) ? data : null;
     }
 
+    public ActivityData GetActivityData(string dataId)
+    {
+        if (ActivityDataList == null || string.IsNullOrEmpty(dataId)) return null;
 
+        return ActivityDataList.TryGetValue(dataId, out var data) ? data : null;
+    }
 
-    
 
 }

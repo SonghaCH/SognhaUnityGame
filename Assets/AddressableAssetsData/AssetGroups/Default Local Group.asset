@@ -125,6 +125,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d52d4c281276fee45b8b9f8b43b51d30
+    m_Address: Sprite/Luckyball 1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: e22b2813fde79714c97fb5bfea580b7c
     m_Address: Sprite/Out Class
     m_ReadOnly: 0

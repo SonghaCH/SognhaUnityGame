@@ -150,6 +150,20 @@ public class NormalDialogueData : GameDataBase
 
 }
 
+[System.Serializable]
+public class ActivityData : GameDataBase
+{
+    public string Name;
+    public int TimeCost;
+    public float IntGain;
+    public float HealthGain;
+    public float CharmGain;
+    public float ChangeStress;
+    public int MoneyCost;
+    public int MoneyGain;
+
+}
+
 
 
 

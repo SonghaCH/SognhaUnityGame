@@ -30,6 +30,7 @@ public class GameUtil
         GameDataManager.Instance.LoadMindDialoguedata("0_MindDialogue");
         GameDataManager.Instance.LoadMSGDialogueData("0_MSGDialogue");
         GameDataManager.Instance.LoadNormalDialogueData("0_NormalDialogue");
+        GameDataManager.Instance.LoadActivityData("0_Activity");
 
 
 

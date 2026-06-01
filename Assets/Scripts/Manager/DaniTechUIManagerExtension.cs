@@ -41,11 +41,13 @@ public enum DaniTechUIType
     MapPopupUI,
 
     LuckyDrawUI,
+    LuckyDrawResultPopupUI,
 
 
     LuckyDrawHelpPopupUI,
 
     LuckyDrawingPopupUI,
+    MiniPopupUI,
 
 
     DNSimplePopup,
@@ -304,13 +306,57 @@ public static class DaniTechUIManagerExtension
 
     }
 
-
-
-
     public static void CloseLuckyDrawingPopupUI(this DaniTechUIManager uiManager)
     {
         uiManager.CloseUI(DaniTechUIRootType.PopupUI, DaniTechUIType.LuckyDrawingPopupUI);
     }
+
+
+    public static void OpenLuckyDrawResultPopupUI(this DaniTechUIManager uiManager, int ballIndex, int prize, string colorName)
+    {
+        var uiBase = uiManager.OpenPopupUI(DaniTechUIType.LuckyDrawResultPopupUI);
+        if (uiBase == null)
+        {
+            Debug.LogWarning("UI가 생성되지 않았습니다");
+            return;
+        }
+
+        // [핵심] 생성된 UI에 데이터 전달하기
+        // uiBase를 LuckyDrawResultPopupUI 타입으로 변환(Cast)해서 SetResult를 호출합니다.
+        var resultPopup = uiBase as LuckyDrawResultPopupUI;
+        if (resultPopup != null)
+        {
+            resultPopup.SetResult(ballIndex, prize, colorName);
+        }
+    }
+
+    public static void CloseLuckyDrawResultPopupUI(this DaniTechUIManager uiManager)
+    {
+        uiManager.CloseUI(DaniTechUIRootType.PopupUI, DaniTechUIType.LuckyDrawResultPopupUI);
+    }
+
+
+    public static void OpenMiniPopupUI(this DaniTechUIManager uiManager, string message)
+    {
+        var uiBase = uiManager.OpenPopupUI(DaniTechUIType.MiniPopupUI);
+        if (uiBase == null)
+        {
+            Debug.LogWarning("UI가 생성되지 않았습니다");
+            return;
+        }
+
+        // [핵심] 생성된 팝업이 우리가 만든 NotificationPopupUI 타입이라면 메시지 전달!
+        if (uiBase is MiniPopupUI miniPopup)
+        {
+            miniPopup.SetMessage(message);
+        }
+    }
+    public static void CloseMiniPopupUI(this DaniTechUIManager uiManager)
+    {
+        uiManager.CloseUI(DaniTechUIRootType.PopupUI, DaniTechUIType.MiniPopupUI);
+    }
+
+
 
 
 
@@ -328,7 +374,6 @@ public static class DaniTechUIManagerExtension
     {
         uiManager.CloseUI(DaniTechUIRootType.VeryFrontUI, DaniTechUIType.LuckyDrawUI);
     }
-
 
 
 
