@@ -53,6 +53,9 @@ public enum DaniTechUIType
     CUHelpPopupUI,
     CUWorkingPopupUI,
 
+
+    AcademyUI,
+
     MiniPopupUI,
 
 
@@ -483,6 +486,21 @@ public static class DaniTechUIManagerExtension
     public static void CloseCUWorkingPopupUI(this DaniTechUIManager uiManager)
     {
         uiManager.CloseUI(DaniTechUIRootType.PopupUI, DaniTechUIType.CUWorkingPopupUI);
+    }
+
+    public static void OpenAcademyUI(this DaniTechUIManager uiManager)
+    {
+        var uiBase = uiManager.OpenUI(DaniTechUIRootType.VeryFrontUI, DaniTechUIType.AcademyUI, false);
+        if (uiBase == null)
+        {
+            Debug.LogWarning($"UI가 생성되지 않았습니다");
+            return;
+        }
+    }
+
+    public static void CloseAcademyUI(this DaniTechUIManager uiManager)
+    {
+        uiManager.CloseUI(DaniTechUIRootType.VeryFrontUI, DaniTechUIType.AcademyUI);
     }
 
 
