@@ -62,7 +62,7 @@ public class MainUI : DaniTechUIBase
     private void Onclick_Option()
     {
         Debug.Log("설정 열기");
-        DaniTechUIManager.Instance.OpenGymUI();
+        DaniTechUIManager.Instance.OpenCUUI();
     }
 
     private void Onclick_Map()

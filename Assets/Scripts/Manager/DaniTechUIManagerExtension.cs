@@ -49,6 +49,10 @@ public enum DaniTechUIType
     GymHelpPopupUI,
     GymExercisingPopupUI,
 
+    CUUI,
+    CUHelpPopupUI,
+    CUWorkingPopupUI,
+
     MiniPopupUI,
 
 
@@ -415,8 +419,7 @@ public static class DaniTechUIManagerExtension
 
     public static void OpenGymExercisingPopupUI(this DaniTechUIManager uiManager)
     {
-        var uiBase = uiManager.OpenPopupUI(DaniTechUIType.GymExercisingPopupUI
-);
+        var uiBase = uiManager.OpenPopupUI(DaniTechUIType.GymExercisingPopupUI);
         if (uiBase == null)
         {
             Debug.LogWarning($"UI가 생성되지 않았습니다");
@@ -429,6 +432,62 @@ public static class DaniTechUIManagerExtension
     {
         uiManager.CloseUI(DaniTechUIRootType.PopupUI, DaniTechUIType.GymExercisingPopupUI);
     }
+
+
+
+
+
+    public static void OpenCUUI(this DaniTechUIManager uiManager)
+    {
+        var uiBase = uiManager.OpenUI(DaniTechUIRootType.VeryFrontUI, DaniTechUIType.CUUI, false);
+        if (uiBase == null)
+        {
+            Debug.LogWarning($"UI가 생성되지 않았습니다");
+            return;
+        }
+    }
+
+    public static void CloseCUUI(this DaniTechUIManager uiManager)
+    {
+        uiManager.CloseUI(DaniTechUIRootType.VeryFrontUI, DaniTechUIType.CUUI);
+    }
+
+    public static void OpenCUHelpPopupUI(this DaniTechUIManager uiManager)
+    {
+        var uiBase = uiManager.OpenPopupUI(DaniTechUIType.CUHelpPopupUI);
+        if (uiBase == null)
+        {
+            Debug.LogWarning($"UI가 생성되지 않았습니다");
+            return;
+        }
+
+    }
+
+    public static void CloseCUHelpPopupUI(this DaniTechUIManager uiManager)
+    {
+        uiManager.CloseUI(DaniTechUIRootType.PopupUI, DaniTechUIType.CUHelpPopupUI);
+    }
+
+
+    public static void OpenCUWorkingPopupUI(this DaniTechUIManager uiManager)
+    {
+        var uiBase = uiManager.OpenPopupUI(DaniTechUIType.CUWorkingPopupUI);
+        if (uiBase == null)
+        {
+            Debug.LogWarning($"UI가 생성되지 않았습니다");
+            return;
+        }
+
+    }
+
+    public static void CloseCUWorkingPopupUI(this DaniTechUIManager uiManager)
+    {
+        uiManager.CloseUI(DaniTechUIRootType.PopupUI, DaniTechUIType.CUWorkingPopupUI);
+    }
+
+
+
+
 
 
     //public static void OpenDialogueUI(this DaniTechUIManager uiManager, string startDialogueId)
