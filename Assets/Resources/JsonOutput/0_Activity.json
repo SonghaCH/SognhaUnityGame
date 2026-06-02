@@ -2,7 +2,7 @@
   {
     "Id": "activity_Gym_01",
     "Name": "헬스장",
-    "TimeCost(min)": 180,
+    "TimeCost": 180,
     "IntGain": 0,
     "HealthGain": 30,
     "CharmGain": 10,
@@ -13,7 +13,7 @@
   {
     "Id": "activity_Academy_01",
     "Name": "학원",
-    "TimeCost(min)": 480,
+    "TimeCost": 480,
     "IntGain": 50,
     "HealthGain": 0,
     "CharmGain": 5,
@@ -24,7 +24,7 @@
   {
     "Id": "activity_LuckyDraw_01",
     "Name": "복권방",
-    "TimeCost(min)": 60,
+    "TimeCost": 60,
     "IntGain": 0,
     "HealthGain": 0,
     "CharmGain": 0,
@@ -35,7 +35,7 @@
   {
     "Id": "activity_BarerShop_01",
     "Name": "바버샵",
-    "TimeCost(min)": 180,
+    "TimeCost": 180,
     "IntGain": 0,
     "HealthGain": 0,
     "CharmGain": 40,
@@ -46,7 +46,7 @@
   {
     "Id": "activity_GameRoom_01",
     "Name": "PC방",
-    "TimeCost(min)": 180,
+    "TimeCost": 180,
     "IntGain": 0,
     "HealthGain": 0,
     "CharmGain": 0,
@@ -57,7 +57,7 @@
   {
     "Id": "activity_CUWork_01",
     "Name": "편의점 아르바이트",
-    "TimeCost(min)": 180,
+    "TimeCost": 180,
     "IntGain": 0,
     "HealthGain": 0,
     "CharmGain": 0,
@@ -68,7 +68,7 @@
   {
     "Id": "activity_HomeRest_01",
     "Name": "집에서 휴식",
-    "TimeCost(min)": 180,
+    "TimeCost": 180,
     "IntGain": 0,
     "HealthGain": 0,
     "CharmGain": 0,

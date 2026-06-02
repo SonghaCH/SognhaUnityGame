@@ -26,6 +26,23 @@ public class DaniTechUIButton : MonoBehaviour
         Button_Base.onClick.RemoveAllListeners();
     }
 
+    //private void OnEnable()
+    //{
+    //    // RemoveListener를 먼저 해주면 중복 등록을 방지하면서 다른 리스너를 건드리지 않습니다.
+    //    Button_Base.onClick.RemoveListener(OnClickSetSelectUI);
+    //    Button_Base.onClick.AddListener(OnClickSetSelectUI);
+    //}
+
+    //private void OnDisable()
+    //{
+    //    // RemoveAllListeners()는 외부에서 등록한 이벤트까지 전부 날려버리므로 절대 금지!
+    //    // 자기 자신의 이벤트만 쏙 빼줍니다.
+    //    if (Button_Base != null)
+    //    {
+    //        Button_Base.onClick.RemoveListener(OnClickSetSelectUI);
+    //    }
+    //}
+
 
     private void SetDefaultUI()
     {

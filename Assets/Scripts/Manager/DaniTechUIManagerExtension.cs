@@ -42,11 +42,13 @@ public enum DaniTechUIType
 
     LuckyDrawUI,
     LuckyDrawResultPopupUI,
-
-
     LuckyDrawHelpPopupUI,
-
     LuckyDrawingPopupUI,
+
+    GymUI,
+    GymHelpPopupUI,
+    GymExercisingPopupUI,
+
     MiniPopupUI,
 
 
@@ -375,6 +377,58 @@ public static class DaniTechUIManagerExtension
         uiManager.CloseUI(DaniTechUIRootType.VeryFrontUI, DaniTechUIType.LuckyDrawUI);
     }
 
+    public static void OpenGymUI(this DaniTechUIManager uiManager)
+    {
+        var uiBase = uiManager.OpenUI(DaniTechUIRootType.VeryFrontUI, DaniTechUIType.GymUI, false);
+        if (uiBase == null)
+        {
+            Debug.LogWarning($"UI가 생성되지 않았습니다");
+            return;
+        }
+    }
+
+    public static void CloseGymUI(this DaniTechUIManager uiManager)
+    {
+        uiManager.CloseUI(DaniTechUIRootType.VeryFrontUI, DaniTechUIType.GymUI);
+    }
+
+
+
+
+    public static void OpenGymHelpPopupUI(this DaniTechUIManager uiManager)
+    {
+        var uiBase = uiManager.OpenPopupUI(DaniTechUIType.GymHelpPopupUI);
+        if (uiBase == null)
+        {
+            Debug.LogWarning($"UI가 생성되지 않았습니다");
+            return;
+        }
+
+    }
+    public static void CloseGymHelpPopupUI(this DaniTechUIManager uiManager)
+    {
+        uiManager.CloseUI(DaniTechUIRootType.PopupUI, DaniTechUIType.GymHelpPopupUI);
+    }
+
+
+
+
+    public static void OpenGymExercisingPopupUI(this DaniTechUIManager uiManager)
+    {
+        var uiBase = uiManager.OpenPopupUI(DaniTechUIType.GymExercisingPopupUI
+);
+        if (uiBase == null)
+        {
+            Debug.LogWarning($"UI가 생성되지 않았습니다");
+            return;
+        }
+
+    }
+
+    public static void CloseGymExercisingPopupUI(this DaniTechUIManager uiManager)
+    {
+        uiManager.CloseUI(DaniTechUIRootType.PopupUI, DaniTechUIType.GymExercisingPopupUI);
+    }
 
 
     //public static void OpenDialogueUI(this DaniTechUIManager uiManager, string startDialogueId)
