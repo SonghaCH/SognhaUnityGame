@@ -19,9 +19,14 @@ public class HomeUI : DaniTechUIBase
         Btn_Rest.BindOnClickButtonEvent(OnClick_Rest);
         Btn_Help.BindOnClickButtonEvent(OnClick_Help);
 
-        RefreshUI();
 
     }
+    public void Update()
+    {
+        RefreshUI();
+    }
+
+
 
     public void RefreshUI()
     {
@@ -57,7 +62,8 @@ public class HomeUI : DaniTechUIBase
         // 횟수 체크
         if (TimeManager.Instance.CanDoActivity("activity_HomeRest_01"))
         {
-            DaniTechUIManager.Instance.OpenPCGamePlayPopupUI();
+            DaniTechUIManager.Instance.OpenHomeRestPopupUI();
+
         }
         else
         {
@@ -67,6 +73,6 @@ public class HomeUI : DaniTechUIBase
 
     private void OnClick_Help()
     {
-        DaniTechUIManager.Instance.OpenPCHelpPopupUI();
+        DaniTechUIManager.Instance.OpenHomeHelpPopupUI();
     }
 }

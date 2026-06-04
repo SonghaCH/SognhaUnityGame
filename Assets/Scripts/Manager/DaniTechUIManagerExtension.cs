@@ -70,6 +70,7 @@ public enum DaniTechUIType
 
     HomeUI,
     HomeHelpPopupUI,
+    HomeRestPopupUI,
 
     DNSimplePopup,
     DNMainUI,
@@ -684,6 +685,23 @@ public static class DaniTechUIManagerExtension
     }
 
 
+
+    public static void OpenHomeRestPopupUI(this DaniTechUIManager uiManager)
+    {
+        var uiBase = uiManager.OpenPopupUI(DaniTechUIType.HomeRestPopupUI);
+        if (uiBase == null)
+        {
+            Debug.LogWarning($"UI가 생성되지 않았습니다");
+            return;
+        }
+
+    }
+
+    public static void CloseHomeRestPopupUI(this DaniTechUIManager uiManager)
+    {
+        uiManager.CloseUI(DaniTechUIRootType.PopupUI, DaniTechUIType.HomeRestPopupUI);
+    }
+    
     //public static void OpenDialogueUI(this DaniTechUIManager uiManager, string startDialogueId)
     //{
     //    var uiBase = uiManager.OpenContentUI(DaniTechUIType.DNDialogueUI);
