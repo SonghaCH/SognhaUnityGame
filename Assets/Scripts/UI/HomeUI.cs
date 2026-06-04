@@ -1,41 +1,28 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-public class MainUI : DaniTechUIBase
+public class HomeUI : DaniTechUIBase
 {
-    // [중요] 다른 매니저에서 이 UI를 찾기 위한 싱글톤 인스턴스
-    public static MainUI Instance { get; private set; }
-
-    [SerializeField] private Image Image_Time;
     [SerializeField] private Text Text_Date;
     [SerializeField] private Text Text_Day;
     [SerializeField] private Text Text_Time;
 
-    [SerializeField] private DaniTechUIButton Button_Option;
-    [SerializeField] private DaniTechUIButton Button_Map;
 
-    [SerializeField] private Text Text_Health;
-    [SerializeField] private Text Text_Int;
-    [SerializeField] private Text Text_Charm;
+    [SerializeField] private DaniTechUIButton Btn_Exit;
+    [SerializeField] private DaniTechUIButton Btn_Rest;
+    [SerializeField] private DaniTechUIButton Btn_Help;
     [SerializeField] private Text Text_Money;
-    [SerializeField] private Text Text_Stress;
-
-    private void Awake()
-    {
-        // 인스턴스 등록
-        Instance = this;
-    }
 
     private void OnEnable()
     {
-        Button_Option.BindOnClickButtonEvent(Onclick_Option);
-        Button_Map.BindOnClickButtonEvent(Onclick_Map);
+        Btn_Exit.BindOnClickButtonEvent(OnClick_Exit);
+        Btn_Rest.BindOnClickButtonEvent(OnClick_Rest);
+        Btn_Help.BindOnClickButtonEvent(OnClick_Help);
 
-        // UI가 켜질 때 현재 데이터를 한번 반영
         RefreshUI();
+
     }
 
-    // UI 갱신을 담당하는 통합 메서드
     public void RefreshUI()
     {
         // Null 체크: 매니저들이 아직 초기화되지 않았을 경우를 대비
@@ -59,14 +46,27 @@ public class MainUI : DaniTechUIBase
         */
     }
 
-    private void Onclick_Option()
+
+    private void OnClick_Exit()
     {
-        Debug.Log("설정 열기");
-        DaniTechUIManager.Instance.OpenPCUI();
+        DaniTechUIManager.Instance.CloseHomeUI();
     }
 
-    private void Onclick_Map()
+    private void OnClick_Rest()
     {
-        DaniTechUIManager.Instance.OpenMapPopupUI();
+        // 횟수 체크
+        if (TimeManager.Instance.CanDoActivity("activity_HomeRest_01"))
+        {
+            DaniTechUIManager.Instance.OpenPCGamePlayPopupUI();
+        }
+        else
+        {
+            DaniTechUIManager.Instance.OpenMiniPopupUI("금일 최대 휴식 시간 도달  ");
+        }
+    }
+
+    private void OnClick_Help()
+    {
+        DaniTechUIManager.Instance.OpenPCHelpPopupUI();
     }
 }
