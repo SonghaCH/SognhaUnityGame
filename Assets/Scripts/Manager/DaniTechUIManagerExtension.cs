@@ -55,6 +55,12 @@ public enum DaniTechUIType
 
 
     AcademyUI,
+    AcademyHelpPopupUI,
+    AcademyStudyPopupUI,
+
+    BarberShopUI,
+    BarberShopHelpPopupUI,
+    BaberShopCharmPopupUI,
 
     MiniPopupUI,
 
@@ -504,9 +510,86 @@ public static class DaniTechUIManagerExtension
     }
 
 
+    public static void OpenAcademyHelpPopupUI(this DaniTechUIManager uiManager)
+    {
+        var uiBase = uiManager.OpenPopupUI(DaniTechUIType.AcademyHelpPopupUI);
+        if (uiBase == null)
+        {
+            Debug.LogWarning($"UI가 생성되지 않았습니다");
+            return;
+        }
+
+    }
+
+    public static void CloseAcademyHelpPopupUI(this DaniTechUIManager uiManager)
+    {
+        uiManager.CloseUI(DaniTechUIRootType.PopupUI, DaniTechUIType.AcademyHelpPopupUI);
+    }
+
+    public static void OpenAcademyStudyPopupUI(this DaniTechUIManager uiManager)
+    {
+        var uiBase = uiManager.OpenPopupUI(DaniTechUIType.AcademyStudyPopupUI);
+        if (uiBase == null)
+        {
+            Debug.LogWarning($"UI가 생성되지 않았습니다");
+            return;
+        }
+
+    }
+    public static void CloseAcademyStudyPopupUI(this DaniTechUIManager uiManager)
+    {
+        uiManager.CloseUI(DaniTechUIRootType.PopupUI, DaniTechUIType.AcademyStudyPopupUI);
+    }
+
+    public static void OpenBarberShopUI(this DaniTechUIManager uiManager)
+    {
+        var uiBase = uiManager.OpenUI(DaniTechUIRootType.VeryFrontUI, DaniTechUIType.BarberShopUI, false);
+        if (uiBase == null)
+        {
+            Debug.LogWarning($"UI가 생성되지 않았습니다");
+            return;
+        }
+    }
+
+    public static void CloseBarberShopUI(this DaniTechUIManager uiManager)
+    {
+        uiManager.CloseUI(DaniTechUIRootType.VeryFrontUI, DaniTechUIType.BarberShopUI);
+    }
 
 
 
+    public static void OpenBarberShopHelpPopupUI(this DaniTechUIManager uiManager)
+    {
+        var uiBase = uiManager.OpenPopupUI(DaniTechUIType.BarberShopHelpPopupUI);
+        if (uiBase == null)
+        {
+            Debug.LogWarning($"UI가 생성되지 않았습니다");
+            return;
+        }
+
+    }
+
+    public static void CloseBarberShopHelpPopupUI(this DaniTechUIManager uiManager)
+    {
+        uiManager.CloseUI(DaniTechUIRootType.PopupUI, DaniTechUIType.BarberShopHelpPopupUI);
+    }
+
+    public static void OpenBaberShopCharmPopupUI(this DaniTechUIManager uiManager)
+    {
+        var uiBase = uiManager.OpenPopupUI(DaniTechUIType.BaberShopCharmPopupUI);
+        if (uiBase == null)
+        {
+            Debug.LogWarning($"UI가 생성되지 않았습니다");
+            return;
+        }
+
+    }
+
+    public static void CloseBaberShopCharmPopupUI(this DaniTechUIManager uiManager)
+    {
+        uiManager.CloseUI(DaniTechUIRootType.PopupUI, DaniTechUIType.BaberShopCharmPopupUI);
+    }
+    
 
     //public static void OpenDialogueUI(this DaniTechUIManager uiManager, string startDialogueId)
     //{

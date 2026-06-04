@@ -13,7 +13,7 @@
   {
     "Id": "activity_Academy_01",
     "Name": "학원",
-    "TimeCost": 480,
+    "TimeCost": 300,
     "IntGain": 50,
     "HealthGain": 0,
     "CharmGain": 5,

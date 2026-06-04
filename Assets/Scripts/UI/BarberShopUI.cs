@@ -1,40 +1,40 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-public class AcademyUI : DaniTechUIBase
+public class BarberShopUI : DaniTechUIBase
 {
     [SerializeField] private DaniTechUIButton Btn_Exit;
-    [SerializeField] private DaniTechUIButton Btn_Study;
+    [SerializeField] private DaniTechUIButton Btn_Charm;
     [SerializeField] private DaniTechUIButton Btn_Help;
     [SerializeField] private Text Text_Money;
 
     private void OnEnable()
     {
         Btn_Exit.BindOnClickButtonEvent(OnClick_Exit);
-        Btn_Study.BindOnClickButtonEvent(OnClick_Study);
+        Btn_Charm.BindOnClickButtonEvent(OnClick_Charm);
         Btn_Help.BindOnClickButtonEvent(OnClick_Help);
     }
 
     private void OnClick_Exit()
     {
-        DaniTechUIManager.Instance.CloseAcademyUI();
+        DaniTechUIManager.Instance.CloseBarberShopUI();
     }
 
-    private void OnClick_Study()
+    private void OnClick_Charm()
     {
         // 횟수 체크
-        if (TimeManager.Instance.CanDoActivity("activity_Academy_01"))
+        if (TimeManager.Instance.CanDoActivity("activity_BarerShop_01"))
         {
-            DaniTechUIManager.Instance.OpenAcademyStudyPopupUI();
+            DaniTechUIManager.Instance.OpenBaberShopCharmPopupUI();
         }
         else
         {
-            DaniTechUIManager.Instance.OpenMiniPopupUI("금일 공부 최대 할댱량 도달  ");
+            DaniTechUIManager.Instance.OpenMiniPopupUI("금일 관리 횟수 도달");
         }
     }
 
     private void OnClick_Help()
     {
-        DaniTechUIManager.Instance.OpenAcademyHelpPopupUI();
+        DaniTechUIManager.Instance.OpenBarberShopHelpPopupUI();
     }
 }
