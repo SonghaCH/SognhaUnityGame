@@ -101,7 +101,7 @@ GameObject:
   m_Component:
   - component: {fileID: 161209684312557675}
   - component: {fileID: 3093569033971971955}
-  - component: {fileID: 4111137212574267417}
+  - component: {fileID: 5843942196035944626}
   m_Layer: 0
   m_Name: Interaction_Home
   m_TagString: Untagged
@@ -171,7 +171,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.9752847, y: 2.7989426}
   m_EdgeRadius: 0
---- !u!114 &4111137212574267417
+--- !u!114 &5843942196035944626
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -180,7 +180,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6593216220176571439}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 46758add80ceb8c4abcfda2e3f4f90a8, type: 3}
+  m_Script: {fileID: 11500000, guid: 459e6affb65d9f5418ad2a01d58d3513, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Interaction_Academy
+  m_EditorClassIdentifier: Assembly-CSharp::Interaction_Home
   interactionHint: {fileID: 348220042944260110}

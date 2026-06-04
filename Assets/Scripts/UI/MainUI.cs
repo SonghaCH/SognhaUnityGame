@@ -38,7 +38,7 @@ public class MainUI : DaniTechUIBase
     // UI 갱신을 담당하는 통합 메서드
     public void RefreshUI()
     {
-        // Null 체크: 매니저들이 아직 초기화되지 않았을 경우를 대비
+        // 시간 정보 갱신
         if (TimeManager.Instance != null)
         {
             Text_Date.text = TimeManager.Instance.GetFormattedDate();
@@ -46,17 +46,15 @@ public class MainUI : DaniTechUIBase
             Text_Time.text = TimeManager.Instance.GetFormattedTime();
         }
 
-        // StatManager는 아직 만드시는 중이겠지만, 연결하면 이런 식이 됩니다.
-        /*
+        // [활성화] StatManager 데이터 연동
         if (StatManager.Instance != null)
         {
             Text_Health.text = StatManager.Instance.Health.ToString("F1");
-            Text_Int.text = StatManager.Instance.Int.ToString("F1");
+            Text_Int.text = StatManager.Instance.Intel.ToString("F1");
             Text_Charm.text = StatManager.Instance.Charm.ToString("F1");
             Text_Money.text = StatManager.Instance.Money.ToString("N0") + "원";
             Text_Stress.text = StatManager.Instance.Stress.ToString("F1");
         }
-        */
     }
 
     private void Onclick_Option()

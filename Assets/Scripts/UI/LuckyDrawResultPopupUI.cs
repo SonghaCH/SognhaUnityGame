@@ -22,14 +22,24 @@ public class LuckyDrawResultPopupUI : DaniTechUIBase
 
         if (ballIndex >= 0 && ballIndex < BallReferences.Length)
         {
-            // 드래그해서 넣은 에셋을 불러옵니다.
-            BallReferences[ballIndex].LoadAssetAsync<Sprite>().Completed += (handle) =>
+            var assetRef = BallReferences[ballIndex];
+
+            // 1. 이미 로드되었는지 확인 (Handle이 유효하고 성공 상태인지)
+            if (assetRef.OperationHandle.IsValid() && assetRef.OperationHandle.Status == UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationStatus.Succeeded)
             {
-                if (handle.Status == UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationStatus.Succeeded)
+                Image_Result.sprite = (Sprite)assetRef.OperationHandle.Result;
+            }
+            else
+            {
+                // 2. 로드된 적이 없다면 새로 로드
+                assetRef.LoadAssetAsync<Sprite>().Completed += (handle) =>
                 {
-                    Image_Result.sprite = handle.Result;
-                }
-            };
+                    if (handle.Status == UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationStatus.Succeeded)
+                    {
+                        Image_Result.sprite = handle.Result;
+                    }
+                };
+            }
         }
     }
 
