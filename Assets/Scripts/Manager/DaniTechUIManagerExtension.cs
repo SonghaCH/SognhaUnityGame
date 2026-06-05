@@ -751,19 +751,6 @@ public static class DaniTechUIManagerExtension
     
 
 
-    //public static void OpenDialogueUI(this DaniTechUIManager uiManager, string startDialogueId)
-    //{
-    //    var uiBase = uiManager.OpenContentUI(DaniTechUIType.DNDialogueUI);
-    //    if(uiBase == null)
-    //    {
-    //        Debug.LogWarning($"UI가 생성되지 않았습니다");
-    //        return;
-    //    }
-
-    //    if (uiBase is DaniTech_DialogueUI dialogueUi)
-    //    {
-    //        dialogueUi.StartDialogue(startDialogueId);
-    //    }
-    //}
+    
 }
 

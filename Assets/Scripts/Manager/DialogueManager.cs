@@ -244,7 +244,7 @@ public class DialogueManager : MonoBehaviour
     /// <summary>
     /// 대사 플로우가 완전히 끝났을 때 각자의 루트에 맞춰 깔끔하게 클로즈해주는 청소 함수
     /// </summary>
-    private void CloseAllDialogueUIs()
+    public void CloseAllDialogueUIs()
     {
         DaniTechUIManager.Instance.CloseUI(DaniTechUIRootType.ContentUI, DaniTechUIType.NormalDialogueUI);
         DaniTechUIManager.Instance.CloseUI(DaniTechUIRootType.ContentUI, DaniTechUIType.MSGDialogueUI);

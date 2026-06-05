@@ -19,7 +19,7 @@
   },
   {
     "Id": "dateDialogue_Ending_1_1_1",
-    "Description": "4월 9일 화요일 오전 8시 00분",
+    "Description": "4월 10일 수요일 오전 8시 00분",
     "NextDialogueId": "dateDialogue_Ending_1_1_2",
     "BGImagePath": "Sprite/Dark empty Room"
   },
@@ -37,7 +37,7 @@
   },
   {
     "Id": "dateDialogue_Ending_1_2_1",
-    "Description": "4월 9일 화요일 오전 8시 00분",
+    "Description": "4월 10일 수요일 오전 8시 00분",
     "NextDialogueId": "dateDialogue_Ending_1_2_2",
     "BGImagePath": "Sprite/Dark empty Room"
   },

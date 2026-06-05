@@ -7,7 +7,9 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get; private set; }
 
     [Header("현재 게임 상태")]
-    public GameState CurrentState = GameState.Dialogue; // 오프닝부터 시작
+    public GameState CurrentState = GameState.Dialogue;
+
+    private bool isEndingTriggered = false; // 중복 호출 방지
 
     private void Awake()
     {
@@ -24,7 +26,6 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        // 게임 시작 시 초기 상태 설정
         ChangeState(GameState.Dialogue);
     }
 
@@ -35,17 +36,14 @@ public class GameManager : MonoBehaviour
         switch (newState)
         {
             case GameState.Dialogue:
-                // 대화 중: 시간 정지
                 if (TimeManager.Instance != null) TimeManager.Instance.IsPaused = true;
                 break;
 
             case GameState.Play:
-                // 플레이 중: 시간 흐름 재개
                 if (TimeManager.Instance != null) TimeManager.Instance.IsPaused = false;
                 break;
 
             case GameState.Paused:
-                // 메뉴 등 일시정지: 시간 정지
                 if (TimeManager.Instance != null) TimeManager.Instance.IsPaused = true;
                 break;
         }
@@ -55,4 +53,38 @@ public class GameManager : MonoBehaviour
 
     // 오프닝 중엔 false, 플레이 중엔 true 반환
     public bool CanProcessInput() => CurrentState == GameState.Play;
+
+    // --- 추가된 엔딩 로직 ---
+    public void EnterEndingScene()
+    {
+        if (isEndingTriggered) return;
+        isEndingTriggered = true;
+
+        // 1. 상태를 Dialogue로 변경하여 시간 정지 및 입력 제어
+        ChangeState(GameState.Dialogue);
+
+        // 2. 기존 대화창 싹 청소 (DialogueManager의 CloseAllDialogueUIs가 public이어야 함)
+        DialogueManager.Instance.CloseAllDialogueUIs();
+        DaniTechUIManager.Instance.CloseMainUI();
+
+
+        // 3. 스탯 기반 엔딩 ID 결정
+        bool isSuccess = CheckEndingConditions();
+
+        // [수정된 부분] 요청하신 ID로 적용
+        string endingId = isSuccess ? "dateDialogue_Ending_1_2_1" : "dateDialogue_Ending_1_1_1";
+
+        // 4. 엔딩 다이얼로그 시작
+        DialogueManager.Instance.StartDialogueFlow(endingId);
+
+        Debug.Log($"[GameManager] 엔딩 진입: {endingId}");
+    }
+
+    private bool CheckEndingConditions()
+    {
+        return StatManager.Instance.Health >= 50f &&
+               StatManager.Instance.Money >= 500000 &&
+               StatManager.Instance.Charm >= 30f &&
+               StatManager.Instance.Intel >= 30f;
+    }
 }

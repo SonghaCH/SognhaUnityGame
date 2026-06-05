@@ -35,24 +35,41 @@ public class TimeManager : MonoBehaviour
             AddTime(10);
             timer = 0f;
         }
+
+        // 테스트 키
+        if (Input.GetKeyDown(KeyCode.F8))
+        {
+            Debug.Log("F8 테스트: 3일차로 강제 이동!");
+            DayCount = 3;
+            GameManager.Instance.EnterEndingScene();
+            DaniTechUIManager.Instance.CloseMainUI();
+        }
+    }
+
+    // [추가] 엔딩 체크 로직을 중앙화
+    private void CheckEndingTrigger()
+    {
+        if (DayCount >= 3)
+        {
+            GameManager.Instance.EnterEndingScene();
+        }
     }
 
     public void SkipToTime(int targetMinutes)
     {
-        // 8시(480분)를 넘기는 시점이라면 날짜를 하루 증가
         if (CurrentMinutes >= targetMinutes)
         {
             DayCount++;
         }
 
         CurrentMinutes = targetMinutes;
-
-        // 8시가 되었으므로 하루 활동 횟수 초기화
-        // (이전 로직에서 8시 체크를 이미 구현해두셨다면 유지해주시면 됩니다)
         activityCounts.Clear();
 
+        // 엔딩 체크 추가
+        CheckEndingTrigger();
         UpdateUI();
     }
+
     public void AddTime(int minutesToAdd)
     {
         int previousMinutes = CurrentMinutes;
@@ -67,17 +84,16 @@ public class TimeManager : MonoBehaviour
         {
             CurrentMinutes -= MINUTES_IN_DAY;
             DayCount++;
+
+            // 엔딩 체크 추가
+            CheckEndingTrigger();
         }
         UpdateUI();
     }
 
     public bool IsLateNight()
     {
-        if (CurrentMinutes >= 60 && CurrentMinutes < 480)
-        {
-            return true;
-        }
-        return false;
+        return (CurrentMinutes >= 60 && CurrentMinutes < 480);
     }
 
     public bool CanDoActivity(string activityId)

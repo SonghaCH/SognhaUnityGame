@@ -1163,7 +1163,7 @@
     "Id": "normalDialogue_Ending_1_1_12",
     "CharacterDataId": "character_Minhyeong_01",
     "Description": "고마워…넌 좋은 사람이니까. 화이팅했으면 좋겠어. 안녕",
-    "NextDialogueId": "normalDialogue_Ending_1_1_13",
+    "NextDialogueId": "mindDialogue_Ending_1_1_13",
     "BGImagePath": "Sprite/EndingImage4",
     "SelectionDialogueIdList": null,
     "TexturePath": null,

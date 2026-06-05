@@ -15,6 +15,11 @@ MonoBehaviour:
   m_GroupName: Default Local Group
   m_GUID: 148207ea9883a174cb0232b50b86685d
   m_SerializeEntries:
+  - m_GUID: 097823cfb805e734ba00e776316b923d
+    m_Address: Sprite/EndingImage6
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 0f6709899ab37d247a79f938a640600e
     m_Address: Sprite/Class Room
     m_ReadOnly: 0
@@ -35,6 +40,16 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3e4073368646f924b9256a9016903a00
+    m_Address: Sprite/EndingImage7
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4aee7fd866595334a832a8ab8aee0b9c
+    m_Address: Sprite/EndingImage2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 502c5c1af372b57468024c66a237862a
     m_Address: Sprite/morning empty Room 7-30
     m_ReadOnly: 0
@@ -42,6 +57,11 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 53d63c5dcfc184347a438836dba38592
     m_Address: Sprite/Before Sleep Empty
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5a1902253f2af1941abb200c6081f948
+    m_Address: Sprite/EndingImage5
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -110,6 +130,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a26514b086f8365488023646632b706c
+    m_Address: Sprite/EndingImage
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: a962cc7201a356a45af10fb172c7db9e
     m_Address: Sprite/Door
     m_ReadOnly: 0
@@ -117,6 +142,11 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: af56216ca89f7a04097617440a703861
     m_Address: Sprite/Sister4
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bb7a595cb5320364a873a2e13a1ef626
+    m_Address: Sprite/EndingImage3
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -132,6 +162,11 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: e22b2813fde79714c97fb5bfea580b7c
     m_Address: Sprite/Out Class
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e4281ed61a0484d4ab2009378e9429f6
+    m_Address: Sprite/EndingImage4
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
