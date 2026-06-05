@@ -35,15 +35,7 @@ public class TimeManager : MonoBehaviour
             AddTime(10);
             timer = 0f;
         }
-
-        // 테스트 키
-        if (Input.GetKeyDown(KeyCode.F8))
-        {
-            Debug.Log("F8 테스트: 3일차로 강제 이동!");
-            DayCount = 3;
-            GameManager.Instance.EnterEndingScene();
-            DaniTechUIManager.Instance.CloseMainUI();
-        }
+        
     }
 
     // [추가] 엔딩 체크 로직을 중앙화

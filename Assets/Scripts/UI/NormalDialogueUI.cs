@@ -8,27 +8,20 @@ public class NormalDialogueUI : DaniTechUIBase
     [SerializeField] private Text Text_Character;
     [SerializeField] private Text Text_Description;
     [SerializeField] private DaniTechUIButton Btn_Next;
+    [SerializeField] private Image Image_Color;
 
     private string _currentDialogueId;
-
-    
 
     private void OnEnable()
     {
         Btn_Next.BindOnClickButtonEvent(OnClick_Next);
     }
 
-    /// <summary>
-    /// 다이얼로그에서 Next 버튼이 눌러질 때 호출된다
-    /// </summary>
     public void OnClick_Next()
     {
         DialogueManager.Instance.RequestNextDialogue(_currentDialogueId);
     }
 
-    /// <summary>
-    /// [매니저 연동 함수] DialogueManager가 이 프리팹 UI를 켜면서 데이터를 심어줄 때 호출하는 함수
-    /// </summary>
     public void SetupDialogue(string dialogueId, string description, string characterId)
     {
         _currentDialogueId = dialogueId;
@@ -36,14 +29,9 @@ public class NormalDialogueUI : DaniTechUIBase
         SetCharacterName(characterId);
     }
 
-    
-
-    /// <summary>
-    /// 캐릭터 정보가 있다면 말하는 이의 이름을 표기해주는 함수
-    /// </summary>
     private void SetCharacterName(string characterDataId)
     {
-        bool isActive = (string.IsNullOrEmpty(characterDataId) == false);
+        bool isActive = !string.IsNullOrEmpty(characterDataId);
         Layout_CharacterName.SetActive(isActive);
 
         if (isActive)
@@ -51,11 +39,24 @@ public class NormalDialogueUI : DaniTechUIBase
             var characterData = GameDataManager.Instance.GetSHCharacterData(characterDataId);
             if (characterData != null)
             {
-                Debug.Log(characterData);
+                // 1. 이름 텍스트 설정
                 Text_Character.text = characterData.Name;
+                // 2. 이름 텍스트는 무조건 검은색 고정
+                Text_Character.color = Color.black;
+
+                // 3. 이미지 색상만 구분하여 적용
+                if (Image_Color != null)
+                {
+                    if (characterDataId == "character_Player_01")
+                    {
+                        Image_Color.color = Color.cyan; // 주인공: 하늘색 이미지
+                    }
+                    else
+                    {
+                        Image_Color.color = Color.yellow; // 상대방: 노란색 이미지
+                    }
+                }
             }
         }
     }
-
-   
 }

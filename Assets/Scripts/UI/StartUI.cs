@@ -10,7 +10,6 @@ public class StartUI : DaniTechUIBase
     private void OnEnable()
     {
         Btn_Start.BindOnClickButtonEvent(OnClick_GameStart);
-        Btn_Option.BindOnClickButtonEvent(OnClick_OpenOption);
         Btn_Quit.BindOnClickButtonEvent(OnClick_GameQuit);
     }
 
@@ -21,11 +20,6 @@ public class StartUI : DaniTechUIBase
         DaniTechUIManager.Instance.CloseContentUI(DaniTechUIType.StartUI);
         DialogueManager.Instance.StartDialogueFlow("dateDialogue_Opening_1_1_100");
         DaniTechUIManager.Instance.OpenSkipUI();
-    }
-
-    public void OnClick_OpenOption()
-    {
-        Debug.Log("설정 버튼 ");
     }
 
     public void OnClick_GameQuit()

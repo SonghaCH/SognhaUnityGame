@@ -69,6 +69,7 @@ public enum DaniTechUIType
 
     MiniPopupUI,
     BigPopupUI,
+    EndingUI,
 
     HomeUI,
     HomeHelpPopupUI,
@@ -748,8 +749,22 @@ public static class DaniTechUIManagerExtension
     {
         uiManager.CloseUI(DaniTechUIRootType.VeryFrontUI, DaniTechUIType.HomeSleepUI);
     }
-    
 
+    public static void OpenEndingUI(this DaniTechUIManager uiManager)
+    {
+        var uiBase = uiManager.OpenUI(DaniTechUIRootType.VeryFrontUI, DaniTechUIType.EndingUI, false);
+        if (uiBase == null)
+        {
+            Debug.LogWarning($"UI가 생성되지 않았습니다");
+            return;
+        }
+
+    }
+
+    public static void CloseEndingUI(this DaniTechUIManager uiManager)
+    {
+        uiManager.CloseUI(DaniTechUIRootType.VeryFrontUI, DaniTechUIType.EndingUI);
+    }
 
     
 }

@@ -912,6 +912,16 @@
   {
     "Id": "mindDialogue_Ending_1_1_15",
     "Description": "여전히 나는… 부족한 사람이었다.",
+    "NextDialogueId": "mindDialogue_Ending_1_1_16",
+    "BGImagePath": "Sprite/EndingImage5",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null,
+    "CharacterDataId": null
+  },
+  {
+    "Id": "mindDialogue_Ending_1_1_16",
+    "Description": null,
     "NextDialogueId": null,
     "BGImagePath": "Sprite/EndingImage5",
     "SelectionDialogueIdList": null,
@@ -932,6 +942,16 @@
   {
     "Id": "mindDialogue_Ending_1_2_15",
     "Description": "행복한 나날을 살아가며, 자기 계발을 멈추지  않는 내가 될 것이다.",
+    "NextDialogueId": "mindDialogue_Ending_1_2_16",
+    "BGImagePath": "Sprite/EndingImage7",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null,
+    "CharacterDataId": null
+  },
+  {
+    "Id": "mindDialogue_Ending_1_2_16",
+    "Description": null,
     "NextDialogueId": null,
     "BGImagePath": "Sprite/EndingImage7",
     "SelectionDialogueIdList": null,

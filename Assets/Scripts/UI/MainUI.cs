@@ -11,7 +11,6 @@ public class MainUI : DaniTechUIBase
     [SerializeField] private Text Text_Day;
     [SerializeField] private Text Text_Time;
 
-    [SerializeField] private DaniTechUIButton Button_Option;
     [SerializeField] private DaniTechUIButton Button_Map;
 
     [SerializeField] private Text Text_Health;
@@ -28,7 +27,6 @@ public class MainUI : DaniTechUIBase
 
     private void OnEnable()
     {
-        Button_Option.BindOnClickButtonEvent(Onclick_Option);
         Button_Map.BindOnClickButtonEvent(Onclick_Map);
 
         // UI가 켜질 때 현재 데이터를 한번 반영
@@ -57,11 +55,6 @@ public class MainUI : DaniTechUIBase
         }
     }
 
-    private void Onclick_Option()
-    {
-        Debug.Log("설정 열기");
-        DaniTechUIManager.Instance.OpenHomeUI();
-    }
 
     private void Onclick_Map()
     {

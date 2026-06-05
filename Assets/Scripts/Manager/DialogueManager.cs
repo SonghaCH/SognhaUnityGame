@@ -124,6 +124,8 @@ public class DialogueManager : MonoBehaviour
             }
         }
         
+       
+
 
         ProcessDialogue(nextId);
     }
@@ -134,6 +136,13 @@ public class DialogueManager : MonoBehaviour
     private void ProcessDialogue(string dialogueId)
     {
 
+        if (dialogueId.Contains("mindDialogue_Ending_1_1_16"))
+        {
+            Debug.Log($"[강제 엔딩 트리거] 엔딩 ID 감지됨: {dialogueId}");
+            CloseAllDialogueUIs(); // 기존 대화창 강제 종료
+            DaniTechUIManager.Instance.OpenEndingUI(); // 엔딩 UI 강제 오픈
+            return; // 나머지 대사 처리 로직을 실행하지 않음
+        }
         // A. 일반 텍스트 대사창 처리 (normal) -> ContentUI 루트
         if (dialogueId.StartsWith("normalDialogue"))
         {
