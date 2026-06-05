@@ -87,7 +87,7 @@ GameObject:
   - component: {fileID: 4004927111669797512}
   - component: {fileID: 2429517911349143346}
   m_Layer: 5
-  m_Name: BigiPopupUI
+  m_Name: BigPopupUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -31,6 +31,10 @@ public class Interaction_BarberShop : MonoBehaviour
 
     private void Update()
     {
+        if (GameManager.Instance != null && !GameManager.Instance.CanProcessInput())
+        {
+            return;
+        }
         // 범위 내에 있을 때만 F키 입력 감지
         // (isPlayerInRange 변수를 대신하여 간단하게 체크)
         if (interactionHint.activeSelf && Input.GetKeyDown(KeyCode.F))

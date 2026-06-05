@@ -24,6 +24,7 @@ public class HomeUI : DaniTechUIBase
     public void Update()
     {
         RefreshUI();
+        UpdateMoneyUI();
     }
 
 
@@ -38,19 +39,17 @@ public class HomeUI : DaniTechUIBase
             Text_Time.text = TimeManager.Instance.GetFormattedTime();
         }
 
-        // StatManager는 아직 만드시는 중이겠지만, 연결하면 이런 식이 됩니다.
-        /*
-        if (StatManager.Instance != null)
-        {
-            Text_Health.text = StatManager.Instance.Health.ToString("F1");
-            Text_Int.text = StatManager.Instance.Int.ToString("F1");
-            Text_Charm.text = StatManager.Instance.Charm.ToString("F1");
-            Text_Money.text = StatManager.Instance.Money.ToString("N0") + "원";
-            Text_Stress.text = StatManager.Instance.Stress.ToString("F1");
-        }
-        */
+        
     }
+   
 
+    public void UpdateMoneyUI()
+    {
+        if (Text_Money != null && StatManager.Instance != null)
+        {
+            Text_Money.text = $"{StatManager.Instance.Money:N0} 원";
+        }
+    }
 
     private void OnClick_Exit()
     {

@@ -2,7 +2,7 @@
 using UnityEngine.UI;
 using System.Collections;
 
-public class BigiPopupUI : DaniTechUIBase
+public class BigPopupUI : DaniTechUIBase
 {
     [SerializeField] private Text Text_Message; // 인스펙터에서 텍스트 컴포넌트 연결
     [SerializeField] private float displayDuration = 3.0f; // 사라지는 시간
@@ -22,6 +22,6 @@ public class BigiPopupUI : DaniTechUIBase
         yield return new WaitForSeconds(displayDuration);
 
         // DaniTechUIManager를 통해 팝업 닫기
-        DaniTechUIManager.Instance.CloseBigiPopupUI();
+        DaniTechUIManager.Instance.CloseBigPopupUI();
     }
 }

@@ -13,8 +13,21 @@ public class PCUI : DaniTechUIBase
         Btn_Exit.BindOnClickButtonEvent(OnClick_Exit);
         Btn_Game.BindOnClickButtonEvent(OnClick_Game);
         Btn_Help.BindOnClickButtonEvent(OnClick_Help);
+
     }
 
+    private void Update()
+    {
+        UpdateMoneyUI();
+    }
+   
+    public void UpdateMoneyUI()
+    {
+        if (Text_Money != null && StatManager.Instance != null)
+        {
+            Text_Money.text = $"{StatManager.Instance.Money:N0} 원";
+        }
+    }
     private void OnClick_Exit()
     {
         DaniTechUIManager.Instance.ClosePCUI();

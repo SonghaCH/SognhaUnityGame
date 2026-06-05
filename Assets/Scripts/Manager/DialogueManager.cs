@@ -86,7 +86,20 @@ public class DialogueManager : MonoBehaviour
             CloseAllDialogueUIs();
             return;
         }
+        
+        if (string.IsNullOrEmpty(nextId) || nextId == "0" || nextId.Equals("None", StringComparison.OrdinalIgnoreCase))
+        {
+            CloseAllDialogueUIs();
 
+            // [중요] 오프닝 대화가 종료될 때 상태를 Play로 전환
+            // 오프닝 대화의 마지막 ID 패턴을 확인하여 안전하게 호출합니다.
+            if (currentDialogueId.Contains("Opening"))
+            {
+                if (GameManager.Instance != null)
+                    GameManager.Instance.ChangeState(GameState.Play);
+            }
+            return;
+        }
 
         if (currentDialogueId == "mindDialogue_Opening_1_1_303")
         {
@@ -104,6 +117,11 @@ public class DialogueManager : MonoBehaviour
             DaniTechUIManager.Instance.CloseBackgroundUI();
             DaniTechUIManager.Instance.CloseMindDialogueUI();
             DaniTechUIManager.Instance.OpenMainUI();
+
+            if (GameManager.Instance != null)
+            {
+                GameManager.Instance.ChangeState(GameState.Play);
+            }
         }
         
 

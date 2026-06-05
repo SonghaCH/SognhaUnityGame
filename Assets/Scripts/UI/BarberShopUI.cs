@@ -13,8 +13,22 @@ public class BarberShopUI : DaniTechUIBase
         Btn_Exit.BindOnClickButtonEvent(OnClick_Exit);
         Btn_Charm.BindOnClickButtonEvent(OnClick_Charm);
         Btn_Help.BindOnClickButtonEvent(OnClick_Help);
+        
     }
 
+    private void Update()
+    {
+        UpdateMoneyUI();
+    }
+
+    public void UpdateMoneyUI()
+    {
+        if (Text_Money != null && StatManager.Instance != null)
+        {
+            // 소지금을 콤마(,)가 포함된 문자열로 표시
+            Text_Money.text = $"{StatManager.Instance.Money:N0} 원";
+        }
+    }
     private void OnClick_Exit()
     {
         DaniTechUIManager.Instance.CloseBarberShopUI();
