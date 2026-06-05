@@ -5,7 +5,7 @@ public class StatManager : MonoBehaviour
     public static StatManager Instance { get; private set; }
 
     // 최대값 설정 (필요에 따라 조절하세요)
-    private const float MAX_STAT = 100f;
+    private const float MAX_STAT = 1000f;
 
     public float Health { get; private set; }
     public float Intel { get; private set; }

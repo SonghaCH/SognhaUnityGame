@@ -66,7 +66,9 @@ public enum DaniTechUIType
     PCHelpPopupUI,
     PCGamePlayPopupUI,
 
+
     MiniPopupUI,
+    BigiPopupUI,
 
     HomeUI,
     HomeHelpPopupUI,
@@ -701,7 +703,27 @@ public static class DaniTechUIManagerExtension
     {
         uiManager.CloseUI(DaniTechUIRootType.PopupUI, DaniTechUIType.HomeRestPopupUI);
     }
+
+
+    public static void OpenBigiPopupUI(this DaniTechUIManager uiManager, string message)
+    {
+        var uiBase = uiManager.OpenPopupUI(DaniTechUIType.BigiPopupUI);
+        if (uiBase == null)
+        {
+            Debug.LogWarning($"UI가 생성되지 않았습니다");
+            return;
+        }
+
+    }
+
+    public static void CloseBigiPopupUI(this DaniTechUIManager uiManager)
+    {
+        uiManager.CloseUI(DaniTechUIRootType.PopupUI, DaniTechUIType.BigiPopupUI);
+    }
     
+
+
+
     //public static void OpenDialogueUI(this DaniTechUIManager uiManager, string startDialogueId)
     //{
     //    var uiBase = uiManager.OpenContentUI(DaniTechUIType.DNDialogueUI);
