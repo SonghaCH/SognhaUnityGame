@@ -2,12 +2,10 @@
 
 public class Interaction_Home : MonoBehaviour
 {
-    // [중요] 여기에 Hierarchy에 있는 "F 복권방 입장" 스프라이트 오브젝트를 드래그해서 넣으세요!
     [SerializeField] private GameObject interactionHint;
 
     private void Start()
     {
-        // 시작할 때 무조건 꺼져있게 설정
         if (interactionHint != null) interactionHint.SetActive(false);
     }
 
@@ -15,7 +13,6 @@ public class Interaction_Home : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            // 플레이어가 다가오면 알림창 켜기
             if (interactionHint != null) interactionHint.SetActive(true);
         }
     }
@@ -24,7 +21,6 @@ public class Interaction_Home : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            // 플레이어가 멀어지면 알림창 끄기
             if (interactionHint != null) interactionHint.SetActive(false);
         }
     }
@@ -35,11 +31,22 @@ public class Interaction_Home : MonoBehaviour
         {
             return;
         }
-        // 범위 내에 있을 때만 F키 입력 감지
-        // (isPlayerInRange 변수를 대신하여 간단하게 체크)
+
         if (interactionHint.activeSelf && Input.GetKeyDown(KeyCode.F))
         {
-            DaniTechUIManager.Instance.OpenHomeUI();
+            // 시간 식별: 새벽 1시(60분) ~ 오전 8시(480분) 사이 확인
+            int currentTime = TimeManager.Instance.CurrentMinutes;
+
+            if (currentTime >= 60 && currentTime < 480)
+            {
+                // 새벽 시간대: 잠들기 UI 호출
+                DaniTechUIManager.Instance.OpenHomeSleepUI();
+            }
+            else
+            {
+                // 일반 시간대: 기존 집 UI 호출
+                DaniTechUIManager.Instance.OpenHomeUI();
+            }
         }
     }
 }

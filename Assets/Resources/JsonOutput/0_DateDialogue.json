@@ -16,5 +16,41 @@
     "Description": "4월 7일 화요일 오전 7시 30분",
     "NextDialogueId": "mindDialogue_Opening_1_1_287",
     "BGImagePath": "Sprite/Dark empty Room"
+  },
+  {
+    "Id": "dateDialogue_Ending_1_1_1",
+    "Description": "4월 9일 화요일 오전 8시 00분",
+    "NextDialogueId": "dateDialogue_Ending_1_1_2",
+    "BGImagePath": "Sprite/Dark empty Room"
+  },
+  {
+    "Id": "dateDialogue_Ending_1_1_2",
+    "Description": "나는 용기를 내어 변화된 내 모습으로 그녀를 다시 찾아갔다.",
+    "NextDialogueId": "dateDialogue_Ending_1_1_3",
+    "BGImagePath": "Sprite/Dark empty Room"
+  },
+  {
+    "Id": "dateDialogue_Ending_1_1_3",
+    "Description": "그녀에게 변화된 내가 좋게 보여지길 바란다.",
+    "NextDialogueId": "normalDialogue_Ending_1_1_4",
+    "BGImagePath": "Sprite/Dark empty Room"
+  },
+  {
+    "Id": "dateDialogue_Ending_1_2_1",
+    "Description": "4월 9일 화요일 오전 8시 00분",
+    "NextDialogueId": "dateDialogue_Ending_1_2_2",
+    "BGImagePath": "Sprite/Dark empty Room"
+  },
+  {
+    "Id": "dateDialogue_Ending_1_2_2",
+    "Description": "나는 용기를 내어 변화된 내 모습으로 그녀를 다시 찾아갔다.",
+    "NextDialogueId": "dateDialogue_Ending_1_2_3",
+    "BGImagePath": "Sprite/Dark empty Room"
+  },
+  {
+    "Id": "dateDialogue_Ending_1_2_3",
+    "Description": "그녀에게 변화된 내가 좋게 보여지길 바란다.",
+    "NextDialogueId": "normalDialogue_Ending_1_2_4",
+    "BGImagePath": "Sprite/Dark empty Room"
   }
 ]

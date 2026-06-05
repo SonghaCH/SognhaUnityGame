@@ -6,62 +6,62 @@ public class ActivityManager : MonoBehaviour
 
     private void Awake() => Instance = this;
 
-    // UI 버튼이나 애니메이션 끝나는 시점에서 호출
     public void ExecuteActivity(string activityId)
     {
-        // [추가] 오프닝 중에는 행동 불가 (GameManager 연동)
-        if (GameManager.Instance != null && !GameManager.Instance.CanProcessInput())
-        {
-            Debug.Log("오프닝 중에는 활동을 수행할 수 없습니다.");
-            return;
-        }
-
-        // 1. 데이터 가져오기
         ActivityData data = GameDataManager.Instance.GetActivityData(activityId);
-        if (data == null)
-        {
-            Debug.LogError($"[ActivityManager] 데이터를 찾을 수 없습니다: {activityId}");
-            return;
-        }
+        if (data == null) return;
 
-        // 2. 횟수 제한 체크 (TimeManager에게 확인)
         if (!TimeManager.Instance.CanDoActivity(activityId))
         {
-            // 수정: 기존 로그 대신 UI 팝업 오픈 (기존에 작성하셨던 방식)
-            DaniTechUIManager.Instance.OpenMiniPopupUI("오늘은 이미 이 행동을 2번 다 했습니다!");
+            DaniTechUIManager.Instance.OpenBigPopupUI("오늘은 이미 이 행동을 2번 다 했습니다!");
             return;
         }
 
-        // 3. 재화 확인 (StatManager에 돈이 충분한지)
         if (StatManager.Instance.Money < data.MoneyCost)
         {
             DaniTechUIManager.Instance.OpenBigPopupUI("돈이 부족합니다!");
             return;
         }
 
-        // 4. 로직 실행
+        // 새벽 패널티 계산 (원본 로직은 건드리지 않고, 호출 시점만 조절)
+        float finalStress = data.ChangeStress;
+        if (TimeManager.Instance.IsLateNight())
+        {
+            finalStress *= 2f;
+        }
+
         StatManager.Instance.AddMoney(-data.MoneyCost);
         TimeManager.Instance.AddTime(data.TimeCost);
         TimeManager.Instance.AddActivityCount(activityId);
-        StatManager.Instance.ApplyActivityEffect(data);
 
-        // 5. 복권 결과 처리
+        // 오버로딩된 함수를 사용하여 인자 전달
+        StatManager.Instance.ApplyActivityEffect(data, finalStress);
+
         if (activityId == "activity_LuckyDraw_01")
         {
             ProcessLotteryResult();
         }
-
-        Debug.Log($"[ActivityManager] {data.Name} 실행 완료!");
     }
 
+    // 보내주신 스크린샷의 원본 복권 로직
     private void ProcessLotteryResult()
     {
         float random = UnityEngine.Random.Range(0f, 100f);
-        int prize = (random < 10f) ? 1000 : (random < 30f) ? 3000 : (random < 60f) ? 5000 :
-                    (random < 90f) ? 10000 : (random < 99.9f) ? 50000 : 500000000;
+        int prize = 0;
+        int ballIndex = 0;
+        string colorName = "";
+
+        if (random < 10f) { prize = 1000; ballIndex = 0; colorName = "빨강"; }
+        else if (random < 30f) { prize = 3000; ballIndex = 1; colorName = "파랑"; }
+        else if (random < 60f) { prize = 5000; ballIndex = 2; colorName = "초록"; }
+        else if (random < 90f) { prize = 10000; ballIndex = 3; colorName = "흰색"; }
+        else if (random < 99.9f) { prize = 50000; ballIndex = 4; colorName = "노랑"; }
+        else { prize = 500000000; ballIndex = 5; colorName = "검은색"; }
 
         StatManager.Instance.AddMoney(prize);
-        DaniTechUIManager.Instance.OpenLuckyDrawResultPopupUI(0, prize, "당첨"); // index 처리 등은 기존 로직 유지
-        Debug.Log($"당첨 결과: {prize}원 획득!");
+
+        // 원본 로그 및 UI 로직 유지
+        DaniTechUIManager.Instance.OpenLuckyDrawResultPopupUI(ballIndex, prize, colorName);
+        Debug.Log($"당첨 결과: {colorName} 구슬 당첨, {prize}원 획득!");
     }
 }

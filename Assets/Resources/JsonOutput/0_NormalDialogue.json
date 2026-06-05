@@ -1078,5 +1078,195 @@
     "SelectionDialogueIdList": null,
     "TexturePath": null,
     "VoicePath": null
+  },
+  {
+    "Id": "normalDialogue_Ending_1_1_4",
+    "CharacterDataId": "character_Player_01",
+    "Description": "다시 보자고해서 미안해.",
+    "NextDialogueId": "normalDialogue_Ending_1_1_5",
+    "BGImagePath": "Sprite/EndingImage4",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "normalDialogue_Ending_1_1_5",
+    "CharacterDataId": "character_Player_01",
+    "Description": "그렇지만 너에게 변화된 모습을 보여주고 싶었어.",
+    "NextDialogueId": "normalDialogue_Ending_1_1_6",
+    "BGImagePath": "Sprite/EndingImage4",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "normalDialogue_Ending_1_1_6",
+    "CharacterDataId": "character_Player_01",
+    "Description": "너는 어떻게 생각해?",
+    "NextDialogueId": "normalDialogue_Ending_1_1_7",
+    "BGImagePath": "Sprite/EndingImage4",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "normalDialogue_Ending_1_1_7",
+    "CharacterDataId": "character_Minhyeong_01",
+    "Description": "정말.. 미안한데…",
+    "NextDialogueId": "normalDialogue_Ending_1_1_8",
+    "BGImagePath": "Sprite/EndingImage2",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "normalDialogue_Ending_1_1_8",
+    "CharacterDataId": "character_Minhyeong_01",
+    "Description": "나는 마음 먹었고, 나는 너와 다시 만날 생각이 없어…",
+    "NextDialogueId": "normalDialogue_Ending_1_1_9",
+    "BGImagePath": "Sprite/EndingImage2",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "normalDialogue_Ending_1_1_9",
+    "CharacterDataId": "character_Minhyeong_01",
+    "Description": "미안해…",
+    "NextDialogueId": "normalDialogue_Ending_1_1_10",
+    "BGImagePath": "Sprite/EndingImage2",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "normalDialogue_Ending_1_1_10",
+    "CharacterDataId": "character_Player_01",
+    "Description": "그렇구나..또 아프게해서 미안해",
+    "NextDialogueId": "normalDialogue_Ending_1_1_11",
+    "BGImagePath": "Sprite/EndingImage4",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "normalDialogue_Ending_1_1_11",
+    "CharacterDataId": "character_Player_01",
+    "Description": "꼭 잘살아야해!",
+    "NextDialogueId": "normalDialogue_Ending_1_1_12",
+    "BGImagePath": "Sprite/EndingImage4",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "normalDialogue_Ending_1_1_12",
+    "CharacterDataId": "character_Minhyeong_01",
+    "Description": "고마워…넌 좋은 사람이니까. 화이팅했으면 좋겠어. 안녕",
+    "NextDialogueId": "normalDialogue_Ending_1_1_13",
+    "BGImagePath": "Sprite/EndingImage4",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "normalDialogue_Ending_1_2_4",
+    "CharacterDataId": "character_Player_01",
+    "Description": "안녕! 다시 보고 싶었어..",
+    "NextDialogueId": "normalDialogue_Ending_1_2_5",
+    "BGImagePath": "Sprite/EndingImage",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "normalDialogue_Ending_1_2_5",
+    "CharacterDataId": "character_Player_01",
+    "Description": "헤어지고 나서 열심히 살았고, 너와 미래를 더 꿈꾸고",
+    "NextDialogueId": "normalDialogue_Ending_1_2_6",
+    "BGImagePath": "Sprite/EndingImage",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "normalDialogue_Ending_1_2_6",
+    "CharacterDataId": "character_Player_01",
+    "Description": "떳떳한 사람이 되고 싶어서 노력했어",
+    "NextDialogueId": "normalDialogue_Ending_1_2_7",
+    "BGImagePath": "Sprite/EndingImage",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "normalDialogue_Ending_1_2_7",
+    "CharacterDataId": "character_Player_01",
+    "Description": "너는 어떻게 생각해?",
+    "NextDialogueId": "normalDialogue_Ending_1_2_8",
+    "BGImagePath": "Sprite/EndingImage",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "normalDialogue_Ending_1_2_8",
+    "CharacterDataId": "character_Minhyeong_01",
+    "Description": "사실 나도.. 너가 없으면 안될거 같더라",
+    "NextDialogueId": "normalDialogue_Ending_1_2_9",
+    "BGImagePath": "Sprite/EndingImage3",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "normalDialogue_Ending_1_2_9",
+    "CharacterDataId": "character_Minhyeong_01",
+    "Description": "너무 힘들고, 너가 너무 보고 싶었어.",
+    "NextDialogueId": "normalDialogue_Ending_1_2_10",
+    "BGImagePath": "Sprite/EndingImage3",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "normalDialogue_Ending_1_2_10",
+    "CharacterDataId": "character_Minhyeong_01",
+    "Description": "다시 보러와줘서 고마워",
+    "NextDialogueId": "normalDialogue_Ending_1_2_11",
+    "BGImagePath": "Sprite/EndingImage3",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "normalDialogue_Ending_1_2_11",
+    "CharacterDataId": "character_Player_01",
+    "Description": "우리 함께 미래를 꿈꾸고 열심히 살아보자",
+    "NextDialogueId": "normalDialogue_Ending_1_2_12",
+    "BGImagePath": "Sprite/EndingImage6",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "normalDialogue_Ending_1_2_12",
+    "CharacterDataId": "character_Minhyeong_01",
+    "Description": "나도 너와의 미래를 꿈꾸고, 사랑하며 살아가고 싶어!",
+    "NextDialogueId": "normalDialogue_Ending_1_2_13",
+    "BGImagePath": "Sprite/EndingImage6",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "normalDialogue_Ending_1_2_13",
+    "CharacterDataId": "character_Player_01",
+    "Description": "같은 생각이야. 행복하게 살아보자!",
+    "NextDialogueId": "mindDialogue_Ending_1_2_14",
+    "BGImagePath": "Sprite/EndingImage6",
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
   }
 ]
