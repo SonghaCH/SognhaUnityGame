@@ -12,6 +12,8 @@ public class MainUI : DaniTechUIBase
     [SerializeField] private Text Text_Time;
 
     [SerializeField] private DaniTechUIButton Button_Map;
+    [SerializeField] private DaniTechUIButton Button_Exit;
+
 
     [SerializeField] private Text Text_Health;
     [SerializeField] private Text Text_Int;
@@ -28,6 +30,7 @@ public class MainUI : DaniTechUIBase
     private void OnEnable()
     {
         Button_Map.BindOnClickButtonEvent(Onclick_Map);
+        Button_Exit.BindOnClickButtonEvent(Onclick_Exit);
 
         // UI가 켜질 때 현재 데이터를 한번 반영
         RefreshUI();
@@ -60,4 +63,9 @@ public class MainUI : DaniTechUIBase
     {
         DaniTechUIManager.Instance.OpenMapPopupUI();
     }
+    private void Onclick_Exit()
+    {
+        DaniTechUIManager.Instance.OpenQuitPopupUI();
+    }
+
 }
