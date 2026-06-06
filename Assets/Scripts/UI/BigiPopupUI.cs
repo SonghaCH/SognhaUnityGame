@@ -12,6 +12,7 @@ public class BigPopupUI : DaniTechUIBase
     {
         Text_Message.text = message;
 
+        
         // 이전에 돌던 타이머가 있다면 멈추고 새로 시작 (안전장치)
         StopAllCoroutines();
         StartCoroutine(AutoCloseRoutine());

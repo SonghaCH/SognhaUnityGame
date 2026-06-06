@@ -115,6 +115,7 @@ public class DialogueManager : MonoBehaviour
             DaniTechUIManager.Instance.OpenStartLoadingUI();
             DaniTechUIManager.Instance.CloseBackgroundUI();
             DaniTechUIManager.Instance.CloseMindDialogueUI();
+            
             DaniTechUIManager.Instance.OpenMainUI();
 
             if (GameManager.Instance != null)

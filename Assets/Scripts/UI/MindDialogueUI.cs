@@ -25,6 +25,10 @@ public class MindDialogueUI : DaniTechUIBase
     public void OnClick_Next()
     {
         DialogueManager.Instance.RequestNextDialogue(_currentDialogueId);
+        if(_currentDialogueId == "mindDialogue_Opening_1_1_307_2(2)")
+        {
+            this.gameObject.SetActive(false);
+        }
     }
 
     

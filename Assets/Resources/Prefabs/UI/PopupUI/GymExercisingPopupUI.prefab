@@ -127,7 +127,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9522889c516ff246ba461ea5ddbb7cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GymExercisingPopupUI
-  targetCount: 50
+  targetCount: 20
   countText: {fileID: 2224622947592766947}
 --- !u!1 &2882097182162556558
 GameObject:

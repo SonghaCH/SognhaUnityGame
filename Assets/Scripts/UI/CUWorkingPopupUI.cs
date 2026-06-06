@@ -15,7 +15,7 @@ public class CUWorkingPopupUI : DaniTechUIBase
     // 헬스장 로직과 동일한 ID 및 변수 구조
     private const string ACTIVITY_ID = "activity_CUWork_01";
     private int successCount = 0;
-    private int targetCount = 30; // 헬스장처럼 초기값 유지
+    private int targetCount = 20; // 헬스장처럼 초기값 유지
 
     private void OnEnable()
     {
