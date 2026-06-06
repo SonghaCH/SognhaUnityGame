@@ -14,7 +14,7 @@ public class StartLoadingUI : DaniTechUIBase
 
     private void OnEnable()
     {
-        StartLoadResource(0.5f).Forget();
+        StartLoadResource(3.0f).Forget();
     }
 
     private async UniTaskVoid StartLoadResource(float duration)
@@ -41,7 +41,7 @@ public class StartLoadingUI : DaniTechUIBase
 
             await UniTask.Yield(PlayerLoopTiming.Update, _cancelToken.Token);
         }
-        Slider_LoadingBar.value = 1.0f;
+        Slider_LoadingBar.value = 2.0f;
         DaniTechUIManager.Instance.CloseLoadingUI();
 
 

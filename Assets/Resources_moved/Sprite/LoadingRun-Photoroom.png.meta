@@ -1,0 +1,691 @@
+fileFormatVersion: 2
+guid: 5f9232df72214824390bf03a1cc03910
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8834689834246167754
+    second: LoadingRun-Photoroom_0
+  - first:
+      213: 6283861158354625200
+    second: LoadingRun-Photoroom_1
+  - first:
+      213: -5830553242105061814
+    second: LoadingRun-Photoroom_2
+  - first:
+      213: -1189265994802002265
+    second: LoadingRun-Photoroom_3
+  - first:
+      213: 4886749725230939213
+    second: LoadingRun-Photoroom_4
+  - first:
+      213: -1648066547441675607
+    second: LoadingRun-Photoroom_5
+  - first:
+      213: -3676287129988406380
+    second: LoadingRun-Photoroom_6
+  - first:
+      213: -1891447545991302386
+    second: LoadingRun-Photoroom_7
+  - first:
+      213: 309126827263762291
+    second: LoadingRun-Photoroom_8
+  - first:
+      213: -7511748472555355344
+    second: LoadingRun-Photoroom_9
+  - first:
+      213: -2208001754938208499
+    second: LoadingRun-Photoroom_10
+  - first:
+      213: -8829704070519734640
+    second: LoadingRun-Photoroom_11
+  - first:
+      213: -1758895405036116115
+    second: LoadingRun-Photoroom_12
+  - first:
+      213: -1666371454181650654
+    second: LoadingRun-Photoroom_13
+  - first:
+      213: -1021231750734970904
+    second: LoadingRun-Photoroom_14
+  - first:
+      213: -841631811922591281
+    second: LoadingRun-Photoroom_15
+  - first:
+      213: -2780565519607906782
+    second: LoadingRun-Photoroom_16
+  - first:
+      213: 1581801630868899639
+    second: LoadingRun-Photoroom_17
+  - first:
+      213: 5335269204950589253
+    second: LoadingRun-Photoroom_18
+  - first:
+      213: 5828790137991886076
+    second: LoadingRun-Photoroom_19
+  - first:
+      213: 376257728895895676
+    second: LoadingRun-Photoroom_20
+  - first:
+      213: -4179774040098632030
+    second: LoadingRun-Photoroom_21
+  - first:
+      213: 6583105887672197717
+    second: LoadingRun-Photoroom_22
+  - first:
+      213: -3168125193596322443
+    second: LoadingRun-Photoroom_23
+  - first:
+      213: -8975002986675466661
+    second: LoadingRun-Photoroom_24
+  - first:
+      213: -5526056109726587397
+    second: LoadingRun-Photoroom_25
+  - first:
+      213: -8229385511676018617
+    second: LoadingRun-Photoroom_26
+  - first:
+      213: -2749160349934861474
+    second: LoadingRun-Photoroom_27
+  - first:
+      213: 2668681984144448964
+    second: LoadingRun-Photoroom_28
+  - first:
+      213: 459292879574948893
+    second: LoadingRun-Photoroom_29
+  - first:
+      213: 1392051535362699187
+    second: LoadingRun-Photoroom_30
+  - first:
+      213: 8328450177272523802
+    second: LoadingRun-Photoroom_31
+  - first:
+      213: -2493831471240264791
+    second: LoadingRun-Photoroom_32
+  - first:
+      213: 794681354315989144
+    second: LoadingRun-Photoroom_33
+  - first:
+      213: -2696934650896983055
+    second: LoadingRun-Photoroom_34
+  - first:
+      213: 4481712035296645098
+    second: LoadingRun-Photoroom_35
+  - first:
+      213: 3400188601671369481
+    second: LoadingRun-Photoroom_36
+  - first:
+      213: -742476815257249172
+    second: LoadingRun-Photoroom_37
+  - first:
+      213: 6869328376314349953
+    second: LoadingRun-Photoroom_38
+  - first:
+      213: -8636436809107276179
+    second: LoadingRun-Photoroom_39
+  - first:
+      213: -2219898247404663373
+    second: LoadingRun-Photoroom_40
+  - first:
+      213: -3515463925003698492
+    second: LoadingRun-Photoroom_41
+  - first:
+      213: 5956354316145651358
+    second: LoadingRun-Photoroom_42
+  - first:
+      213: -3787698501564195787
+    second: LoadingRun-Photoroom_43
+  - first:
+      213: 2633228013125607783
+    second: LoadingRun-Photoroom_44
+  - first:
+      213: -2203088940889299275
+    second: LoadingRun-Photoroom_45
+  - first:
+      213: 8765803397627056547
+    second: LoadingRun-Photoroom_46
+  - first:
+      213: 4567096401715313009
+    second: LoadingRun-Photoroom_47
+  - first:
+      213: 8451898992979630536
+    second: LoadingRun-Photoroom_48
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: LoadingRun-Photoroom_0
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 520
+        width: 165
+        height: 230
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 633a0096760e46580800000000000000
+      internalID: -8834689834246167754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LoadingRun-Photoroom_15
+      rect:
+        serializedVersion: 2
+        x: 1570
+        y: 520
+        width: 165
+        height: 230
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc18fa2835ce154f0800000000000000
+      internalID: -841631811922591281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LoadingRun-Photoroom_18
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 520
+        width: 165
+        height: 230
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54f192e031faa0a40800000000000000
+      internalID: 5335269204950589253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LoadingRun-Photoroom_19
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 520
+        width: 165
+        height: 230
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf47e4d8fb504e050800000000000000
+      internalID: 5828790137991886076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LoadingRun-Photoroom_20
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 520
+        width: 165
+        height: 230
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c78c5d2396cb83500800000000000000
+      internalID: 376257728895895676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LoadingRun-Photoroom_21
+      rect:
+        serializedVersion: 2
+        x: 937
+        y: 520
+        width: 165
+        height: 230
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ae858ae7a57ef5c0800000000000000
+      internalID: -4179774040098632030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LoadingRun-Photoroom_22
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 521
+        width: 165
+        height: 230
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 552eb711de3eb5b50800000000000000
+      internalID: 6583105887672197717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LoadingRun-Photoroom_23
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 520
+        width: 165
+        height: 230
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57db9bffbee8804d0800000000000000
+      internalID: -3168125193596322443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LoadingRun-Photoroom_32
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 190
+        width: 165
+        height: 230
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a3c8036d71246dd0800000000000000
+      internalID: -2493831471240264791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LoadingRun-Photoroom_33
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 190
+        width: 165
+        height: 230
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89081a93b76470b00800000000000000
+      internalID: 794681354315989144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LoadingRun-Photoroom_34
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 190
+        width: 165
+        height: 230
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fbd7d65930929ad0800000000000000
+      internalID: -2696934650896983055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LoadingRun-Photoroom_35
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 190
+        width: 165
+        height: 230
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aef0379d95d323e30800000000000000
+      internalID: 4481712035296645098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LoadingRun-Photoroom_36
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 190
+        width: 165
+        height: 230
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90344fba485ef2f20800000000000000
+      internalID: 3400188601671369481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LoadingRun-Photoroom_37
+      rect:
+        serializedVersion: 2
+        x: 1143
+        y: 190
+        width: 165
+        height: 230
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6ad0a4354132b5f0800000000000000
+      internalID: -742476815257249172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LoadingRun-Photoroom_38
+      rect:
+        serializedVersion: 2
+        x: 1353
+        y: 190
+        width: 165
+        height: 230
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1894ab353c1c45f50800000000000000
+      internalID: 6869328376314349953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LoadingRun-Photoroom_39
+      rect:
+        serializedVersion: 2
+        x: 1565
+        y: 190
+        width: 165
+        height: 230
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6e7d0cda76352880800000000000000
+      internalID: -8636436809107276179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 01f2bbc3074b8834a927f746724f4f71
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      LoadingRun-Photoroom_0: -8834689834246167754
+      LoadingRun-Photoroom_1: 6283861158354625200
+      LoadingRun-Photoroom_10: -2208001754938208499
+      LoadingRun-Photoroom_11: -8829704070519734640
+      LoadingRun-Photoroom_12: -1758895405036116115
+      LoadingRun-Photoroom_13: -1666371454181650654
+      LoadingRun-Photoroom_14: -1021231750734970904
+      LoadingRun-Photoroom_15: -841631811922591281
+      LoadingRun-Photoroom_16: -2780565519607906782
+      LoadingRun-Photoroom_17: 1581801630868899639
+      LoadingRun-Photoroom_18: 5335269204950589253
+      LoadingRun-Photoroom_19: 5828790137991886076
+      LoadingRun-Photoroom_2: -5830553242105061814
+      LoadingRun-Photoroom_20: 376257728895895676
+      LoadingRun-Photoroom_21: -4179774040098632030
+      LoadingRun-Photoroom_22: 6583105887672197717
+      LoadingRun-Photoroom_23: -3168125193596322443
+      LoadingRun-Photoroom_24: -8975002986675466661
+      LoadingRun-Photoroom_25: -5526056109726587397
+      LoadingRun-Photoroom_26: -8229385511676018617
+      LoadingRun-Photoroom_27: -2749160349934861474
+      LoadingRun-Photoroom_28: 2668681984144448964
+      LoadingRun-Photoroom_29: 459292879574948893
+      LoadingRun-Photoroom_3: -1189265994802002265
+      LoadingRun-Photoroom_30: 1392051535362699187
+      LoadingRun-Photoroom_31: 8328450177272523802
+      LoadingRun-Photoroom_32: -2493831471240264791
+      LoadingRun-Photoroom_33: 794681354315989144
+      LoadingRun-Photoroom_34: -2696934650896983055
+      LoadingRun-Photoroom_35: 4481712035296645098
+      LoadingRun-Photoroom_36: 3400188601671369481
+      LoadingRun-Photoroom_37: -742476815257249172
+      LoadingRun-Photoroom_38: 6869328376314349953
+      LoadingRun-Photoroom_39: -8636436809107276179
+      LoadingRun-Photoroom_4: 4886749725230939213
+      LoadingRun-Photoroom_40: -2219898247404663373
+      LoadingRun-Photoroom_41: -3515463925003698492
+      LoadingRun-Photoroom_42: 5956354316145651358
+      LoadingRun-Photoroom_43: -3787698501564195787
+      LoadingRun-Photoroom_44: 2633228013125607783
+      LoadingRun-Photoroom_45: -2203088940889299275
+      LoadingRun-Photoroom_46: 8765803397627056547
+      LoadingRun-Photoroom_47: 4567096401715313009
+      LoadingRun-Photoroom_48: 8451898992979630536
+      LoadingRun-Photoroom_5: -1648066547441675607
+      LoadingRun-Photoroom_6: -3676287129988406380
+      LoadingRun-Photoroom_7: -1891447545991302386
+      LoadingRun-Photoroom_8: 309126827263762291
+      LoadingRun-Photoroom_9: -7511748472555355344
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
