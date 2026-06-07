@@ -29,7 +29,7 @@
     "HealthGain": 0,
     "CharmGain": 0,
     "ChangeStress": -10,
-    "MoneyCost": 10000,
+    "MoneyCost": 5000,
     "MoneyGain": 0
   },
   {

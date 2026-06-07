@@ -30,6 +30,8 @@ public enum DaniTechUIType
 
     MainUI,
 
+    GameHelpGuidePopupUI,
+
 
 
 
@@ -766,6 +768,25 @@ public static class DaniTechUIManagerExtension
         uiManager.CloseUI(DaniTechUIRootType.VeryFrontUI, DaniTechUIType.EndingUI);
     }
 
+    public static void OpenGameHelpGuidePopupUI(this DaniTechUIManager uiManager)
+    {
+        var uiBase = uiManager.OpenPopupUI(DaniTechUIType.GameHelpGuidePopupUI);
+        if (uiBase == null)
+        {
+            Debug.LogWarning($"UI가 생성되지 않았습니다");
+            return;
+        }
+
+    }
+
+    public static void CloseGameHelpGuidePopupUI(this DaniTechUIManager uiManager)
+    {
+        uiManager.CloseUI(DaniTechUIRootType.PopupUI, DaniTechUIType.GameHelpGuidePopupUI);
+    }
     
+
+
 }
+
+
 

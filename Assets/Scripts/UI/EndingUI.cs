@@ -16,9 +16,8 @@ public class EndingUI : DaniTechUIBase
 
         // 5초 후 실행할 로직
         // 예시: DaniTechUIManager를 통해 QuitPopupUI를 호출
-        DaniTechUIManager.Instance.OpenQuitPopupUI();
+        Application.Quit();
 
-        Debug.Log("2초가 지나 Quit Popup이 호출되었습니다.");
     }
 
     private void OnDisable()

@@ -54,9 +54,9 @@ public class ActivityManager : MonoBehaviour
         if (random < 10f) { prize = 1000; ballIndex = 0; colorName = "빨강"; }
         else if (random < 30f) { prize = 3000; ballIndex = 1; colorName = "파랑"; }
         else if (random < 60f) { prize = 5000; ballIndex = 2; colorName = "초록"; }
-        else if (random < 90f) { prize = 10000; ballIndex = 3; colorName = "흰색"; }
-        else if (random < 99.9f) { prize = 50000; ballIndex = 4; colorName = "노랑"; }
-        else { prize = 500000000; ballIndex = 5; colorName = "검은색"; }
+        else if (random < 90f) { prize = 10000; ballIndex = 3; colorName = "흰"; }
+        else if (random < 99f) { prize = 50000; ballIndex = 4; colorName = "노랑"; }
+        else { prize = 500000000; ballIndex = 5; colorName = "검은"; }
 
         StatManager.Instance.AddMoney(prize);
 

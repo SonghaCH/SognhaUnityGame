@@ -23,16 +23,12 @@ public class StatManager : MonoBehaviour
     private float GetStressMultiplier()
     {
         if (Stress >= 300) return 0.5f;
-        DaniTechUIManager.Instance.OpenBigPopupUI("피로도가 300 이상이 되어 \n획득 스탯이 0.5% 감소합니다");
 
         if (Stress >= 200) return 0.6f;
-        DaniTechUIManager.Instance.OpenBigPopupUI("피로도가 200 이상이 되어 \n획득 스탯이 0.4% 감소합니다");
 
         if (Stress >= 100) return 0.7f;
-        DaniTechUIManager.Instance.OpenBigPopupUI("피로도가 100 이상이 되어 \n획득 스탯이 0.3% 감소합니다");
 
         if (Stress >= 50) return 0.95f;
-        DaniTechUIManager.Instance.OpenBigPopupUI("피로도가 50 이상이 되어 \n획득 스탯이 0.05% 감소합니다");
         return 1.0f;
     }
 

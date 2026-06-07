@@ -14,7 +14,7 @@ public class TimeManager : MonoBehaviour
     [Header("자동 시간 설정")]
     [SerializeField] private float secondsPer10Minutes = 5.0f;
     private float timer = 0f;
-
+    private bool hasShownNightPopup = false;
     public bool IsPaused { get; set; } = true;
 
     private Dictionary<string, int> activityCounts = new Dictionary<string, int>();
@@ -46,6 +46,15 @@ public class TimeManager : MonoBehaviour
             GameManager.Instance.EnterEndingScene();
         }
     }
+    private void CheckSleepEvent()
+    {
+        // 예: 밤 10시(22시 = 1320분)가 되었을 때
+        if (CurrentMinutes >= 1380 || CurrentMinutes < 480) // 10분 단위 업데이트 기준
+        {
+            DaniTechUIManager.Instance.OpenBigPopupUI("날이 어두워 졌네요! 1시가 지나면,집으로 들어가 취침하십쇼!");
+            hasShownNightPopup = true;
+        }
+    }
 
     public void SkipToTime(int targetMinutes)
     {
@@ -60,6 +69,7 @@ public class TimeManager : MonoBehaviour
         // 엔딩 체크 추가
         CheckEndingTrigger();
         UpdateUI();
+        CheckSleepEvent();
     }
 
     public void AddTime(int minutesToAdd)
@@ -81,6 +91,8 @@ public class TimeManager : MonoBehaviour
             CheckEndingTrigger();
         }
         UpdateUI();
+        CheckSleepEvent();
+
     }
 
     public bool IsLateNight()
