@@ -49,9 +49,11 @@ public class TimeManager : MonoBehaviour
     private void CheckSleepEvent()
     {
         // 예: 밤 10시(22시 = 1320분)가 되었을 때
-        if (CurrentMinutes >= 1380 || CurrentMinutes < 480) // 10분 단위 업데이트 기준
+        if (hasShownNightPopup) return;
+
+        if (CurrentMinutes >= 30 && CurrentMinutes < 480) // 10분 단위 업데이트 기준
         {
-            DaniTechUIManager.Instance.OpenBigPopupUI("날이 어두워 졌네요! 1시가 지나면,집으로 들어가 취침하십쇼!");
+            DaniTechUIManager.Instance.OpenBigPopupUI("1시가 지나면 집으로 들어가 취침하십쇼!");
             hasShownNightPopup = true;
         }
     }
