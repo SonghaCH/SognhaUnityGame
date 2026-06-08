@@ -31,7 +31,7 @@ public class TimeManager : MonoBehaviour
 
     private void Update()
     {
-        // [디버그 기능] K 키를 누르면 즉시 3일차로 이동하여 엔딩 테스트
+        //// [디버그 기능] K 키를 누르면 즉시 3일차로 이동하여 엔딩 테스트
         //if (Input.GetKeyDown(KeyCode.O))
         //{
         //    ForceJumpToEnd();
@@ -47,7 +47,7 @@ public class TimeManager : MonoBehaviour
         }
     }
 
-    // [추가] 엔딩 테스트용 강제 이동 메서드
+    ////[추가] 엔딩 테스트용 강제 이동 메서드
     //public void ForceJumpToEnd()
     //{
     //    dayCount = 3;
@@ -74,9 +74,9 @@ public class TimeManager : MonoBehaviour
         if (hasShownNightPopup) return;
 
         // 밤 10시(22시 = 1320분)가 되었을 때 팝업
-        if (currentMinutes >= 1320 && currentMinutes < 1440)
+        if (currentMinutes >= 900 && currentMinutes < 1440)
         {
-            DaniTechUIManager.Instance.OpenBigPopupUI("1시가 지나면 집으로 들어가 취침하십쇼!");
+            DaniTechUIManager.Instance.OpenBigPopupUI("Tip: 1시가 지나면 집으로 들어가 취침하십쇼!");
             hasShownNightPopup = true;
         }
     }

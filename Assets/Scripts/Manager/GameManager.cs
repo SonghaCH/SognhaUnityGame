@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Security.Cryptography;
+using UnityEngine;
 
 public enum GameState { Play, Dialogue, Paused }
 
@@ -82,9 +83,9 @@ public class GameManager : MonoBehaviour
 
     private bool CheckEndingConditions()
     {
-        return StatManager.Instance.Health >= 110f &&
-               StatManager.Instance.Money >= 500000 &&
-               StatManager.Instance.Charm >= 50f &&
+        return StatManager.Instance.Health >= 100f &&
+               StatManager.Instance.Money >= 400000 &&
+               StatManager.Instance.Charm >= 90f &&
                StatManager.Instance.Intel >= 100f;
     }
 }

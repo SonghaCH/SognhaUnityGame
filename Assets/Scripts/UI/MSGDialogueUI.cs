@@ -51,6 +51,11 @@ public class MSGDialogueUI : DaniTechUIBase
 
         // 1. 오직 엑셀 데이터만을 기준으로 타겟 에넘 타입을 정확히 분기합니다.
         DaniTechUIType slotUIType = GetChatSlotUIType();
+       
+        if (msgTypeFromServer == "OhterMSG")
+        {
+            SoundManager.Instance.PlaySFX("SFX_Message", 0.5f);
+        }
 
         // 2. 익스텐션 메서드의 GetUIPath 규칙에 맞춰 리소스 경로를 조합합니다.
         string path = DaniTechUIManager.Instance.GetUIPath(DaniTechUIRootType.ContentUI, slotUIType);

@@ -16,7 +16,7 @@ public class LuckyDrawResultPopupUI : DaniTechUIBase
     private void OnEnable()
     {
         Btn_Close.BindOnClickButtonEvent(Onclick_Close);
-        SoundManager.Instance.PlaySFX(openSoundName, 0.7f);
+        SoundManager.Instance.PlaySFX(openSoundName, 0.5f);
 
     }
 

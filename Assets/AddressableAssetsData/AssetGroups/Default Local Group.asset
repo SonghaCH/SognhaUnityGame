@@ -41,7 +41,7 @@ MonoBehaviour:
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 3e4073368646f924b9256a9016903a00
-    m_Address: Sprite/EndingImage7
+    m_Address: Sprite/EndingImage7-1
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -172,6 +172,11 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: e22b2813fde79714c97fb5bfea580b7c
     m_Address: Sprite/Out Class
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e24819b50e3f884439e1f07bf5031142
+    m_Address: Sprite/EndingImage7
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0

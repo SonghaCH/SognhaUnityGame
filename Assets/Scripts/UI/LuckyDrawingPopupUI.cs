@@ -10,7 +10,7 @@ public class LuckyDrawingPopupUI : DaniTechUIBase
     private void OnEnable()
     {
         Debug.Log("[LuckyDrawingPopupUI] 팝업 열림, 소리 재생 시도: " + openSoundName);
-        SoundManager.Instance.PlaySFX(openSoundName, 0.3f);
+        SoundManager.Instance.PlaySFX(openSoundName, 0.2f);
         // 팝업이 켜지자마자 애니메이션 시간만큼 대기 시작
         StartCoroutine(WaitAndProcess());
        

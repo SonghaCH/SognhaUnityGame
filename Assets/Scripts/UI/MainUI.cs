@@ -106,17 +106,23 @@ public class MainUI : DaniTechUIBase
         StatManager stats = StatManager.Instance;
         string nextKey = "State_Normal";
 
-        // 1. 상태 결정 우선순위 로직
-        if (stats.Intel >= 30f && stats.Charm > 30f && stats.Health > 50f && stats.Money > 500000)
+        // 1. 상태 키 결정 (로직만 수행)
+        if (lastAppliedKey == "State_Elite")
             nextKey = "State_Elite";
-        else if (stats.Charm >= 30f)
+
+
+        else if (stats.Intel >= 100f && stats.Charm >= 90f && stats.Health >= 100f && stats.Money >= 400000)
+            nextKey = "State_Elite";
+        else if (stats.Charm >= 90f && stats.Money >= 300000)
             nextKey = "State_Charm";
 
-        // 2. 상태가 실제로 바뀌었을 때만 팝업 실행
+        // 2. [핵심] 키가 바뀌었을 때만 팝업 실행!
         if (nextKey != lastAppliedKey)
         {
-            lastAppliedKey = nextKey; // 상태 업데이트
-            DaniTechUIManager.Instance.OpenBigPopupUI("스탯이 상승하여 초상화가 변경되었습니다!");
+            lastAppliedKey = nextKey;
+            DaniTechUIManager.Instance.OpenBigPopupUI("스탯 변동으로 인해 초상화가 변경되었습니다!");
+            // 여기서 이미지를 갱신할 명령을 내림
+            UpdateCharacterImage();
         }
 
         return nextKey;
@@ -124,8 +130,7 @@ public class MainUI : DaniTechUIBase
 
     private void Onclick_Map()
     {
-        //DaniTechUIManager.Instance.OpenMapPopupUI();
-        DaniTechUIManager.Instance.OpenCUUI();
+        DaniTechUIManager.Instance.OpenMapPopupUI();
     }
     private void Onclick_Exit()
     {

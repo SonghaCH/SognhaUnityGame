@@ -29,6 +29,8 @@ public class StatManager : MonoBehaviour
         if (Stress >= 100) return 0.7f;
 
         if (Stress >= 50) return 0.95f;
+
+        
         return 1.0f;
     }
 
