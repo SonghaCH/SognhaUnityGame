@@ -26,6 +26,8 @@ public class MainUI : DaniTechUIBase
     // [추가] 상태 표시용 이미지 컴포넌트
     [SerializeField] private Image Image_CharacterState;
 
+    [SerializeField] private string cityBgmName = "BGM_City";
+
     private string lastAppliedKey = "State_Normal";
 
     private void Awake()
@@ -40,10 +42,16 @@ public class MainUI : DaniTechUIBase
         Button_Exit.BindOnClickButtonEvent(Onclick_Exit);
         Button_Guide.BindOnClickButtonEvent(Onclick_Guide);
 
+        SoundManager.Instance.PlayBGM(cityBgmName, saveHistory: true, fadeDuration: 1.0f);
+
         // UI가 켜질 때 현재 데이터를 한번 반영
         RefreshUI();
     }
-
+    private void OnDisable()
+    {
+        // [전문 포인트] 메인 화면을 나갈 때 음악 복구
+        SoundManager.Instance.StopBGMAndRestore(fadeDuration: 1.0f);
+    }
     // UI 갱신을 담당하는 통합 메서드
     public void RefreshUI()
     {
@@ -116,7 +124,8 @@ public class MainUI : DaniTechUIBase
 
     private void Onclick_Map()
     {
-        DaniTechUIManager.Instance.OpenMapPopupUI();
+        //DaniTechUIManager.Instance.OpenMapPopupUI();
+        DaniTechUIManager.Instance.OpenCUUI();
     }
     private void Onclick_Exit()
     {

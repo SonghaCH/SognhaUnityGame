@@ -3,6 +3,10 @@ using UnityEngine.UI;
 
 public class CUWorkingPopupUI : DaniTechUIBase
 {
+    [SerializeField] private string bgmSound = "BGM_Working";
+
+
+
     [Header("Game Settings")]
     public GameObject[] itemPrefabs;
     public RectTransform[] spawnPoints;
@@ -15,10 +19,12 @@ public class CUWorkingPopupUI : DaniTechUIBase
     // 헬스장 로직과 동일한 ID 및 변수 구조
     private const string ACTIVITY_ID = "activity_CUWork_01";
     private int successCount = 0;
-    private int targetCount = 20; // 헬스장처럼 초기값 유지
-
+    private int targetCount = 30; // 헬스장처럼 초기값 유지
     private void OnEnable()
     {
+        bgmSound = "BGM_Working";
+        Debug.Log($"노래 아이디: {bgmSound}");
+        SoundManager.Instance.PlayBGM(bgmSound, saveHistory: true);
         StartGame();
     }
 
@@ -26,7 +32,7 @@ public class CUWorkingPopupUI : DaniTechUIBase
     {
         successCount = 0;
         UpdateUI();
-        InvokeRepeating("SpawnItem", 1f, 0.8f);
+        InvokeRepeating("SpawnItem", 1f, 0.4f);
     }
 
     void SpawnItem()
@@ -107,6 +113,8 @@ public class CUWorkingPopupUI : DaniTechUIBase
         }
 
         DaniTechUIManager.Instance.OpenMiniPopupUI("알바 완료!");
+
+        SoundManager.Instance.StopBGMAndRestore(fadeDuration: 0.5f);
         DaniTechUIManager.Instance.CloseCUWorkingPopupUI(); // 기존 헬스장처럼 팝업 닫기
     }
 }

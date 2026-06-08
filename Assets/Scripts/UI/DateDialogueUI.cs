@@ -26,7 +26,29 @@ public class DateDialogueUI : DaniTechUIBase
     {
         _currentDialogueId = dialogueId;
         _fullText = description;
+
+        // [★추가] 대화 ID를 분석하여 BGM 재생
+        PlayBGMByDialogueId(dialogueId);
+
         StartTyping(description);
+    }
+
+    // 대화 ID에 따라 BGM을 결정하고 재생하는 함수
+    private void PlayBGMByDialogueId(string dialogueId)
+    {
+        string bgmName = "";
+
+        // 대화 ID에 포함된 단어를 기준으로 BGM 선택
+        if (dialogueId.Contains("dateDialogue_Opening_1_1_100"))
+        {
+            bgmName = "BGM_Opening";
+        }
+        
+        // BGM이 결정되었다면 재생
+        if (!string.IsNullOrEmpty(bgmName))
+        {
+            SoundManager.Instance.PlayBGM(bgmName, saveHistory: true, fadeDuration: 1.0f);
+        }
     }
 
     private void StartTyping(string text)
@@ -38,16 +60,14 @@ public class DateDialogueUI : DaniTechUIBase
     private IEnumerator TypingRoutine(string text)
     {
         Text_Description.text = "";
-        int soundCounter = 0; // 소리 빈도 조절용 카운터
+        int soundCounter = 0;
 
         foreach (char c in text)
         {
             Text_Description.text += c;
 
-            // 공백이 아니고, 2글자마다 한 번씩 효과음 재생
             if (c != ' ' && soundCounter % 1 == 0)
             {
-                // SFX 폴더의 "Typing" 파일을 볼륨 0.2로 재생
                 SoundManager.Instance.PlaySFX("Sound_Typing", 0.3f);
             }
 

@@ -7,6 +7,8 @@ public class LuckyDrawResultPopupUI : DaniTechUIBase
     [SerializeField] private DaniTechUIButton Btn_Close;
     [SerializeField] private Image Image_Result;
     [SerializeField] private Text Text_AddMoney;
+    [SerializeField] private string openSoundName = "SFX_Result";
+
 
     // [핵심] 여기서 인스펙터에 드래그 앤 드롭으로 에셋을 할당합니다.
     [SerializeField] private AssetReferenceSprite[] BallReferences;
@@ -14,6 +16,8 @@ public class LuckyDrawResultPopupUI : DaniTechUIBase
     private void OnEnable()
     {
         Btn_Close.BindOnClickButtonEvent(Onclick_Close);
+        SoundManager.Instance.PlaySFX(openSoundName, 0.7f);
+
     }
 
     public void SetResult(int ballIndex, int prize, string colorName)

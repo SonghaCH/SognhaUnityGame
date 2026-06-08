@@ -37,6 +37,7 @@ public class SoundManager : MonoBehaviour
         _fadeCoroutine = StartCoroutine(FadeBGM(fileName, fadeDuration));
     }
 
+
     public void StopBGMAndRestore(float fadeDuration = 0.5f)
     {
         if (_bgmHistory.Count > 0) PlayBGM(_bgmHistory.Pop(), false, fadeDuration);

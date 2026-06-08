@@ -241,6 +241,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 644a98e06f56d3d499f8412cb34c7b6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CUWorkingPopupUI
+  bgmSound: BGM_Working
   itemPrefabs:
   - {fileID: 3599848752743650191, guid: cf9fc9104a4692942a9d012f4a220512, type: 3}
   - {fileID: 3454278684971547512, guid: d09c572642fd68d469ecfce387a5736e, type: 3}
@@ -252,7 +253,7 @@ MonoBehaviour:
   - {fileID: 5834458127293058627}
   - {fileID: 7696276707775910372}
   scanPointTransform: {fileID: 2772311305661488125}
-  fallSpeed: 1200
+  fallSpeed: 1700
   Text_CountNumber: {fileID: 5316521373917374157}
 --- !u!1 &3250094228614179755
 GameObject:
@@ -286,8 +287,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -78.981155, y: -186.55731}
-  m_SizeDelta: {x: 477.6991, y: 212.6219}
+  m_AnchoredPosition: {x: -95.23653, y: -186.55731}
+  m_SizeDelta: {x: 577.0375, y: 212.6219}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &3376886644205410869
 GameObject:
