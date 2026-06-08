@@ -3,7 +3,7 @@
 public class StatManager : MonoBehaviour
 {
     public static StatManager Instance { get; private set; }
-    private const float MAX_STAT = 1000f;
+    public const float MAX_STAT = 1000f;
 
     public float Health { get; private set; }
     public float Intel { get; private set; }

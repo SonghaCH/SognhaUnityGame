@@ -1,9 +1,11 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.AddressableAssets; // 어드레서블 사용
+using UnityEngine.ResourceManagement.AsyncOperations;
 
 public class MainUI : DaniTechUIBase
 {
-    // [중요] 다른 매니저에서 이 UI를 찾기 위한 싱글톤 인스턴스
+    // 다른 매니저에서 이 UI를 찾기 위한 싱글톤 인스턴스
     public static MainUI Instance { get; private set; }
 
     [SerializeField] private Image Image_Time;
@@ -15,13 +17,16 @@ public class MainUI : DaniTechUIBase
     [SerializeField] private DaniTechUIButton Button_Exit;
     [SerializeField] private DaniTechUIButton Button_Guide;
 
-
-
     [SerializeField] private Text Text_Health;
     [SerializeField] private Text Text_Int;
     [SerializeField] private Text Text_Charm;
     [SerializeField] private Text Text_Money;
     [SerializeField] private Text Text_Stress;
+
+    // [추가] 상태 표시용 이미지 컴포넌트
+    [SerializeField] private Image Image_CharacterState;
+
+    private string lastAppliedKey = "State_Normal";
 
     private void Awake()
     {
@@ -50,17 +55,64 @@ public class MainUI : DaniTechUIBase
             Text_Time.text = TimeManager.Instance.GetFormattedTime();
         }
 
-        // [활성화] StatManager 데이터 연동
+        // StatManager 데이터 연동
         if (StatManager.Instance != null)
         {
-            Text_Health.text = StatManager.Instance.Health.ToString("F1");
-            Text_Int.text = StatManager.Instance.Intel.ToString("F1");
-            Text_Charm.text = StatManager.Instance.Charm.ToString("F1");
+            Text_Health.text = $"{StatManager.Instance.Health:F0} / {StatManager.MAX_STAT:F0}";
+            Text_Int.text = $"{StatManager.Instance.Intel:F0} / {StatManager.MAX_STAT:F0}";
+            Text_Charm.text = $"{StatManager.Instance.Charm:F0} / {StatManager.MAX_STAT:F0}";
+            Text_Stress.text = $"{StatManager.Instance.Stress:F0} / {StatManager.MAX_STAT:F0}";
+
             Text_Money.text = StatManager.Instance.Money.ToString("N0") + "원";
-            Text_Stress.text = StatManager.Instance.Stress.ToString("F1");
         }
+
+        // [추가] 상태 이미지 갱신
+        UpdateCharacterImage();
     }
 
+    // 스탯 기반 이미지 업데이트
+    private void UpdateCharacterImage()
+    {
+        if (StatManager.Instance == null) return;
+
+        // 우선순위에 따른 상태 키 결정
+        string assetKey = GetAssetKeyByStats();
+
+        // 어드레서블로 이미지 로드
+        Addressables.LoadAssetAsync<Sprite>(assetKey).Completed += (handle) =>
+        {
+            if (handle.Status == AsyncOperationStatus.Succeeded)
+            {
+                Image_CharacterState.sprite = handle.Result;
+            }
+            else
+            {
+                Debug.LogWarning($"이미지를 로드할 수 없습니다: {assetKey}");
+            }
+        };
+    }
+
+    // 스탯에 따른 이미지 키 반환 로직
+    private string GetAssetKeyByStats()
+    {
+        StatManager stats = StatManager.Instance;
+        string nextKey = "State_Normal";
+
+        // 1. 상태 결정 우선순위 로직
+        if (stats.Intel >= 30f && stats.Charm > 30f && stats.Health > 50f && stats.Money > 500000)
+            nextKey = "State_Elite";
+        else if (stats.Charm >= 30f)
+            nextKey = "State_Charm";
+
+        // 2. 상태가 실제로 바뀌었을 때만 팝업 실행
+        if (nextKey != lastAppliedKey)
+        {
+            lastAppliedKey = nextKey; // 상태 업데이트
+            DaniTechUIManager.Instance.OpenBigPopupUI("스탯이 상승하여 초상화가 변경되었습니다!");
+        }
+
+        return nextKey;
+    }
 
     private void Onclick_Map()
     {
@@ -70,7 +122,6 @@ public class MainUI : DaniTechUIBase
     {
         DaniTechUIManager.Instance.OpenQuitPopupUI();
     }
-
     private void Onclick_Guide()
     {
         DaniTechUIManager.Instance.OpenGameHelpGuidePopupUI();

@@ -75,6 +75,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 73e7a17e662e7ca4dbe83b594de71042
+    m_Address: State_Charm
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 77f739173a61b3f44a7b75b67bcf9601
     m_Address: Sprite/Call Image
     m_ReadOnly: 0
@@ -121,7 +126,7 @@ MonoBehaviour:
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 9e454dc571435604088b2529da2c805b
-    m_Address: Sprite/ProfileIcorn
+    m_Address: State_Normal
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -152,6 +157,11 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: bc0cae17ad356ea4bafbd5ab043093f3
     m_Address: Sprite/Class Room study
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c5bcf6ab6b018b540989a3cd76576912
+    m_Address: State_Elite
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
