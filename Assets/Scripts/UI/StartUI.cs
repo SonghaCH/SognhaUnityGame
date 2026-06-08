@@ -3,14 +3,18 @@
 public class StartUI : DaniTechUIBase
 {
     [SerializeField] private DaniTechUIButton Btn_Start;
-    [SerializeField] private DaniTechUIButton Btn_Option;
     [SerializeField] private DaniTechUIButton Btn_Quit;
-    
+    [SerializeField] private string bgmName = "BGM_Start";
     //ToDo임시 Start 변경
     private void OnEnable()
     {
         Btn_Start.BindOnClickButtonEvent(OnClick_GameStart);
         Btn_Quit.BindOnClickButtonEvent(OnClick_GameQuit);
+
+        if (!string.IsNullOrEmpty(bgmName))
+        {
+            SoundManager.Instance.PlayBGM("BGM_Start");
+        }
     }
 
 

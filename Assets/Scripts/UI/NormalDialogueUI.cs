@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,6 +11,10 @@ public class NormalDialogueUI : DaniTechUIBase
     [SerializeField] private Image Image_Color;
 
     private string _currentDialogueId;
+    private string _currentCharacterId; // 캐릭터 ID 추적용 변수
+
+    private Coroutine _typingCoroutine;
+    private string _fullText;
 
     private void OnEnable()
     {
@@ -19,14 +23,58 @@ public class NormalDialogueUI : DaniTechUIBase
 
     public void OnClick_Next()
     {
+        if (TrySkipTyping()) return;
         DialogueManager.Instance.RequestNextDialogue(_currentDialogueId);
     }
 
     public void SetupDialogue(string dialogueId, string description, string characterId)
     {
         _currentDialogueId = dialogueId;
-        Text_Description.text = description;
+        _fullText = description;
+        _currentCharacterId = characterId; // 대화 시작 시 ID 저장
+
         SetCharacterName(characterId);
+        StartTyping(description);
+    }
+
+    private void StartTyping(string text)
+    {
+        if (_typingCoroutine != null) StopCoroutine(_typingCoroutine);
+        _typingCoroutine = StartCoroutine(TypingRoutine(text));
+    }
+
+    private IEnumerator TypingRoutine(string text)
+    {
+        Text_Description.text = "";
+        int soundCounter = 0; // 효과음 빈도 조절용
+
+        foreach (char c in text)
+        {
+            Text_Description.text += c;
+
+            // [사운드 로직] 공백이 아니고, 2글자당 1번씩 사운드 호출
+            if (c != ' ' && soundCounter % 2 == 0)
+            {
+                // 캐릭터 ID를 결합하여 "Typing_캐릭터ID" 파일 호출
+                SoundManager.Instance.PlaySFX("Typing_" + _currentCharacterId, 0.15f);
+            }
+
+            soundCounter++;
+            yield return new WaitForSeconds(0.03f);
+        }
+        _typingCoroutine = null;
+    }
+
+    private bool TrySkipTyping()
+    {
+        if (_typingCoroutine != null)
+        {
+            StopCoroutine(_typingCoroutine);
+            _typingCoroutine = null;
+            Text_Description.text = _fullText;
+            return true;
+        }
+        return false;
     }
 
     private void SetCharacterName(string characterDataId)
@@ -39,22 +87,12 @@ public class NormalDialogueUI : DaniTechUIBase
             var characterData = GameDataManager.Instance.GetSHCharacterData(characterDataId);
             if (characterData != null)
             {
-                // 1. 이름 텍스트 설정
                 Text_Character.text = characterData.Name;
-                // 2. 이름 텍스트는 무조건 검은색 고정
                 Text_Character.color = Color.black;
 
-                // 3. 이미지 색상만 구분하여 적용
                 if (Image_Color != null)
                 {
-                    if (characterDataId == "character_Player_01")
-                    {
-                        Image_Color.color = Color.cyan; // 주인공: 하늘색 이미지
-                    }
-                    else
-                    {
-                        Image_Color.color = Color.yellow; // 상대방: 노란색 이미지
-                    }
+                    Image_Color.color = (characterDataId == "character_Player_01") ? Color.cyan : Color.yellow;
                 }
             }
         }
