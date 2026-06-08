@@ -102,7 +102,7 @@
   {
     "Id": "normalDialogue_Opening_1_1_133",
     "CharacterDataId": "character_Minhyeong_01",
-    "Description": "얼마 전 데이트에서도 전만큼 재미있지 않다고 느꼈고, 오늘도 너와 함꼐 게임하면서 사소한 다툼이 있었잖아? 근데 평소였으면 엄청 서운하고, 속상해서 너한테 분명하게 말했을거야.",
+    "Description": "얼마 전 데이트에서도 전만큼 재미있지 않다고 느꼈고, 오늘도 너와 함께 게임하면서 사소한 다툼이 있었잖아? 근데 평소였으면 엄청 서운하고, 속상해서 너한테 분명하게 말했을거야.",
     "NextDialogueId": "normalDialogue_Opening_1_1_134",
     "BGImagePath": "Sprite/Call Image",
     "SelectionDialogueIdList": null,

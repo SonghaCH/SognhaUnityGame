@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class SoundManager : MonoBehaviour
 {
@@ -31,7 +32,7 @@ public class SoundManager : MonoBehaviour
     {
         if (saveHistory && bgmSource.clip != null) _bgmHistory.Push(bgmSource.clip.name);
 
-        bgmSource.volume = 0.15f;
+        bgmSource.volume = 0.05f;
 
         if (_fadeCoroutine != null) StopCoroutine(_fadeCoroutine);
         _fadeCoroutine = StartCoroutine(FadeBGM(fileName, fadeDuration));
@@ -46,6 +47,7 @@ public class SoundManager : MonoBehaviour
     private IEnumerator FadeBGM(string fileName, float duration)
     {
         AudioClip nextClip = LoadAudio("Sounds/BGM/" + fileName);
+        if (nextClip == null) yield break; // 파일이 없을 경우 방어 코드
         if (bgmSource.clip == nextClip) yield break;
 
         // 서서히 줄이기
@@ -57,6 +59,10 @@ public class SoundManager : MonoBehaviour
         }
 
         bgmSource.clip = nextClip;
+
+        // [★핵심] 루프 활성화 설정
+        bgmSource.loop = true;
+
         bgmSource.Play();
 
         // 서서히 키우기
@@ -69,14 +75,14 @@ public class SoundManager : MonoBehaviour
     }
 
     // --- SFX 제어 ---
-    public void PlaySFX(string fileName, float volume = 0.5f)
+    public void PlaySFX(string fileName, float volume = 0.4f)
     {
         AudioClip clip = LoadAudio("Sounds/SFX/" + fileName);
         if (clip != null) sfxSource.PlayOneShot(clip, volume);
     }
 
     // 캐릭터 ID 기반 소리 (파일명: Typing_캐릭터ID)
-    public void PlayCharacterTypingSound(string characterId, float volume = 0.3f)
+    public void PlayCharacterTypingSound(string characterId, float volume = 0.25f)
     {
         PlaySFX("Typing_" + characterId, volume);
     }

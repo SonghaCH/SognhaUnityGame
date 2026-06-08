@@ -14,7 +14,7 @@
     "Id": "activity_Academy_01",
     "Name": "학원",
     "TimeCost": 300,
-    "IntGain": 50,
+    "IntGain": 100,
     "HealthGain": 0,
     "CharmGain": 5,
     "ChangeStress": 40,
@@ -24,7 +24,7 @@
   {
     "Id": "activity_LuckyDraw_01",
     "Name": "복권방",
-    "TimeCost": 60,
+    "TimeCost": 30,
     "IntGain": 0,
     "HealthGain": 0,
     "CharmGain": 0,

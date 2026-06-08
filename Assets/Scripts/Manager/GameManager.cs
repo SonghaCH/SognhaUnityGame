@@ -85,7 +85,7 @@ public class GameManager : MonoBehaviour
     {
         return StatManager.Instance.Health >= 100f &&
                StatManager.Instance.Money >= 400000 &&
-               StatManager.Instance.Charm >= 90f &&
+               StatManager.Instance.Charm >= 90f&&
                StatManager.Instance.Intel >= 100f;
     }
 }
