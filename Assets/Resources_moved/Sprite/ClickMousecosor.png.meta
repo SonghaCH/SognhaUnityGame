@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 0caee955cebf3984d91616bb921cd49d
+guid: 3437117898e97ee40a9f751c03f34d24
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5018067581836232810
-    second: HelpPOP_0
+      213: -4041874231852164686
+    second: ClickMousecosor_0
+  - first:
+      213: -2198666548267013031
+    second: ClickMousecosor_1
+  - first:
+      213: -7363933108408683512
+    second: ClickMousecosor_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -24,7 +30,7 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
     flipGreenChannel: 0
-  isReadable: 0
+  isReadable: 1
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
@@ -37,7 +43,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -57,7 +63,7 @@ TextureImporter:
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 8
+  textureType: 7
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -126,23 +132,67 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: HelpPOP_0
+      name: ClickMousecosor_0
       rect:
         serializedVersion: 2
-        x: 102
-        y: 57
-        width: 819
-        height: 487
+        x: 14
+        y: 12
+        width: 36
+        height: 33
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 62, y: 52, z: 57, w: 199}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6977fb50f1e3c5ab0800000000000000
-      internalID: -5018067581836232810
+      spriteID: 2b995a70dc068e7c0800000000000000
+      internalID: -4041874231852164686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClickMousecosor_1
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 45
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95ca2036c64cc71e0800000000000000
+      internalID: -2198666548267013031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClickMousecosor_2
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 45
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 804ff8b8add0ec990800000000000000
+      internalID: -7363933108408683512
       vertices: []
       indices: 
       edges: []
@@ -151,7 +201,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: e9e6583daf17b384992cd45ff1ee1216
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -161,7 +211,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      HelpPOP_0: -5018067581836232810
+      ClickMousecosor_0: -4041874231852164686
+      ClickMousecosor_1: -2198666548267013031
+      ClickMousecosor_2: -7363933108408683512
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
