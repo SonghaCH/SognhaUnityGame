@@ -82,9 +82,9 @@ public class GameManager : MonoBehaviour
 
     private bool CheckEndingConditions()
     {
-        return StatManager.Instance.Health >= 50f &&
+        return StatManager.Instance.Health >= 110f &&
                StatManager.Instance.Money >= 500000 &&
-               StatManager.Instance.Charm >= 30f &&
-               StatManager.Instance.Intel >= 30f;
+               StatManager.Instance.Charm >= 50f &&
+               StatManager.Instance.Intel >= 100f;
     }
 }

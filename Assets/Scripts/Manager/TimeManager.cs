@@ -8,8 +8,12 @@ public class TimeManager : MonoBehaviour
     private const int MINUTES_IN_DAY = 1440;
     private const int DAY_START_MINUTES = 480;
 
-    public int DayCount { get; private set; } = 0;
-    public int CurrentMinutes { get; private set; } = 480;
+    // 프로퍼티를 사용하지 않고 변수로 관리하는 방식을 유지합니다.
+    private int dayCount = 0;
+    public int DayCount { get { return dayCount; } }
+
+    private int currentMinutes = 480;
+    public int CurrentMinutes { get { return currentMinutes; } }
 
     [Header("자동 시간 설정")]
     [SerializeField] private float secondsPer10Minutes = 5.0f;
@@ -27,6 +31,12 @@ public class TimeManager : MonoBehaviour
 
     private void Update()
     {
+        // [디버그 기능] K 키를 누르면 즉시 3일차로 이동하여 엔딩 테스트
+        //if (Input.GetKeyDown(KeyCode.O))
+        //{
+        //    ForceJumpToEnd();
+        //}
+
         if (IsPaused) return;
 
         timer += Time.deltaTime;
@@ -35,23 +45,36 @@ public class TimeManager : MonoBehaviour
             AddTime(10);
             timer = 0f;
         }
-        
     }
 
-    // [추가] 엔딩 체크 로직을 중앙화
+    // [추가] 엔딩 테스트용 강제 이동 메서드
+    //public void ForceJumpToEnd()
+    //{
+    //    dayCount = 3;
+    //    currentMinutes = 480;
+
+    //    Debug.Log("디버그: 3일차로 강제 이동 및 엔딩 트리거 실행");
+
+    //    CheckEndingTrigger();
+    //    UpdateUI();
+    //    CheckSleepEvent();
+    //}
+
+    // 엔딩 체크 로직 중앙화
     private void CheckEndingTrigger()
     {
-        if (DayCount >= 3)
+        if (dayCount >= 3)
         {
             GameManager.Instance.EnterEndingScene();
         }
     }
+
     private void CheckSleepEvent()
     {
-        // 예: 밤 10시(22시 = 1320분)가 되었을 때
         if (hasShownNightPopup) return;
 
-        if (CurrentMinutes >= 30 && CurrentMinutes < 480) // 10분 단위 업데이트 기준
+        // 밤 10시(22시 = 1320분)가 되었을 때 팝업
+        if (currentMinutes >= 1320 && currentMinutes < 1440)
         {
             DaniTechUIManager.Instance.OpenBigPopupUI("1시가 지나면 집으로 들어가 취침하십쇼!");
             hasShownNightPopup = true;
@@ -60,15 +83,14 @@ public class TimeManager : MonoBehaviour
 
     public void SkipToTime(int targetMinutes)
     {
-        if (CurrentMinutes >= targetMinutes)
+        if (currentMinutes >= targetMinutes)
         {
-            DayCount++;
+            dayCount++;
         }
 
-        CurrentMinutes = targetMinutes;
+        currentMinutes = targetMinutes;
         activityCounts.Clear();
 
-        // 엔딩 체크 추가
         CheckEndingTrigger();
         UpdateUI();
         CheckSleepEvent();
@@ -76,30 +98,30 @@ public class TimeManager : MonoBehaviour
 
     public void AddTime(int minutesToAdd)
     {
-        int previousMinutes = CurrentMinutes;
-        CurrentMinutes += minutesToAdd;
+        int previousMinutes = currentMinutes;
+        currentMinutes += minutesToAdd;
 
-        if (previousMinutes < DAY_START_MINUTES && CurrentMinutes >= DAY_START_MINUTES)
+        // 새로운 날이 되었을 때 액티비티 제한 초기화
+        if (previousMinutes < DAY_START_MINUTES && currentMinutes >= DAY_START_MINUTES)
         {
             activityCounts.Clear();
+            hasShownNightPopup = false; // 날이 바뀌면 팝업 상태도 초기화
         }
 
-        if (CurrentMinutes >= MINUTES_IN_DAY)
+        if (currentMinutes >= MINUTES_IN_DAY)
         {
-            CurrentMinutes -= MINUTES_IN_DAY;
-            DayCount++;
+            currentMinutes -= MINUTES_IN_DAY;
+            dayCount++;
 
-            // 엔딩 체크 추가
             CheckEndingTrigger();
         }
         UpdateUI();
         CheckSleepEvent();
-
     }
 
     public bool IsLateNight()
     {
-        return (CurrentMinutes >= 60 && CurrentMinutes < 480);
+        return (currentMinutes >= 60 && currentMinutes < 480);
     }
 
     public bool CanDoActivity(string activityId)
@@ -134,18 +156,18 @@ public class TimeManager : MonoBehaviour
 
     public string GetFormattedDate()
     {
-        return "4월 " + (7 + DayCount) + "일";
+        return "4월 " + (7 + dayCount) + "일";
     }
 
     public string GetFormattedDay()
     {
-        return (DayCount + 1) + "일차";
+        return (dayCount + 1) + "일차";
     }
 
     public string GetFormattedTime()
     {
-        int hour = (CurrentMinutes / 60) % 24;
-        int min = CurrentMinutes % 60;
+        int hour = (currentMinutes / 60) % 24;
+        int min = currentMinutes % 60;
         return string.Format("{0:D2}시 {1:D2}분", hour, min);
     }
 }
