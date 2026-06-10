@@ -5,7 +5,6 @@ public class StartUI : DaniTechUIBase
     [SerializeField] private DaniTechUIButton Btn_Start;
     [SerializeField] private DaniTechUIButton Btn_Quit;
     [SerializeField] private string bgmName = "BGM_Start";
-    //ToDo임시 Start 변경
     private void OnEnable()
     {
         Btn_Start.BindOnClickButtonEvent(OnClick_GameStart);

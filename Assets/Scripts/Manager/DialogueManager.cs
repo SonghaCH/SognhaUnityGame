@@ -38,9 +38,7 @@ public class DialogueManager : MonoBehaviour
         ProcessDialogue(startDialogueId);
     }
 
-    /// <summary>
-    /// UI 쪽에서 현재 ID의 대사 조각들을 다 소모하고 다음 ID를 요청할 때 호출하는 함수
-    /// </summary>
+   
     public void RequestNextDialogue(string currentDialogueId)
     {
         if (string.IsNullOrEmpty(currentDialogueId)) return;
@@ -49,7 +47,6 @@ public class DialogueManager : MonoBehaviour
         Debug.Log($"현재 다이얼로그ID: {currentDialogueId}");
         string nextId = string.Empty;
 
-        // 1. 접두사를 한 번만 검사하여 깔끔하게 분기 처리 (switch문 활용)
         if (currentDialogueId.StartsWith("msgDialogue"))
         {
             var data = GameDataManager.Instance.GetMSGDialogueData(currentDialogueId);

@@ -78,13 +78,7 @@ public enum DaniTechUIType
     HomeRestPopupUI,
     HomeSleepUI,
 
-    DNSimplePopup,
-    DNMainUI,
-    DNMyProfilePopup, 
-    DNInventory,
-    DNLoadingUI,
-    DNDialogueUI,
-    DNInfoBookUI
+    
 }
 
 
